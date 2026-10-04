@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-04",
+  "registry": "ClawHub",
+  "owner": "redrookai",
+  "slug": "remove-ai-slop",
+  "version": "1.0.0",
+  "url": "https://clawhub.ai/redrookai/skills/remove-ai-slop",
+  "source_commit": "979ad39ab0a91589459628f0b0ef19ef809f5141",
+  "source_path": "skills/remove-ai-slop",
+  "license": "MIT-0",
+  "registry_install_command": "clawhub install @RedRookAI/remove-ai-slop --version 1.0.0",
+  "registry_install_succeeded": true,
+  "all_eight_published_files_matched_source": true,
+  "verified_files": [
+    "SKILL.md",
+    "README.md",
+    "REMOVE-AI-SLOP.md",
+    "agents/openai.yaml",
+    "references/patterns.md",
+    "references/phrasing.md",
+    "references/research.md",
+    "references/word-and-phrase-review.md"
+  ],
+  "released_skill_sha256": "f8adc14cb7832502194e46332bf1028585dfbb88e834074502f2cbd064032d67",
+  "scope": "One standard registry install into an isolated test folder. No overwrite or pending-scan bypass flags. The installed editing instructions match the previously tested release."
+}

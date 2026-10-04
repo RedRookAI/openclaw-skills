@@ -14,6 +14,8 @@ Each condition ran once. Both received deslop instructions, so the comparison do
 
 ## OpenClaw
 
+[ClawHub registry installation](clawhub-install.json) succeeded for v1.0.0. All eight downloaded files matched the published source, including the previously tested SKILL.md.
+
 [Agent installation from the public link](handoff-test.md) passed on Haymitch using local Qwen Spark. The agent downloaded and installed all six files itself, then loaded the skill on the next request.
 
 [Eight live turns](openclaw/README.md) ran on Seven's installed OpenClaw in isolated test state. Three used v5, two used v6, and three used the released v7. The v7 turns loaded the exact released skill and edited marketing copy, an explanation, and a personal update. Tool traces show the actual skill and reference reads. Earlier imperfect edits remain in the records.

@@ -4,7 +4,7 @@ Skills and copy-and-paste prompts for everyday problems with AI agents.
 
 | Skill | What it does |
 | --- | --- |
-| [Remove AI slop](skills/remove-ai-slop/README.md) | Makes AI drafts read naturally. Cuts canned phrasing, forced jokes, and repetitive rhetoric. |
+| [Remove AI slop](skills/remove-ai-slop/README.md) ([ClawHub](https://clawhub.ai/redrookai/skills/remove-ai-slop)) | Makes AI drafts read naturally. Cuts canned phrasing, forced jokes, and repetitive rhetoric. |
 
 ## Give it to your Claw
 

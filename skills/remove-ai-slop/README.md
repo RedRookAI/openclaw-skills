@@ -12,6 +12,12 @@ Install the Remove AI slop skill from this link into your workspace skills direc
 https://github.com/RedRookAI/openclaw-skills/releases/download/remove-ai-slop-v1.0.0/remove-ai-slop-skill.zip
 ```
 
+[Install from ClawHub](https://clawhub.ai/redrookai/skills/remove-ai-slop), or run:
+
+```sh
+openclaw skills install @redrookai/remove-ai-slop
+```
+
 You can also extract the ZIP's `remove-ai-slop` folder into your workspace's `skills/` directory yourself.
 
 Use it after drafting:
