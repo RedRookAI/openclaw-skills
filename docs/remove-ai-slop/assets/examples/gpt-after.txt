@@ -1,0 +1,5 @@
+FolderSweep helps organize your downloads by watching one folder and grouping files by type. It works on Linux and macOS.
+
+You can preview the changes before moving anything. Nothing moves until you confirm, and you can undo the last move.
+
+Preview first. Move when ready. Try FolderSweep today.

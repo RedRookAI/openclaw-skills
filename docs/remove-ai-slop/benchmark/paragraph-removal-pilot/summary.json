@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-04T02:19:27.880340+00:00",
+  "api_requests": 12,
+  "complete_requests": 12,
+  "models": {
+    "gpt": {
+      "pairs": 3,
+      "identical_outputs": 1,
+      "same_reported_provider_pairs": 1
+    },
+    "claude": {
+      "pairs": 3,
+      "identical_outputs": 0,
+      "same_reported_provider_pairs": 3
+    }
+  },
+  "pilot_reported_cost_usd": "0.0447355",
+  "previous_plus_pilot_usd": "1.025666872",
+  "rating_method": "No automated judges or ratings. Actual outputs displayed for human inspection.",
+  "one_pass_per_condition": true,
+  "supporting_references_compiled": false,
+  "skill_changed_during_experiment": false,
+  "separate_output_validator_run": false,
+  "diagnostic_control_requests": 2,
+  "diagnostic_control_cost_usd": "0.0068435",
+  "overall_spend_including_controls_usd": "1.032510372",
+  "request_and_cost_integrity_checked": true
+}

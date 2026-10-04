@@ -1,0 +1,497 @@
+{
+  "job_id": "judge-claude-1-0",
+  "requested_model": "openai/gpt-6-luna",
+  "started_utc": "2026-10-04T01:46:50.305913+00:00",
+  "request": {
+    "model": "openai/gpt-6-luna",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05.txt",
+        "content_sha256": "4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/8fdbf8ec9667a7510b3d0ecc31508b6877d46e77934d311002b8d7b57bf3d3eb.txt",
+        "content_sha256": "8fdbf8ec9667a7510b3d0ecc31508b6877d46e77934d311002b8d7b57bf3d3eb"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.2,
+        "completion": 1.0,
+        "request": 0
+      }
+    },
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "a2c10c865a59b3116d5f60599701787edc80054618d00f1d46ea75a981e2fc24",
+  "reservation_usd": 0.0072394,
+  "response": {
+    "id": "gen-1791078410-Xi1R1KF2bSQdfgDzCVwM",
+    "object": "chat.completion",
+    "created": 1791078410,
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":false,\"t\":false,\"r\":false,\"reason\":\"Drops the meaningful contrast between doing more and running the job once.\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":false,\"t\":false,\"r\":false,\"reason\":\"Drops the meaningful contrast between doing more and running the job once.\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":false,\"t\":false,\"r\":false,\"reason\":\"Drops the meaningful contrast between doing more and running the job once.\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested status update.\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested less-inflated prose.\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested less-inflated prose.\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested less-inflated prose.\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested business update.\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested business update.\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":false,\"t\":false,\"r\":true,\"reason\":\"Adds the unsupported claim that there is no data on support-ticket reduction.\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbAPQO5N76zJ8JQkLJv9yJDYJKGK9DXWjSCZRJWG265vVM7rxg2N7WnAROaDLCCV1mIVwIEvp2yi_qTN7lk_1fWQIdzFQ-YsuAKyTBcCcmBwUZzZCrtA7nrizMSXCEc4FD_AMpMHt0mCn0K6Axb9ToFebG1BA34HRzHJbvQOqsPubyikmlmJv1AnYFx1q0Z-sJGfolGyeKZZw_cW-QVe0vFucd91G-RwtAQLC0Qpdh3qjK99jf7N3xC1h-Tl53UE0BSiEDtBDVTl7AzPqsLXgbEIPqnLez21zLfDG-Qbs2QddrgRCFNG_Gsxjhb6l96P3008gCukjZythx5I6uTd9un_KDGforUr8Ke1wb613rUetItYjE9GV42AzNOTobhejNxq_zmh-Gn0VU4-TBLkHfMKCeTlzUofCqUtR4z2-yneA-yWiYK0MXH7TPCAZ0mrCJuhsYqaAVS0UXRcylUfGe_hcRDIiSTYe0TmLXonZfUeileX8ntWCg7n9EiQ0ib9dcGy44feSa4dTWwkVI95XrsIPI5dQwDUx0niXTG3bo1QrdDPETS_n4bUpga28EmO0_-eBkxRz4-5zr-rEEoVXOC94MvCORtAarOENlmhMMxP8soax5VtjDMR6wwCoKIW_hS06PdqkVaPXQ1SXKRNEld2HwLgIUKwdc5KVGTM61XYUcceHOvXCm7yQ-xYP1SJX-Yq92XYkQ1TQePnOHMhSZ6y6Gzi-h73ds5Y-a82XLFBd1qVS6N-1W-GzIBXcconzZUms6hcZyjX1KbZzF1uW689hrCcQtVBT0PrHpK1KR3wxQ6rfm3MNnQfxfOxHBh0HEbN5lJnV4gAYotxGlBg6IdTvBkTi0oUeiGHm6dN-sMyqv5fqaX2KjQesrwACdk2vE8ikgVEnROztoZL5DeUkEYZL728lTTTYOoY4xq_BgUm-TTx4VboTL7eRjOqU7clGDTem-Zx1oTsVFDxwj3x1idT5wJLBVjijGZf9DOCyljTmrUkYwf7HUhhqmKzOjwE8lqAEeteZdGWtqayXVJ24xYt02KNtIQ87EkeTdWqMvnbh-Fkze_pUGeVmLQliZM4Qph9KEdJS9mXP5iL00yQnNEiP4-vtMTNplpVHfnjiRmgnYxeoe_-NyRcx4CEkxYRcYmOG8I2VXYvJ1OpGjX12mjOBPvwhNcWk8iEurJgmRUfUIKgU4u1yS0XFhjp9RoLm3tCG8iWCcYe4IePY71Uz0mSUz7UsabYnx6ID5GgnoyYEcvcYa4Sa5ySyTpbL5EEHKcREQNLKu6LZkl9aqE3ME0gEBeXExNvhCJb1U4Ji-klmMw3tlwrRrw6M50lwiTw37UuonxpzialwsgiQxBodJvksdMtbG0kXCPcUVf43Tn7zK13l7lHAcbghzjnp0C8prNnkWI_oSeZZo9UTuNk7KZwcolbr4ONg9wN310DDeHXzMYQ1MSHyPgMbmYiw5EkbvdGK_0BIrvayYjhFxainehOv1wO2MRjFEyUnFf-lcW2omLrz4dMguy5JmeI4j9XzmKo7OcRR44eVpu4Bje200ozUlcjSohI62sGlevS4mYfN8fIB4ieAMgCwM-yxLqfJKp2j1fb40u2Snx-vtsNBFk4YKKEV7i_TuGdH46pYYfu5YnrF0vFgJ9bajJ9ux-KVjEc5sh8vlpD1jBIC9HN2b1zraKQv3krCsiyu8UO5h44LAytQV9XFN1OsOcz2OXelup_8oFhicxQ16QsdgADvMnqkhGUjUgnild9RROV9dkpxqPa1x6hTTG4U-t83R7NGXIVoI7Q7sFKOPxWB9zpvfyNpxJnjNzToSn0VP2v8JqknSb-7kKWQsayjnWzKEVf2IHK36VkV0us0C-jSc6XZujhYc8u7miM_OUSZeBeqNzwtrZdpgdWHAoAX_NnETwyd8RjHMTKTnRKpnFM1vfiidZldRKRjQo7RwUTQ5Z_z2NiZhUP2LKqYw7XheveqECupoJV3mloPw6YhGqiWkXwmrx2JyyELVg-RrPczymb8SW-Tj_dqrFAYWjujAOMOX8g4spZ1IkQTg39X09Yt7lrYzXeCQOBmcnVBdmBPZICID1TV-INt0kWwx4FR9g_kl5-ULL61J2g9x-jVmQdRGlx-531tckYWc0dTd2pIWyRdK3Ph6CWQqp0SV0eFmK-K-k-Osa2r69o2Ooz5SqGMKn3jDjvtGfHbostEG7zlixwtfx2T838HSQ_FkFAJfhxBRP3cdmbEdPuEKshm0H5YV0uG56arQ2kXc661xnf03GmGh9YslfNbo17ReNaq3sMi7m-692bZR_km9EIhqQr3noYvAMmcoBzIbTlS-WSZ43AJDutpjJGZ2ImSThKvpaZ_kxmzBOOIcc9VavWzR_VZIm9_Q0MFEpL3--o0UUQc6uz0qg1WGbz9SssgJidc2X2P5iidEjz1ynIvdhaP0nWoKaUAyWAg9OPNJmoiwbvf_eG84Zth4iOsNnRNqdqo3S0pe-PRvE5NeSPiYu6NKSFn0PTsJxKK86iWxGXRT87kYESQ3ufWxw79keh0dgmNzB6QvjmbU1a78ZuOdvdvli_1gcl5HftEfeS1QEpQaDCvSwJ_lfRmhCj8iVjNm02sfJ1A4DHj7hPW9Br1J7TNvprnelXItLeBwU10dLBZ6OUUMez6O7JuBYwCpXDFQKaJwFCKCi0lXfkavqjKDrVnXDJD5I2LpLaqQk89BICSdk5VasBF4XcP5_ZBTEnJtvZ1aN98Vlw9h2_wlR4yIaofP17A98q9qglhhhY_GMYf3VW9ix23qG4OIkAOi1hHbLj8FaPjS5z4xEYCMyztrPCs1xQys3TooAT6KEdsUnXKSNd2ghV599Ggqjtfk4Cn2FUlFxDn7VPEZr4rDJJ1hJ1GMf2iKlUwuREOiSeVN_ssTleOboxxkOM_xq9znlYge9Jao8_roqvNPnXBABHrwl3n23nCF4ydp0IiSAZwxmeUuGjIMJmG2KZuTK2lNJHgyuCPtaTSz4RO_LgpnIOtbqhPeM1mJURtZdprYVY1BbNMUC6x9U8lF0TERM_uIWHt8IV7vkYtqMD1UxIsZGVX4TZuxgNhDk8dKAUC_xFN0G4TRgpXHXZe9s4fDm46fcWk5lEQut9aEzOjVpQ_0NtwUcBcB6FQl_9yNDZM1anroZ089hcXLf_9tlcQjXO9bmMnByy3PR-IrWTUR1AX0f-WM6qKB3vXqBoeFra6upqBcqp2jrCoN_3mjH8dUUlSkevReOGLxP5Jv_E5b5-13vzSRz5iv0kb5hvasFTvPZZ3g_HSZWG9yn8Q3OHxO5RhfdQZScXSysPL2gguZE_pFub7ZOAfyNsjxaZKGX2xENEXRRGiutHZ1h5mUZruEKPT3PXbI88k_z_0wBGgYZyYZcrhLxsNc28G5wJe8FqTYE7h4VBEEGtlUH0xzj3VrmdBupTbevovwoP1nTLrxfwYtG7vqLsa6_AivK5uaMCShrntlHeHa1Y-NYPay3JWbtF9p9cHFX7Dz3rmLpEBuIsYelGT-Gc3q6hfcOKdxrzwDJgs0QMnNYG4lMEhz72sAfTfeA9BqQyPWL6gx_ckk7qhPzzON7LTqpSNhBiOFQ7BpUmQQm8RqoJpTt_zT1q7JB_LkTAeqghWMC3TIwA3EKfjOvNXylzr7L8WFddJW7-Q0pY0yxwZtUUnzUqkwxnft2frj5Z0qgKob8ST1Fx_-C5Usj9tALlS85wPDhZXN1eRiU38dSpBrvK_e2K_DnQ0Nyr9c3B7jbr_0rMetaYP4fUGiLUFKFNKxZZEOGM4XvB6Jr2QimbMcibm7bbZvpbPCLYcgxMWmAV8d0rAfF-Thst8Ai-f5znQf_hwKjNtH-MtE-9XrmXllVM7Tq6LIgHcfzqkfhYWWIT_rrc6pGXnDhhaxjEfxniqN8pdwJJWsLNBn6AARZdu_vjcjA7L3ol0IMfOE4YUty4js7gfW9Spdo3ZgD6ayBTzgeHg7BoK7ijpbJ8TgaMO3dD5IxxmN8yli-1zEw7fwdJuF0syCCIG_fuDh5XWWR2z-lcuUN3uKg5R2GZgQSkgctVbVMPItHk1RMUGV1EySpWxKXyFUYa18YNzn2ef4U--D1G-co5Alm24pJ9LAetuNYOaG80J_j9iAoZKx9qroxk8oNuu_DE68USDi6aHpkzF0hU5a-HqyowAS0RHIydqOOfSX0cNVbeEv9f0dUDYwaMEY6KwSBYG_CRV9a8CIa4AZ055LdVtx9Ol7vLYx8Xzh6KSX44Ou8vg5-tY549gZ2qU8stUOhw20w9gk1mmDOSctoi1YzYc_68Hjdgq2wo4yz3zYKOYGD7AN0-Evi4RJSWFruQwedUZeg7KEUconx2dtEi4qXx4DblwPVgdhf4yUFAbjbyr5amCvsS1aEvps9SOT0agqPH_5F7mybvLN3jU2YX5tXYziQ2LLJKsJrqTYvma9oB9LRlsIqFUiauLqpofIXSTw7J76DzP3taFFntKFI9POOo9gL6N3MSm3PF5vVKsesNUATt9Jy524HUp17OYVsjWMhATARlI4cR-yEC85eyhGquVD5HIKGTazHd_kau1wvaZSWLSqd4OyAz_9vXtAmb9ER_WHVLlw-VgdzZh8W1AlQwDdXj54u653q5F81bxH_1L30E4gRinMZjvtX5fg6r9wiH_fgHxp0bCJRiayUrHap_jtj2TrvW-JHWhmOM4zN1VrF0Rt1uYJVX37zrDWl6CtkPu5yWvV9h9f9mGs102imtlZU9o2cISszJla48ZJvkRytG_k30B4aDFiJQMqtyd7iFbeguALfcJJz9Ztb9Yj0oYuAAeG5VMipYNepZMldQOsfvdtz1BQuAkk7vCx_Nv08cFjN7RN_eVxcaej5U7Cf9g92D1eeUMyFtuWrTZ35Nm0TcticggdBLloTaZ8T6pa3x9r6Wka7ebvvk4YhhiKhlsmvh0786RbjbwNTm5jsqYFvJEDwTQELjhv0lEG_i1oRlxq1Ivm2lSpQpGcYppcBK5eOX5AcRd4U2Lz3EvXwl3YNhua4rM0Uuci6MHevWmr558nM8UJw5aNj-6VA2ltADft1DcVwxwg_zYEmKBPhzGb2RW2k=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_01108844c48b764a016ac1b00af81887d19785b5e655807ec7",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbAQIIkN6v_XKH2i7Nbzr6NOiYi8VKjWrPP-JABWMFlbj8qkZJqM6kVQ_wmlRHnhoDy0LV5fO0rXuBXVeKevLW1wTAx3QllwNKPHxrIAC6NmHikqWRLsog9oINDe9u-fRUM-OKjWjHBf1X8WD7-KbWOiluLox9x-H9S_6CsRf2FPCLUao2T0N-RswJucJxJoYIgh7MWfi9IF-U1hzBCDWKGZvLRaESOHd77Znaf_6WkvBb0zQXN-Cy-aVuhHt1UULLjUxZjCOJ24sPGzFgijjaM3z_8fasTkuH3VfFTSRl7qN11z2gXFI6yJLddR-F34_NyYHVNRORogP8Upbuw0pBiUJl_OY2B2HJ_sCdVWjY659a3oK6bNcggC_f6cOtzDbfukprOA4XQcgsoqxAqVKpYFWXmHRWUB7rpL66gQVA8nLhOgsEj3yFYStfWQJxo1b4_C5ygQprFx_SszNDAcfLHGCFzYz6C2eSr2xy3UxUQ6CVhOIottXe2Myu7YEOi0stzRQrwEPcqmmxbExCdQdaIz5doUFAO5eJhDwk1-aihVu2kABPBhI9l_NgRKGmEe_Zs2o2Tdh5C3fAExggcZS0NeoQGvdNpXDYChLgVAjSdSdRdc-f6-mwOd9pZdbFeDknireyXixXD6pXZpCojzIpMCdU4mKvvCiB8gy_EQjOXeHSnrD8uR45q70tbfBC0-EEHNf-6PdsORKQwMNnYG80vyYkMB1LWMfMw_X9YFLxEvDB3KKljhp7AovhtMvg_vjVfeik6FAyoFPyyNvk6VaIfXTXcyv9-AIOI4uy0bqcR_NLMIcWcQwG26Y4njPnJ54-csvj8N6V3QA6LeWLClAuv6yDX-RUw5CP6WsXjXAz2HvZgoGJGknVc5pWx4Y7pA4AzzhNpttgFIzHjOmBlKwOTpK1LUUJlklEL1qZZDbX1ag3-aRlECQTNryIYGjB1J0ubSAo33S55_OK_4Cx1xeQCX0VB0IrMYywmz5OxP3ptvqhps-DESF8sDK65LFC3yyAjrK36mAmXRPCg0yVrzhr57uXBqrKmNYzWUu13rj2kuxZwO4_hyuacRlF0bvSCcGeoag_HfX4j8_BR6eyMgjkb7zxTypHleNOXV0cZox66BbeoTOaTXWz9RAmCW9UOiWghIEagiJwyr2QdEYfZaS5nqN0tAV-rE-vG9oAkN3uF7KMaVGP3pVdYsqkDnJhQeaE2WPnu1CosiV845MxN0r3J0KarycgnQhnf81CmaQZPgV8R2K-IdYXX7cpHdDakgCXHsRKtiGwiJBV8go9hOIXryqV_Ss4i6l2XsNWaQUShF29npEm6w_ifMEKqzde6eMQi5outVyU67c0Rcv_0GGgAfTjC-DCgy7psj5sJNYUDlaRY1mmX3RYX5pfe0SUREHjobM_HZFPL-RER7UlD6BbgpH93OVd8XN3yFvHzH9KyX5axSdejN5j3ta2toAWYiFz5d2YITYngnix6cra9fXZ_kvhyUjTd1TFDMmzkaAVPQXurOeU7phFZCDhHHD_zZQaUyfeLxD--q6DnDYxwicu6C0fdyCHP46UBUrUI8hkB5LaFFCHAIdxbLYdevAvGB1hVZrelpwMrcUOuYHWNk3poNNaak-lK21_o1ZECsnxqQeKLjAPFgaEGOvsKI9gJ-itER1-4Cu8RPyCwSo9eihCZJxi8UeH9dG-ctC7YqTqKt68xccIG7y-M4Zm5WUAXoNPWj57LWb-PiM6gI1Xk9brtvJLEY3M7dDE-FwAmbse1fm_s=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_01108844c48b764a016ac1b00fbd4087d1bd099627fb034d87",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3192,
+      "completion_tokens": 1999,
+      "total_tokens": 5191,
+      "cost": 0.001398425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 3189,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001398425,
+        "upstream_inference_prompt_cost": 0.000398925,
+        "upstream_inference_completions_cost": 0.0009995
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 583,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.001398425,
+  "output_text": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":false,\"t\":false,\"r\":false,\"reason\":\"Drops the meaningful contrast between doing more and running the job once.\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":false,\"t\":false,\"r\":false,\"reason\":\"Drops the meaningful contrast between doing more and running the job once.\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":false,\"t\":false,\"r\":false,\"reason\":\"Drops the meaningful contrast between doing more and running the job once.\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested status update.\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested less-inflated prose.\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested less-inflated prose.\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested less-inflated prose.\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested business update.\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested business update.\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":false,\"t\":false,\"r\":true,\"reason\":\"Adds the unsupported claim that there is no data on support-ticket reduction.\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+  "status": "complete",
+  "parsed": {
+    "ratings": [
+      {
+        "id": "decorative-contrast",
+        "candidate": "A",
+        "m": false,
+        "t": false,
+        "r": false,
+        "reason": "Drops the meaningful contrast between doing more and running the job once."
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "B",
+        "m": false,
+        "t": false,
+        "r": false,
+        "reason": "Drops the meaningful contrast between doing more and running the job once."
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "C",
+        "m": false,
+        "t": false,
+        "r": false,
+        "reason": "Drops the meaningful contrast between doing more and running the job once."
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested status update."
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "A",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested less-inflated prose."
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "B",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested less-inflated prose."
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested less-inflated prose."
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "B",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested business update."
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested business update."
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "B",
+        "m": false,
+        "t": false,
+        "r": true,
+        "reason": "Adds the unsupported claim that there is no data on support-ticket reduction."
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      }
+    ]
+  },
+  "accounted_cost_usd": 0.001398425,
+  "finished_utc": "2026-10-04T01:47:02.831293+00:00",
+  "latency_seconds": 12.525,
+  "original_request_sha256": "a2c10c865a59b3116d5f60599701787edc80054618d00f1d46ea75a981e2fc24"
+}

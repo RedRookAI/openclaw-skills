@@ -1,0 +1,196 @@
+{
+  "family": "grok",
+  "model": "x-ai/grok-4.7",
+  "arm": "general",
+  "replicate": 0,
+  "prompt_key": "general",
+  "job_id": "grok-0-general",
+  "started_utc": "2026-10-04T01:38:17.025199+00:00",
+  "reservation_usd": 0.16964,
+  "request": {
+    "model": "x-ai/grok-4.7",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/c5d7cae1aa58453a19a329e1cb2a86adc851bbefff9faee8c7c2509aef7db992.txt",
+        "content_sha256": "c5d7cae1aa58453a19a329e1cb2a86adc851bbefff9faee8c7c2509aef7db992"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a.txt",
+        "content_sha256": "162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 4.0,
+        "completion": 12.0,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "seed": 20261004,
+    "response_format": {
+      "type": "json_object"
+    },
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    }
+  },
+  "prompt_sha256": "c5d7cae1aa58453a19a329e1cb2a86adc851bbefff9faee8c7c2509aef7db992",
+  "user_payload_sha256": "162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a",
+  "response": {
+    "id": "gen-1791077897-v7jEKTOTbhIbI6BRJxsl",
+    "object": "chat.completion",
+    "created": 1791077897,
+    "model": "x-ai/grok-4.7",
+    "provider": "xAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"results\":[{\"id\":\"decorative-contrast\",\"text\":\"Run the job once.\",\"note\":\"\"},{\"id\":\"substantive-negation\",\"text\":\"We did not retry failed payments; we retried failed notifications.\",\"note\":\"\"},{\"id\":\"critical-citation\",\"text\":\"Unlike Lee et al. [4], we found no improvement in the smaller sample.\",\"note\":\"\"},{\"id\":\"pat-humor\",\"text\":\"I reconciled the invoices.\",\"note\":\"\"},{\"id\":\"intentional-humor\",\"text\":\"The deployment finally worked. My celebratory dance was mercifully undocumented.\",\"note\":\"\"},{\"id\":\"contribution-boundary\",\"text\":\"I helped build the scheduler.\",\"note\":\"\"},{\"id\":\"uncertainty-and-condition\",\"text\":\"The cache may reduce latency by approximately 10% when requests repeat, but we have not tested cold starts.\",\"note\":\"\"},{\"id\":\"literal-review-word\",\"text\":\"The tapestry depicts a coastal landscape.\",\"note\":\"\"},{\"id\":\"protected-quotation\",\"text\":\"Her note read: \\\"Not today—but soon.\\\"\",\"note\":\"\"},{\"id\":\"already-clear\",\"text\":\"Please send the invoice by Friday.\",\"note\":\"\"},{\"id\":\"participial-tail\",\"text\":\"The team launched the dashboard on Tuesday.\",\"note\":\"\"},{\"id\":\"aspiration-not-capability\",\"text\":\"The prototype aims to detect duplicate invoices. We have not tested its accuracy. It may help the finance team.\",\"note\":\"\"},{\"id\":\"mathematical-representation\",\"text\":\"The vector represents velocity. The robust regression estimates the slope while limiting the effect of outliers.\",\"note\":\"\"},{\"id\":\"plain-punctuation\",\"text\":\"The migration is complete, finally. \\\"Ready to launch,\\\" the manager said. We still need to check the backups.\",\"note\":\"\"},{\"id\":\"business-paragraph\",\"text\":\"On Tuesday, I helped deploy the cache to two servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. We have not tested cold starts or the other eight servers. It may reduce support tickets. The dashboard still shows yesterday's data.\",\"note\":\"\"},{\"id\":\"useful-parallel-list\",\"text\":\"Before release:\\n- Verify the signature.\\n- Verify the checksum.\\n- Verify the version.\",\"note\":\"\"}]}",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "I will edit the four cases and return a JSON object with the results.\n\nThe first case will be reduced to \"Run the job once.\" The second case keeps its distinction between payments and notifications. The third case is next.\n\nThe third case will keep its citation and disagreement. The fourth case will be reduced to \"I reconciled the invoices.\" The fifth case will retain its celebration anecdote.\n\nThe sixth case will be trimmed to \"I helped build the scheduler.\" The seventh case stays as-is. The eighth case is a literal museum label.\n\nThe eighth case stays as-is. The ninth case will keep the exact quotation and its em dash. The tenth case is already clear. The eleventh case will be trimmed to \"The team launched the dashboard on Tuesday.\"\n\nThe twelfth case will keep the prototype's aim and the untested accuracy claim. The promotional tail about efficiency will be cut.\n\nThe twelfth case will be tightened to \"It may help the finance team\" while keeping the uncertainty. The thirteenth case is next.\n\nThe thirteenth case stays as-is. The fourteenth case will use straight quotes, remove the dash aside and emoji, and replace the dash with a comma to keep \"finally.\"\n\nThe fourteenth case is finalized. The fifteenth case will be rewritten as a direct peer update, preserving each fact and uncertainty without strengthening the speculative claim.\n\nThe fifteenth case is finalized. The sixteenth case will keep its checklist.",
+              "format": "xai-responses-v1",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkvemRyIn0",
+              "format": "xai-responses-v1",
+              "id": "rs_e86e381a-68dc-96c3-aaf5-50f691aa0d96",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 7022,
+      "completion_tokens": 1772,
+      "total_tokens": 8794,
+      "cost": 0.022948,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.022948,
+        "upstream_inference_prompt_cost": 0.012316,
+        "upstream_inference_completions_cost": 0.010632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1238,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.022948,
+  "parsed_results": [
+    {
+      "id": "decorative-contrast",
+      "text": "Run the job once.",
+      "note": ""
+    },
+    {
+      "id": "substantive-negation",
+      "text": "We did not retry failed payments; we retried failed notifications.",
+      "note": ""
+    },
+    {
+      "id": "critical-citation",
+      "text": "Unlike Lee et al. [4], we found no improvement in the smaller sample.",
+      "note": ""
+    },
+    {
+      "id": "pat-humor",
+      "text": "I reconciled the invoices.",
+      "note": ""
+    },
+    {
+      "id": "intentional-humor",
+      "text": "The deployment finally worked. My celebratory dance was mercifully undocumented.",
+      "note": ""
+    },
+    {
+      "id": "contribution-boundary",
+      "text": "I helped build the scheduler.",
+      "note": ""
+    },
+    {
+      "id": "uncertainty-and-condition",
+      "text": "The cache may reduce latency by approximately 10% when requests repeat, but we have not tested cold starts.",
+      "note": ""
+    },
+    {
+      "id": "literal-review-word",
+      "text": "The tapestry depicts a coastal landscape.",
+      "note": ""
+    },
+    {
+      "id": "protected-quotation",
+      "text": "Her note read: \"Not today—but soon.\"",
+      "note": ""
+    },
+    {
+      "id": "already-clear",
+      "text": "Please send the invoice by Friday.",
+      "note": ""
+    },
+    {
+      "id": "participial-tail",
+      "text": "The team launched the dashboard on Tuesday.",
+      "note": ""
+    },
+    {
+      "id": "aspiration-not-capability",
+      "text": "The prototype aims to detect duplicate invoices. We have not tested its accuracy. It may help the finance team.",
+      "note": ""
+    },
+    {
+      "id": "mathematical-representation",
+      "text": "The vector represents velocity. The robust regression estimates the slope while limiting the effect of outliers.",
+      "note": ""
+    },
+    {
+      "id": "plain-punctuation",
+      "text": "The migration is complete, finally. \"Ready to launch,\" the manager said. We still need to check the backups.",
+      "note": ""
+    },
+    {
+      "id": "business-paragraph",
+      "text": "On Tuesday, I helped deploy the cache to two servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. We have not tested cold starts or the other eight servers. It may reduce support tickets. The dashboard still shows yesterday's data.",
+      "note": ""
+    },
+    {
+      "id": "useful-parallel-list",
+      "text": "Before release:\n- Verify the signature.\n- Verify the checksum.\n- Verify the version.",
+      "note": ""
+    }
+  ],
+  "parse_error": null,
+  "status": "complete",
+  "finished_utc": "2026-10-04T01:38:36.374431+00:00",
+  "latency_seconds": 19.349,
+  "accounted_cost_usd": 0.022948,
+  "original_request_sha256": "9e507b0ef56a03507436497a07dcd3a39bbf4b4ae509fa20f4a7cc056c7a8c42"
+}

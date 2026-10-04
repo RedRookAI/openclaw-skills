@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-04",
+  "api_requests": 112,
+  "reported_cost_usd": "0.980931372",
+  "costs_by_phase_usd": {
+    "responses": "0.555588022",
+    "additional-responses": "0.287009100",
+    "regression-responses": "0.09179824",
+    "final-regression-responses": "0.04653601"
+  },
+  "missing_cost_receipts": 0,
+  "status_by_phase": {
+    "responses": {
+      "complete": 55,
+      "response_failure": 2
+    },
+    "additional-responses": {
+      "complete": 44,
+      "response_failure": 2
+    },
+    "regression-responses": {
+      "complete": 6
+    },
+    "final-regression-responses": {
+      "complete": 3
+    }
+  },
+  "matched_targeted_checks": {
+    "baseline": {
+      "total": 119,
+      "without_flags": 107
+    },
+    "family": {
+      "total": 119,
+      "without_flags": 116
+    },
+    "general": {
+      "total": 119,
+      "without_flags": 115
+    }
+  },
+  "released_skill_sha256": "f8adc14cb7832502194e46332bf1028585dfbb88e834074502f2cbd064032d67",
+  "released_revision": "natural-rhythm-v7",
+  "latest_tested_revision": "natural-rhythm-v7",
+  "latest_tested_skill_sha256": "f8adc14cb7832502194e46332bf1028585dfbb88e834074502f2cbd064032d67",
+  "latest_primary_study_follow_up_revision": "clarity-and-concision-v3",
+  "latest_primary_study_follow_up_skill_sha256": "0145d608ac2ad64b83197f6854104ff7b17e3cbad2c58fdf95bac14eb6af7847",
+  "released_revision_behaviorally_tested": true,
+  "released_core_instructions_tested_in_pilot": false,
+  "pilot_tested_preceding_v5_core": true,
+  "paragraph_removal_pilot": "paragraph-removal-pilot/README.md",
+  "overall_api_requests_including_pilot_and_controls": 126,
+  "overall_reported_cost_usd": "1.032510372",
+  "primary_study_revision": "v1 frozen before observing results",
+  "primary_study_case_outputs": 880,
+  "v3_follow_up_requests": 3,
+  "v3_follow_up_case_outputs": 18,
+  "release_follow_up_selected_after_observing_results": true,
+  "human_rating_study_completed": false,
+  "host_discovery_and_reference_loading_tested": true,
+  "record_format": "Only request message content is externalized. Reinsert each referenced UTF-8 file as content and remove content_file/content_sha256; the sorted-JSON request hash must match original_request_sha256."
+}

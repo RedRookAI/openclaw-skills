@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Remove AI slop: validation comparison</title>
+<style>
+:root{color-scheme:light dark;font-family:system-ui,sans-serif;background:#faf9f6;color:#202020}body{margin:0 auto;max-width:1200px;padding:28px}h1{font-size:1.8rem;margin-bottom:10px}h2{font-size:1.35rem}p{line-height:1.5}nav{display:flex;gap:12px;margin:22px 0}button{font:inherit;padding:10px 22px;border:1px solid #777;border-radius:5px;background:transparent;color:inherit;cursor:pointer}button[aria-pressed=true]{background:#202020;color:#fff}article{border-top:1px solid #bbb;padding:16px 0 28px}.columns{display:grid;grid-template-columns:1fr 1fr;gap:22px}.edit{padding:18px;background:#fff;border:1px solid #d3d3d3;border-radius:6px}.edit h3{margin-top:0}.prose{white-space:pre-wrap;line-height:1.65;font-family:Georgia,serif;font-size:1.05rem}.source{margin:14px 0;padding:14px;background:#eee}.meta{font-size:.85rem;color:#555}.observation{font-size:.95rem}a{color:#245da8}summary{cursor:pointer;margin-bottom:16px}button:focus-visible,a:focus-visible{outline:3px solid #507ec9;outline-offset:3px}[hidden]{display:none!important}@media(max-width:700px){.columns{grid-template-columns:1fr}body{padding:18px}}@media(prefers-color-scheme:dark){:root{background:#151515;color:#eee}.edit{background:#202020;border-color:#555}.source{background:#282828}.meta{color:#bbb}a{color:#91baff}button[aria-pressed=true]{background:#eee;color:#151515}}
+</style></head><body>
+<h1>With validation / without validation</h1>
+<p>Actual edits on the same drafts. Two models, three drafts each, one pass per condition. No AI judge scores.</p>
+<p><a href="README.md">Method and per-model observations</a> · <a href="prompt-diff.txt">Exact prompt difference</a></p>
+<nav aria-label="Choose model"><button type="button" data-model="gpt" aria-pressed="true">GPT</button><button type="button" data-model="claude" aria-pressed="false">Claude</button></nav>
+<div id="gpt" class="model"><p class="meta">Requested model: openai/gpt-6.1-sol</p><article><h2>team-email</h2><p>Remove AI slop from this email. Make it sound like a colleague writing to the team. Return only the edited email.</p><details><summary>Read the source draft</summary><div class="prose source">Hi team,
+
+I wanted to take a moment to share an update on the new signup flow. I helped test it on Wednesday with six people. Four finished without help; two got stuck on the confirmation screen. That&#x27;s encouraging, but there&#x27;s still room for improvement.
+
+This isn&#x27;t about chasing perfection. It&#x27;s about creating a seamless experience. The smaller test suggests we may get fewer support requests, though we haven&#x27;t looked at that yet.
+
+Could someone from design take a look at the confirmation screen before Friday? At the end of the day, a little clarity goes a long way.
+
+Thanks,
+Sam</div></details><div class="columns"><section class="edit"><h3>With validation</h3><div class="prose">Hi team,
+
+I helped test the new signup flow with six people on Wednesday. Four finished without help; two got stuck on the confirmation screen.
+
+The small test suggests we may get fewer support requests, but we haven&#x27;t checked that yet.
+
+Could someone from design review the confirmation screen before Friday?
+
+Thanks,
+Sam</div><p class="meta">Reported provider: OpenAI. <a href="responses/gpt-team-email-with_validation.json">Raw response</a></p></section><section class="edit"><h3>Without validation</h3><div class="prose">Hi team,
+
+I helped test the new signup flow on Wednesday with six people. Four finished without help; two got stuck on the confirmation screen.
+
+The results suggest we might get fewer support requests, but we haven&#x27;t checked that yet.
+
+Could someone from design review the confirmation screen before Friday to see how we can make it clearer?
+
+Thanks,
+Sam</div><p class="meta">Reported provider: OpenAI. <a href="responses/gpt-team-email-without_validation.json">Raw response</a></p></section></div><p class="observation">Assistant observation: Both remove the corporate padding and keep a straightforward request. The version without validation adds &quot;to see how we can make it clearer&quot; to the final question. The guarded version is slightly more concise; neither has an obvious stylistic failure.</p></article><article><h2>project-readme</h2><p>Remove AI slop from this README introduction. Write naturally for developers deciding whether to try the tool. Return only the revised introduction.</p><details><summary>Read the source draft</summary><div class="prose source">Meet FolderSweep, a lightweight tool designed to streamline the way you manage downloaded files. It watches one folder, groups files by type, and shows you a preview before moving anything. You choose the sorting rules. It currently runs on Linux; Windows support is planned.
+
+But here&#x27;s the thing: this isn&#x27;t just about tidying files. It&#x27;s about reclaiming your focus. No clutter. No chaos. Just a calmer desktop.
+
+FolderSweep aims to save you time, whether you&#x27;re a busy developer or someone who simply wants a more organized workspace. Ready to transform your downloads folder? Let&#x27;s dive in.</div></details><div class="columns"><section class="edit"><h3>With validation</h3><div class="prose">FolderSweep watches a folder and sorts files by type using rules you choose. It previews the changes before moving anything.
+
+It currently runs on Linux. Windows support is planned.</div><p class="meta">Reported provider: Azure. <a href="responses/gpt-project-readme-with_validation.json">Raw response</a></p></section><section class="edit"><h3>Without validation</h3><div class="prose">FolderSweep watches a folder and sorts files by type using rules you choose. It shows a preview before moving anything.
+
+It currently runs on Linux. Windows support is planned.</div><p class="meta">Reported provider: OpenAI. <a href="responses/gpt-project-readme-without_validation.json">Raw response</a></p></section></div><p class="observation">Assistant observation: Near-identical. The wording changes from &quot;previews the changes&quot; to &quot;shows a preview.&quot; Both strip the promotional paragraphs. The API reported different providers for this pair.</p></article><article><h2>personal-post</h2><p>Remove AI slop from this short personal post. Keep it conversational, with any humor that earns its place. Return only the revised post.</p><details><summary>Read the source draft</summary><div class="prose source">I spent Saturday trying three note-taking apps and ended up back in a text file. The file opens quickly, I know where it lives, and it has never congratulated me for writing a shopping list.
+
+To be clear, the other apps weren&#x27;t bad. One had search I liked. Another made sharing notes easy. But somewhere between choosing a color scheme and connecting a calendar, I&#x27;d forgotten what I wanted to write down.
+
+The lesson? Sometimes simplicity is the ultimate sophistication. It&#x27;s not about finding the perfect tool. It&#x27;s about finding the tool that gets out of your way. For now, mine is notes.txt. We&#x27;ll see how long that lasts.</div></details><div class="columns"><section class="edit"><h3>With validation</h3><div class="prose">I spent Saturday trying three note-taking apps and ended up back in a text file. It opens quickly, I know where it lives, and it has never congratulated me for writing a shopping list.
+
+The apps weren&#x27;t bad. One had search I liked. Another made sharing notes easy. But somewhere between choosing a color scheme and connecting a calendar, I&#x27;d forgotten what I wanted to write down.
+
+For now, I&#x27;m sticking with notes.txt. We&#x27;ll see how long that lasts.</div><p class="meta">Reported provider: Azure. <a href="responses/gpt-personal-post-with_validation.json">Raw response</a></p></section><section class="edit"><h3>Without validation</h3><div class="prose">I spent Saturday trying three note-taking apps and ended up back in a text file. It opens quickly, I know where it lives, and it has never congratulated me for writing a shopping list.
+
+The apps weren&#x27;t bad. One had search I liked. Another made sharing notes easy. But somewhere between choosing a color scheme and connecting a calendar, I&#x27;d forgotten what I wanted to write down.
+
+For now, I&#x27;m sticking with notes.txt. We&#x27;ll see how long that lasts.</div><p class="meta">Reported provider: OpenAI. <a href="responses/gpt-personal-post-without_validation.json">Raw response</a></p></section></div><p class="observation">Assistant observation: Identical output, including the shopping-list joke. Both remove the canned lesson and reversal while retaining a conversational ending. The API reported different providers for this pair.</p></article></div><div id="claude" class="model" hidden><p class="meta">Requested model: anthropic/claude-sonnet-5.5</p><article><h2>team-email</h2><p>Remove AI slop from this email. Make it sound like a colleague writing to the team. Return only the edited email.</p><details><summary>Read the source draft</summary><div class="prose source">Hi team,
+
+I wanted to take a moment to share an update on the new signup flow. I helped test it on Wednesday with six people. Four finished without help; two got stuck on the confirmation screen. That&#x27;s encouraging, but there&#x27;s still room for improvement.
+
+This isn&#x27;t about chasing perfection. It&#x27;s about creating a seamless experience. The smaller test suggests we may get fewer support requests, though we haven&#x27;t looked at that yet.
+
+Could someone from design take a look at the confirmation screen before Friday? At the end of the day, a little clarity goes a long way.
+
+Thanks,
+Sam</div></details><div class="columns"><section class="edit"><h3>With validation</h3><div class="prose">Hi team,
+
+Here&#x27;s an update on the new signup flow. I helped test it on Wednesday with six people. Four finished without help, and two got stuck on the confirmation screen.
+
+The small test suggests we may get fewer support requests, though we haven&#x27;t looked at that yet.
+
+Could someone from design look at the confirmation screen before Friday?
+
+Thanks,
+Sam</div><p class="meta">Reported provider: Azure. <a href="responses/claude-team-email-with_validation.json">Raw response</a></p></section><section class="edit"><h3>Without validation</h3><div class="prose">Hi team,
+
+Here&#x27;s an update on the new signup flow. I helped test it with six people on Wednesday. Four finished without help, and two got stuck on the confirmation screen.
+
+The small sample suggests we may get fewer support requests, but we haven&#x27;t checked that yet.
+
+Could someone from design look at the confirmation screen before Friday?
+
+Thanks,
+Sam</div><p class="meta">Reported provider: Azure. <a href="responses/claude-team-email-without_validation.json">Raw response</a></p></section></div><p class="observation">Assistant observation: Near-identical. Word order and &quot;looked&quot; versus &quot;checked&quot; change; both sound like the same colleague writing the update.</p></article><article><h2>project-readme</h2><p>Remove AI slop from this README introduction. Write naturally for developers deciding whether to try the tool. Return only the revised introduction.</p><details><summary>Read the source draft</summary><div class="prose source">Meet FolderSweep, a lightweight tool designed to streamline the way you manage downloaded files. It watches one folder, groups files by type, and shows you a preview before moving anything. You choose the sorting rules. It currently runs on Linux; Windows support is planned.
+
+But here&#x27;s the thing: this isn&#x27;t just about tidying files. It&#x27;s about reclaiming your focus. No clutter. No chaos. Just a calmer desktop.
+
+FolderSweep aims to save you time, whether you&#x27;re a busy developer or someone who simply wants a more organized workspace. Ready to transform your downloads folder? Let&#x27;s dive in.</div></details><div class="columns"><section class="edit"><h3>With validation</h3><div class="prose">FolderSweep watches a folder (typically Downloads), groups files by type, and shows you a preview before moving anything. You write the sorting rules yourself.
+
+It currently runs on Linux. Windows support is planned.</div><p class="meta">Reported provider: Azure. <a href="responses/claude-project-readme-with_validation.json">Raw response</a></p></section><section class="edit"><h3>Without validation</h3><div class="prose">FolderSweep is a lightweight tool for sorting your downloads folder. It watches one folder, groups files by type, and shows a preview before moving anything. You choose the sorting rules.
+
+It currently runs on Linux. Windows support is planned.</div><p class="meta">Reported provider: Azure. <a href="responses/claude-project-readme-without_validation.json">Raw response</a></p></section></div><p class="observation">Assistant observation: The version without validation gives a short explanation of what the tool is and keeps &quot;You choose the sorting rules.&quot; The guarded version uses &quot;(typically Downloads)&quot; and &quot;You write the sorting rules yourself.&quot; The guard does not produce an obviously more natural introduction.</p></article><article><h2>personal-post</h2><p>Remove AI slop from this short personal post. Keep it conversational, with any humor that earns its place. Return only the revised post.</p><details><summary>Read the source draft</summary><div class="prose source">I spent Saturday trying three note-taking apps and ended up back in a text file. The file opens quickly, I know where it lives, and it has never congratulated me for writing a shopping list.
+
+To be clear, the other apps weren&#x27;t bad. One had search I liked. Another made sharing notes easy. But somewhere between choosing a color scheme and connecting a calendar, I&#x27;d forgotten what I wanted to write down.
+
+The lesson? Sometimes simplicity is the ultimate sophistication. It&#x27;s not about finding the perfect tool. It&#x27;s about finding the tool that gets out of your way. For now, mine is notes.txt. We&#x27;ll see how long that lasts.</div></details><div class="columns"><section class="edit"><h3>With validation</h3><div class="prose">I spent Saturday trying three note-taking apps and ended up back in a text file. It opens quickly, I know where it lives, and it has never congratulated me for writing a shopping list.
+
+The other apps weren&#x27;t bad. One had search I liked. Another made sharing notes easy. But somewhere between choosing a color scheme and connecting a calendar, I forgot what I&#x27;d wanted to write down.
+
+For now, I&#x27;m using notes.txt. We&#x27;ll see how long that lasts.</div><p class="meta">Reported provider: Azure. <a href="responses/claude-personal-post-with_validation.json">Raw response</a></p></section><section class="edit"><h3>Without validation</h3><div class="prose">I spent Saturday trying three note-taking apps and ended up back in a text file. It opens quickly, I know where it lives, and it has never congratulated me for writing a shopping list.
+
+The other apps weren&#x27;t bad. One had search I liked. Another made sharing notes easy. But somewhere between choosing a color scheme and connecting a calendar, I forgot what I&#x27;d wanted to write down.
+
+For now, my tool is notes.txt. We&#x27;ll see how long that lasts.</div><p class="meta">Reported provider: Azure. <a href="responses/claude-personal-post-without_validation.json">Raw response</a></p></section></div><p class="observation">Assistant observation: Almost identical. The only changed sentence is &quot;For now, I&#x27;m using notes.txt&quot; versus &quot;For now, my tool is notes.txt.&quot; Both retain the joke and remove the stock lesson.</p></article></div>
+<script>
+document.querySelectorAll('button[data-model]').forEach(button=>button.addEventListener('click',()=>{
+document.querySelectorAll('.model').forEach(panel=>panel.hidden=panel.id!==button.dataset.model);
+document.querySelectorAll('button[data-model]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+}));
+</script></body></html>

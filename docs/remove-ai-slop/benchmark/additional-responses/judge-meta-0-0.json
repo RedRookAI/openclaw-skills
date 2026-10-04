@@ -1,0 +1,497 @@
+{
+  "job_id": "judge-meta-0-0",
+  "requested_model": "openai/gpt-6-luna",
+  "started_utc": "2026-10-04T01:48:22.666735+00:00",
+  "request": {
+    "model": "openai/gpt-6-luna",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05.txt",
+        "content_sha256": "4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/533d7a77c9c05b591b0f0c29a491d22312549154f49b6969ad67aa0d405c12f8.txt",
+        "content_sha256": "533d7a77c9c05b591b0f0c29a491d22312549154f49b6969ad67aa0d405c12f8"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.2,
+        "completion": 1.0,
+        "request": 0
+      }
+    },
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "dd5977c9e5371b59ca5b0e1f8bf16060a722c570c84293d318054ab429ce3183",
+  "reservation_usd": 0.0071166,
+  "response": {
+    "id": "gen-1791078502-TZ7IyVh69q0fpzSqJhFn",
+    "object": "chat.completion",
+    "created": 1791078502,
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Retains the decorative contrast the request asks to remove.\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbBsPdOt1b3n1F5ju85yusFOGxPzTHf1Z9KvSKmKZ72MYfXdrppeifhx6fMm6UG49YAT36QO30CGIw2S76E5O2DwQ2a_LX-Dbrzztf8okD9m5-j-lMJkI67F6AZlHvP-DwHhj5cII-BbG_2jOiRW84TOZoFQFV_M2QNva98-Jz_GSpf1UY_1G2bA6b5yyZzvi8vt9T6-NlXN87nzQ0hS4-ELKoPCQBvafPaidqSXbxn_y70gVqc1PDJzX50oUsYzS_YKe3sEutFHUo7DzlIievXyDmnyjC4mBnryWhNQn7EXHE688jGlCqPWstzt4qWnpgLY093Tr4AHvXIgvqH3IIK-qn1mqPL9BySu3RARcRUnxls0MXaFad_6PJhU4-07dx8HiVMdYnTqr9yxAUPCLmEyFUG7Wa1M9tVjnpEUyJ0QBwJENyR36O0xLqGxJ5FU8Yf1aELCCW9dksJTu9tseANE7Ht2QMlVPc3t0OHg9TTdvuuPMMjEYd0gwmz-0OKcfnNyrZ75E8kYOL6oqtmhWJ0aPT5h8GnTi2cE1awuDtopPWefD3QwFaQq92LXGRMusI2FaLeQPt47QChJBP2aMbqJ7j_8lkTxB2w4iOyIZNbPSLCV8k_GrKUGx1ercgf0qqJqazaqyYjkdpg03TCqU5TVGyjo3C0pXvBHLN-8do8WfwmSQCL-jAUylJL42wOPvihWmh2bJKd4AGR3KPzpD4t5QRo56mODUPjseP0uF3tIHW_s2i-2sQCFvYYxCeJEzAvH9BZO_YxsmnW_cQW4B3uGMMQ4sTp7fdBCeJuZlhp4-6QcESDT5L2SemDIw4Vh84rJBWoOHumiaQRx3glfsW7WfnF7gzut0zPwwiNKptqHwZXiIkbGh7MmPIasObJ1Lt0Kv1FxiL70kFP_Br09Mc1F9cf01MQAIW51bdhf1UcQHyquKyF6vvbRFyTRK6Y3xL9aQ6kG4rMp_b_n50toclUgj8_OWKoU3qCgJuENEYv7bkQRi_TqhX0VDac1lhZBlR1hb8LpYjuNxeYze97_OdX-3XX0fY5xAjXbdG5tP8QXDlibsus5HShP_rdjys7okksakZ9MRGJLSUjYykyC54WFzskBK-Ff3bhzmPsTQB0S9xFHCwVGqf-zyLGERg-mYwxEjMr-wvEoXOv2Rea_ZXpjEBqR-iD4KAOf1R70afLLiGgS6lOEqqqpLQ0eG78rowmoWx2NJEmVhcE7ISeTHe4CWgyDkBijkZq4605D4dujpzE5KeBvCLmFKo4hSiiJXFATQ8P1d80Ftu5pxzgJM2ZsViMg7mWraKIOYHKtH5D0PK0Nz3VyTEE_JaCRmggvDzMH6vBllOZGfzssgvelhOXrz6CwSxyolooQYQOpDKjRGJEQUQ_FUWz3mO8caIigaRT2SGwzmcqNTPykH35sFRczmEcq2iT0pqcWLkilxW2Q9QSOBW8PdbAXSoESSc1SIOXSxepfwmkygtZdm8uUwx7xQV5uwf3IcWkCw5rt0l-nCwhUt4YTJOhvNxo6pYg9aaSb1slgC_D4H91N-PMdD6UHT4MdkPG6GyAG_1h0bchBJOVQinZxBuKzJtA0I0j7f3iubyOwcEEvzsH8LKwwUYJ7aRS-gUTEj4n4weWPEjJ7JdLK0VV0dS7wRPwDfstfMoWSH_PbLvJ4ow9d3gdZdPQAob0VW3PlQRxSSgxig9hxMpu_Sc__F_YoAWQZso7rI2C2tWTJbeE9l5DPcaYakgnIPGwSqCpDvLpxv7e0DKFPI8EoiKdobfW0ap52q3EF1E6p5MgIW5GxYTUNuU8afe31BFQMOSIOg_Dv2Y9xOIkbch3unGna33l5QNWiibDb23KKndL6VupFBsh1JQyvH9Gt9z7S4z0Emr-A27kPXG7gBpuLc9s01sGsBiwRKIDtI7JQQyeapvAnXKRAefN31rOzdij-e3e97tWZGolzKp9QM5OLFqWoYDKn6KQl01lJWtOlYPwzMo21bTTLSBqL_bxWaoy-atGD2tp22w0IAm_qazn2JfWQTy0IC6Wdl3bZF7Lr4lSsdsUP8GtpjjZF8ymdH4gb47To4sGfGZDiOW8IUH997aQ1rCe2i5qDjAbqhfd5_3BcsOpxnU5Dj9E7f4oy7a8byH9vngUvsbdqBxwjgfR9H8MAUU3GQTPx1ek5hkWu9fzzDuOQswoX5jTDvgRx0k3_LXg8WbAKDe5_B1M1LzdYnL1SqwP9gxASQ9dPHCf8nMJh_lGpT9lfE58gxo5jYgjmTfiBZyfs-hMnslXJ0Rv6UXtgS9QE-8tPVKlPkPS9vhuz0Sp0y_7L09xFc1ksW6HpkghhUkfmN6IYHTn6XSmqSP0T36vkS7lm9I-AeCpB_A9yy1SrFTC2PYfm2Z9w3AP1QjEqgkvTgPF5VefEXbxlIbNJRktZ7IH2E0s9-U5eotQq_y1maHaU5CpSd_pnOEavDsPmQmYBq0r6hxp3vkJrzqXncqy9G91eHBcxUkp0xDuYw3JoO3oeljFd37KzFo6sNhLnTizCd3riDaL1qiYf6zkYzEHZB85b7webFN0YUsi9Z6eqfv8I15D4n2omehc47Mfftj3jA10QJ1d5ezZIQp6lL3QKthMsLlUfYGNgNqD1jyVsVSoeKcuwGv1zJ2O8WmBZ4AXaQcvoaFtWoedGAc12gEV4FZknZtW98vTBFdmvSMPHyVn43sLfncjivp544Qyah_yiQkYWbcAfctX9UFlsgb40f3yqKl1KUZYn7rtipXm1oCWZesp4is2MwTRCSowRYv0geLECtqBFjlnXLodPOStAwezXJjEKePaMFrJZS3t4p26Z7CiNgSuLliq7gBg5coIQFFj5a8t7_zcos7RDodfAzgUtu54Tm-gyGnHEwTAwPDRAtU0FQ60ZaBjOvUuCghnEm80dbxnISOcdYKgI9rXkZXWYdsoUo_s-ZegaWPM8LmQ_pUkpsCl5ykbxpH1RaeUIe6_T-OTLI87osWKpukhReZ0mD5k_Fg-h9GdvBd5ksT9LsfScBatfAl_X5nsdguMFIIdRmOTkWRjc_ls0xlnaFgJTrNKH0sz7uiRQ9iq2p_bM1759WXWbGDX06-5TyA62-soU83ShvkHO9jkKnul9ntmz8hhkaK1vHipAEPgFofT42ArHxhTyW2ZHg8tq30Zz6QWC1CMfVmrIvBFrc_RKaNGd8dc4AvgYDm_pkmOeodMFlX8Zcc8A1P5iZBM6pyMyR2m1MkrMDlIEusxP3OZN-0CaenhpwzulTgMqJKQKruyrQu3uZfPMNEdiQDFu3aHxmYgWX09AyF7RiNnLzmj-Bbov4GelvOx1JmzfU5rc0HZNFg7l8BjMzV85neeeptt2je0koI2JW-J1PHmblnc5-FItFMdEwANCOCMcVLSZVB68syhL8IebI2yOawU61aZxto7zNmnkvVBAcs64mAsPEmaMc9HNNX_WkNOjXJ6c-vgi2dV75lp1DV8v3yT9ozoQPYfzl38sBYv2X62tiqf13r4p0d4QCaDl7E5cCVEAhQsZH2jBKHK9w3gteUvthVYd4U7IWtS8pp7fefFlMeC0jCNILNo7VBFScWyIu4ky2WV4k-i3UkNXUJ65wkCVVIMZ0eIeS8E6ao8ljvl8aCsbUAWzBF2En69jK0VylRhiSyLP52E2BHxw1pxelWTZsPxk0ATyj0tNButo3zYi_Tdjwoxc22dYonwD0NH0j0fddiFnFa3CNEaSByfJ3lTZ8wQWZFQeyDnDeO0Y_tnpF8k1LkUUXWJBbJltT8EHNwGofU9-_SSi1l7PeqPOoJGzwfQlnIGq71l88SkFWb9d-_X_4bHbvlJMkNg-yS9Zh-QamiYjoKT8f4SqB1W2OnZ9u1ULL-N8ujU0HkxUsZuRAEFh8WVf1yQWpR3pbvfdubFV0_A19fdEJEVjbHy4YAtFkfB3-xwHMDMtlKThpZjOdrZXkxr9hosnuemNBWwl-zpoHPb4ur_4jybohHnmurHlJqGcl61rPdk2F3C2ObQ5BkecjjZV_sjgxYyzEUynIUWgrxh66vDKvtEK2AUUclsFIz-IHhEkjg0T7diyHtNULEFiZF6nhJdlqeXU1VL9VXuPwvdNA6xXEI5Hh-8vLYYIIV85f69oDPCJpC6Z2kYRyD6bYvqKPuLG3zc9IRsbzqK8D1_hx-H_zVeIUemdFt5EDhS-qacI-rvRrc-g8Jone0Rviel7PS5iKOrjnoCfCpyBP8xfgCc8fX3G3XBJfa0WrJkzKLGlYLefBV9xHBjJpGD2fUYyoK28nQlO8xS-N3x9q35WaXHKrKHuq2pZOlZcFxcpYJUzokamIXO8o4_A6sT4yw0M3nmHmfoVDvzJ2vwQWfu4RRp6TK0ptwtMoB906Yn0Irc0w2ycjLKAQ7sG3XU2cJNVoovVkJ40YgJsyVhc1oESHE85ISBE8U9aP-AiU43vZvyKvBC-aQwtZCfj7brOYiHPML0a__9lJHR4H--bOonhP8_KY2s3vA63_IyiPvG1dV6wdsS55k5njmEDJ4zgwWCsPjZXXhw8l65OW5ekb5t0Sg3MKwJ6Q--lrRVHzE6cevXkYx461LGOhyES70e6fUGWC39C4OaSpH7IDnaCkXXZaVfhJW_gkMTgP9-YYvv3M7xeUo53FLmcLpkD5-o-j6VDpeqI0aunGsOX9VxdrgdT0obCE5uySqrymHIHniPQcl0FsnjABxW7XtK-MXkvTQmJxOKsl_upyvK3PO0ElvfRh9IZBmZWosLnNoVtgu645TIlmc1SwgtZf2PRFRMWexkXlV6sJQm1ESswU-hgDaN2xwd-mBfPf7QSP7AISz-hKmRH8JyhpCl40jKGWJaNrsdusbqwKMUpmzW58e1-POUjl1yz8j95fAwrzXmH1O6eRd2hnc5-FPeXvi6G5peHWqslHuAarKZq.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_0acd7c914f850cf1016ac1b0676db887d194554149f017aa1b",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbBtie4TJqw9kKGOZM1ySUmDpZu4-UAs3-kHw2jt9ohztEaWcysN-mJQiISwmrehUcMUIAvA7Tov6hu5H1vRmjHrZfZwSpz_0nVegMHoDZCYWVY7VhjA8IyXV4nf5DYe5NGnhI1opYGtRe_SbtE1-_LsT8HGJsA1Vc151oVNHGwG0PSdy0QlA_Vi5P6WAnqdrZYghdk_1k0tBtWA4K62s8PVI4EkPmdKU0137wcMlgffid1PpfIeWgfdsmT9FTz2a-C4lUAsDPbivHdPqiavgikcLL7raw0XuUDow_5o6t7D0lXpmGXxJ1euTLsesrdieREBY8zEUsPuTTNJyTWEv1ryfvbtkp8IgvL-JOFm-QfZhsBCjOHujFC1hO8AHWo48zmOkQ8nGCUKwVRWvwyVXSdoNs3q9gc8KLTWb5PJeWsxax6vdGXtVC-o9kj8Opx-rQmNUfR-lE-HN24J_hFgFztadNqLixW8YepkKWttZNrGT_T6t7zVlCAJ2rXna822mIziqckDgS1VUYjo_4GYkWaaqD3lvOiwmgkt-dXpoBBDD1LhdsC8QTgucIxNU8wnH0U9XOLS46bkYdvexjjYh-kDLCDZ1FZtzN7JcsoRDhFjr8Oehbz4s-sB-kTBNfx-IkC5_qQmLjrcJYhBwpbVa5gsf4qez-6wTkKhrQu6S_a5TCTMOhPN6q__Fwujy5LqgDo2GObazL5_Zydgu7Lj9MCVKGPO3hHOVk8dM6IMB4lO-lZT4u_fNYXZcr_kCJrWRQu-wJOSCyRTMON673yvNVAg3unMEtXAjHtzwASRGJGR92zwb6Vm3wLghp3fD8LTKeoRTmdmGAIqXrKUl2497q3nX8Vh4bEgHNVjqPUZ333-NXD8-O4DnDxu-zN-e_KHwQZY5o02DTucHpkEOgUEaRQXnQ03bAgH6aeCSeC6zOaIyt7i1-hnmrZuBp43wUEFX-hqjKjVKOUgdrSK_sOnGMvsGEixbK2fooOa8NWxxr5KCoj6xWTSzGdoxJZKIOGXjYAMWTrNQYp9Mkr9g7hCVXuGgdIYOOvrpa7S-HJuVTXwxRJ_gV_r_nODcY6h8J8l8XIBZ1AaDc-SnZOG_5XMLkdVVBbwxZDgBGwyXZFSwp8qla23oeE8ehxRiDxyMfMp1OCiUCfv94gnxEuqrCd9C70IEJtM_N_yr8N4GaTIWfo1hQkfqXSzpdMf6zKLJ3i2m6nxmGnonXHlVM4ElUGA9KccoVlRr5VLtwo8OVvYUra0kCffTITmlvXT0Ws77IS122Qt3Ubz9UhbwW5s2XzsAFOsJ4LUW6mamw--U45-nIRhG-rEanRNvXEHtuNPLoRO_uSCh8e2jF0tchOIkCeEnaZ3vY73t0iIk6tr9L5b-DmH6fWoNc3r8yrcHR1dOkKURiNaRFzSXb3Jw84o36UD_WFFpyPUu233gPd4FYmvjtX87kNeENX0eqC-JHbssBiItbPrAi6n4fA2y1tBUa9MNTy0CVqGmBjs-V-p6Q5uoKwbdDk5-oC1Qk-ZFv-Pxk3T-eEqDrIGSqazH00_gmu7b8kvAcXQIYNFJSi5d8X-V9QF-9KOLYRIK7UvKEJVFljE5A5HXUQpjLBnV8A_3eP9U4ZgybPA791nM1V0VfsPere5h_Sqz_YuI7H4Tbcbr2QlrZH9VoAqYf8R_haVPCC9W5gQGpii1kA7C70OgvFN-eDyfya2oXo92iN52kadct3XjWDZZfXmgyGLBeQbpDWqcmqOLZOjYmyuoxvkGk9kAc59I2z9TOl99YhDvZhy39nu27bNKD9beYDJ-ZZvEeJc9FIuT14eDIEIJ4iuGMgmgXqydqqv3oz2jeDWMScA3sCVeaoluVMA94E3cYER-8hIhykHX828Em7LTPimAL0_jK6Y4C8PJ9ZE3Rjdw9RaE2A9FhiG8f4StiJ1vWbkQxtUzELWIhTp8u4qpY6WSvlcH9BU0OCFkRdrbufxIOKuD8q9BMsx9iyvbPN60yChk8BsyImq8ezyerj0T_YhZjEiv-jEzZFM5qrnrO_kTjOL0MSmmHSGg340Bj2RN06iI44wcgbs_ze0sxaG-xboIoU39oww72aMnnLp7TzPE8beu7NqWgx15gKJtLhf4gYFgp5fmwyp-UNzMUJXIk3W1DRx1433a2AMJNAak-oJLSU8cOUvVK1aJU3kvye9IKGkBkJvx7jkGG78d2EeRJ8anmaM1KT-y88=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_0acd7c914f850cf1016ac1b06c8c9c87d1890fa2742a97d852",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3077,
+      "completion_tokens": 1962,
+      "total_tokens": 5039,
+      "cost": 0.00136555,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 3074,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00136555,
+        "upstream_inference_prompt_cost": 0.00038455,
+        "upstream_inference_completions_cost": 0.000981
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 648,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.00136555,
+  "output_text": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Retains the decorative contrast the request asks to remove.\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+  "status": "complete",
+  "parsed": {
+    "ratings": [
+      {
+        "id": "decorative-contrast",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "B",
+        "m": true,
+        "t": false,
+        "r": false,
+        "reason": "Retains the decorative contrast the request asks to remove."
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      }
+    ]
+  },
+  "accounted_cost_usd": 0.00136555,
+  "finished_utc": "2026-10-04T01:48:35.584683+00:00",
+  "latency_seconds": 12.918,
+  "original_request_sha256": "dd5977c9e5371b59ca5b0e1f8bf16060a722c570c84293d318054ab429ce3183"
+}

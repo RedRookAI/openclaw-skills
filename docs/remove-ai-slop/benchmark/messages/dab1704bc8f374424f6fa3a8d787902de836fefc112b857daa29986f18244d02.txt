@@ -1,0 +1,16 @@
+Remove AI slop from this draft. Keep the facts, uncertainty, and intended request. Shorten it if useful; the original 100-140 word target no longer applies. Use a direct peer voice. Return only the edited email. The original brief is included to check claims. If the draft introduced an unsupported fact, flag it briefly rather than inventing evidence.
+
+Generating model: openai/gpt-6.1-sol
+Original brief:
+Write a 100-140 word email to the engineering team in a natural peer voice. Output only the email body.
+Facts: Maya helped deploy a cache on Tuesday to two of ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. Cold starts and the other eight servers have not been tested. Any reduction in support tickets is uncertain. The dashboard still shows yesterday's data. Ask who owns fixing the dashboard. Do not invent further facts.
+Draft:
+Hi team,
+
+Maya helped deploy the cache on Tuesday to two of our ten servers. In a 30-minute test, median latency for repeated requests dropped from 80 ms to 60 ms. That’s an encouraging result, but it’s limited to the tested requests on those two servers. We haven’t tested cold starts or the other eight servers yet, so we shouldn’t treat this as a fleet-wide result.
+
+We also don’t know whether the cache will reduce support tickets; that remains uncertain.
+
+The dashboard is still showing yesterday’s data. Who owns fixing it? It would be helpful to get that clarified so we’re not relying on stale data when reviewing the results.
+
+Thanks!

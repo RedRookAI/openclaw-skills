@@ -1,0 +1,189 @@
+{
+  "family": "gemini",
+  "model": "google/gemini-3.8-flash",
+  "arm": "general",
+  "replicate": 1,
+  "prompt_key": "general",
+  "job_id": "gemini-1-general",
+  "started_utc": "2026-10-04T01:42:48.192602+00:00",
+  "reservation_usd": 0.075903,
+  "request": {
+    "model": "google/gemini-3.8-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/c5d7cae1aa58453a19a329e1cb2a86adc851bbefff9faee8c7c2509aef7db992.txt",
+        "content_sha256": "c5d7cae1aa58453a19a329e1cb2a86adc851bbefff9faee8c7c2509aef7db992"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a.txt",
+        "content_sha256": "162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 1.5,
+        "completion": 7.5,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "seed": 20261005,
+    "response_format": {
+      "type": "json_object"
+    },
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    }
+  },
+  "prompt_sha256": "c5d7cae1aa58453a19a329e1cb2a86adc851bbefff9faee8c7c2509aef7db992",
+  "user_payload_sha256": "162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a",
+  "response": {
+    "id": "gen-1791078168-qHXvGOilMA06QISm6exC",
+    "object": "chat.completion",
+    "created": 1791078168,
+    "model": "google/gemini-3.8-flash",
+    "provider": "Google AI Studio",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\"results\": [{\"id\": \"decorative-contrast\", \"text\": \"Run the job once.\", \"note\": \"\"}, {\"id\": \"substantive-negation\", \"text\": \"We did not retry failed payments; we retried failed notifications.\", \"note\": \"\"}, {\"id\": \"critical-citation\", \"text\": \"Unlike Lee et al. [4], we found no improvement in the smaller sample.\", \"note\": \"\"}, {\"id\": \"pat-humor\", \"text\": \"I reconciled the invoices.\", \"note\": \"\"}, {\"id\": \"intentional-humor\", \"text\": \"The deployment finally worked. My celebratory dance was mercifully undocumented.\", \"note\": \"\"}, {\"id\": \"contribution-boundary\", \"text\": \"I helped build the scheduler.\", \"note\": \"\"}, {\"id\": \"uncertainty-and-condition\", \"text\": \"The cache may reduce latency by approximately 10% when requests repeat, but we have not tested cold starts.\", \"note\": \"\"}, {\"id\": \"literal-review-word\", \"text\": \"The tapestry depicts a coastal landscape.\", \"note\": \"\"}, {\"id\": \"protected-quotation\", \"text\": \"Her note read: \\\"Not today—but soon.\\\"\", \"note\": \"\"}, {\"id\": \"already-clear\", \"text\": \"Please send the invoice by Friday.\", \"note\": \"\"}, {\"id\": \"participial-tail\", \"text\": \"The team launched the dashboard on Tuesday.\", \"note\": \"\"}, {\"id\": \"aspiration-not-capability\", \"text\": \"The prototype aims to detect duplicate invoices, but we have not tested its accuracy. It may help the finance team.\", \"note\": \"\"}, {\"id\": \"mathematical-representation\", \"text\": \"The vector represents velocity. The robust regression estimates the slope while limiting the effect of outliers.\", \"note\": \"\"}, {\"id\": \"plain-punctuation\", \"text\": \"The migration is finally complete. \\\"Ready to launch,\\\" the manager said. We still need to check the backups.\", \"note\": \"\"}, {\"id\": \"business-paragraph\", \"text\": \"On Tuesday, I helped deploy the cache to two servers. In our 30-minute test, median latency fell from 80 ms to 60 ms for repeated requests. We have not tested cold starts or the other eight servers. It may reduce support tickets. The dashboard still shows yesterday's data.\", \"note\": \"\"}, {\"id\": \"useful-parallel-list\", \"text\": \"Before release:\\n- Verify the signature.\\n- Verify the checksum.\\n- Verify the version.\", \"note\": \"\"}]}",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "signature": "EmkKZwFpFH0TI57YBryx7sJCBX3gdy4hP27X237YvCSp1s+SrbHM9u03jYMHB+wjgo0k9eSsVJ1mbq5l0FOjbznW85pnAREMh9b2YWwFOMz3KelrVHVCYOwZ8U/k7+PuVJhp1ymjRpo+MHQ=",
+              "format": "google-gemini-v1",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5923,
+      "completion_tokens": 515,
+      "total_tokens": 6438,
+      "cost": 0.0063735,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0063735,
+        "upstream_inference_prompt_cost": 0.00444225,
+        "upstream_inference_completions_cost": 0.00193125
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.0063735,
+  "parsed_results": [
+    {
+      "id": "decorative-contrast",
+      "text": "Run the job once.",
+      "note": ""
+    },
+    {
+      "id": "substantive-negation",
+      "text": "We did not retry failed payments; we retried failed notifications.",
+      "note": ""
+    },
+    {
+      "id": "critical-citation",
+      "text": "Unlike Lee et al. [4], we found no improvement in the smaller sample.",
+      "note": ""
+    },
+    {
+      "id": "pat-humor",
+      "text": "I reconciled the invoices.",
+      "note": ""
+    },
+    {
+      "id": "intentional-humor",
+      "text": "The deployment finally worked. My celebratory dance was mercifully undocumented.",
+      "note": ""
+    },
+    {
+      "id": "contribution-boundary",
+      "text": "I helped build the scheduler.",
+      "note": ""
+    },
+    {
+      "id": "uncertainty-and-condition",
+      "text": "The cache may reduce latency by approximately 10% when requests repeat, but we have not tested cold starts.",
+      "note": ""
+    },
+    {
+      "id": "literal-review-word",
+      "text": "The tapestry depicts a coastal landscape.",
+      "note": ""
+    },
+    {
+      "id": "protected-quotation",
+      "text": "Her note read: \"Not today—but soon.\"",
+      "note": ""
+    },
+    {
+      "id": "already-clear",
+      "text": "Please send the invoice by Friday.",
+      "note": ""
+    },
+    {
+      "id": "participial-tail",
+      "text": "The team launched the dashboard on Tuesday.",
+      "note": ""
+    },
+    {
+      "id": "aspiration-not-capability",
+      "text": "The prototype aims to detect duplicate invoices, but we have not tested its accuracy. It may help the finance team.",
+      "note": ""
+    },
+    {
+      "id": "mathematical-representation",
+      "text": "The vector represents velocity. The robust regression estimates the slope while limiting the effect of outliers.",
+      "note": ""
+    },
+    {
+      "id": "plain-punctuation",
+      "text": "The migration is finally complete. \"Ready to launch,\" the manager said. We still need to check the backups.",
+      "note": ""
+    },
+    {
+      "id": "business-paragraph",
+      "text": "On Tuesday, I helped deploy the cache to two servers. In our 30-minute test, median latency fell from 80 ms to 60 ms for repeated requests. We have not tested cold starts or the other eight servers. It may reduce support tickets. The dashboard still shows yesterday's data.",
+      "note": ""
+    },
+    {
+      "id": "useful-parallel-list",
+      "text": "Before release:\n- Verify the signature.\n- Verify the checksum.\n- Verify the version.",
+      "note": ""
+    }
+  ],
+  "parse_error": null,
+  "status": "complete",
+  "finished_utc": "2026-10-04T01:42:50.355062+00:00",
+  "latency_seconds": 2.162,
+  "accounted_cost_usd": 0.0063735,
+  "original_request_sha256": "c2edbf1157ede56731df06a7c3eb4c1877c103a5f00b2d54f3c6e115e4584b17"
+}

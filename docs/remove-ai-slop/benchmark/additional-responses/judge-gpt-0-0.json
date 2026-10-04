@@ -1,0 +1,490 @@
+{
+  "job_id": "judge-gpt-0-0",
+  "requested_model": "openai/gpt-6-luna",
+  "started_utc": "2026-10-04T01:47:51.536986+00:00",
+  "request": {
+    "model": "openai/gpt-6-luna",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05.txt",
+        "content_sha256": "4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/746fa0860c9a5619b3d3d782b9245578038100a80f6387be36a721aff234eb4b.txt",
+        "content_sha256": "746fa0860c9a5619b3d3d782b9245578038100a80f6387be36a721aff234eb4b"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.2,
+        "completion": 1.0,
+        "request": 0
+      }
+    },
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "98cf15c08eade3ce882564177b5f4d6e6a087dca2c4953bfed993c895b9a3bb3",
+  "reservation_usd": 0.0071168,
+  "response": {
+    "id": "gen-1791078471-lhnIuTOiV9qCYpiAAXyJ",
+    "object": "chat.completion",
+    "created": 1791078471,
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":false,\"reason\":\"Drops the meaningful contrast that the goal is not doing more.\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":false,\"t\":true,\"r\":false,\"reason\":\"Drops the meaningful contrast that the goal is not doing more.\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbBLoVbbYq7lRKOJoOSGkc_O3Y-cymth9GEfaYCXUtUj6mwf4vIdLGAfb-sVV6wHpWHUlj7BQlWY-ld1sLoMdtyOgONl4fUkPCxrQKrJfLLrGP5HwvPpLFhhFudnuMS2LngN-fxhIM2wb_DXo0YAF80BDvYHZRDaG7xigxN8zivhAbV3rnCyYbxo_eQESLxAUqAv8_EiTocle2umJIy6MXSqMeBzg0PFWkMMzu6RULOCLexI_X-SjsQCFQ_rOmHK9Y1fPNPSaKf9yTyO62G3MOhP1wbJWwOxtyxwR5ONzMyVRn4wmfBXz5ga2c53zSjvoqfhhpUg5NCKKdX8xGhQEW0BgtbMbOVsE1gtzxJ4xFGAfm2ctE56gNQOCVi58lOuolvJWDcPFvXdIanDxbka4VEqgHUxnewpRGjYsGGfrzDIppuOPxz-s1J-5796IxV_ysIDUOTM62JK8YTpOMWSQ92-UZ8lR0t-yeEvyra7WpJcsKZUumrCQvZz8JM44e_essk5-OydTKxs3_H-pcjKvr44S_cEXQQq9Nb76pui7mahRMyVBkXQE1IDCqWKn3iTXJK7u1Yhi_XxaN53krT5mNAJFRsCT_zqSW5gAyqpghh70wbfAh1XMaREvf-32inJskLi8nsuNkFoW5x3hYgYMiDgo67Dwl8kMBBjC2zUK4Ntc9KVfY-GkwqzNN75XXw-qa7pxtKXtw7OOWT3m_9mR9FymBjCo5WHqB-su9DxoYSTjVdeLGI0USBI-GRWrDfyKqkdWCHSVieSIcZn4EyGlMV-GdOPm8DQezuAlPzLHxQS4I4UCtKeh5WFEnkuTp7AEg3I0sGUNlQkTIdqw15SafBKhUP1ZD3UN_1Y98dXj6AURciAW-gilGAJNvVqffhe6K_GW1dtTN5T4mdMhpSrtQ9W1_1ppSshp-vTPXe15Jlo9oOJLsaR2dwcTlarYoZy3D-TQSbN5E-ffDs2MyhRr7OmrTU_CEc_xDy1xLN2ub05DG-itwQTyn3ITGOZ0vMId9Sufn9K5mIVUVi5HLdSZvhX4xi5pyXQGveiHisnK1r9rJ9hWLQdgtDUl2ty386x3rXQ3BsWvI5WhO6cFxhyGbCkVHhHSVR3EFprIelpyKowJ3FWzoYa7oiZdHdFVTNLISWt7d9D7YakGTiknUUBwteCU2FA1T4j_ypxaX9OMTCbGIaSOJSxE08PysyI8Bz8ol4GDL6sHIHJ38EFG5cDsFwIpYcYmSN2LBAeeHSG_txbAjmq4WnQYCs2mTxubKceS1PaJi1Qjl38XG0Og_SI8SXdGMdWc6NyO2UWIKlkyq-g0ND1pH38xQQa79oK7WNgHd5jKB75vno63HNkdn4WyDt_xt3QaqA5kAHsTXlnYXZp62IWaTzd1WTC4g7uwAKmm61OUiWJxKsGklJaOev7AUzltVIhSsi_DrydltHoAcLUBrUdxArTiDT0YsZWcW4FA0KZoVhPj6ZoxKnqrYJWOTbvq7VJV30zTapPtWR6CHICpxWQe9RrKA3pFe0dOTbPCd9TMSvOkFSmk8OssnniJMnJ0F0FrGxF7ZJ8fetw-zpo7vK2gEOCI4jGP0BWFpbmU-AJTJu3cZ_5Ltoq1Aq-8zWlYg2FSWQYPsd8zz3YrBbert-c3BcF2zBq3octsh8sp7WF2x9JsvU73sqFMPBMsWLWxMTPr_nsxrt2BE1t_ifRPYkXICoC2RfZLAB09gdgzXy8wYK2opBToRq3xel1i-b9cKZrPKweZzprIBUGWa3yKi9c3SNUC9gp-vruWQYCbb4NRy_rVEbeIX1Kpi5OFnxjCUtpZ4V9veQaT96jfmlGLnf9s43K4xFGQrkJCJDL_rPX-kEZsxREiDhxM8a5VzQpHc4jg501Embbi3tLa8eBds_dY9gigzJT0X8X9G6VnesFuPtKFz7piMsx7zjffOMPCJkfhOWhh9prc0I8OPlcxJa4hAeD5Njmjlaxt2soCuVE41UFm6hrMuMqPJ2YrYs2WCXAOqkLfpM_zpSp6UvDMblLUY6oT9s5d9HWjEJGtD3JzPZDZSNfoVsBR3O6f6XWS57A42Gt2T4XMjGqBN7lkQJig41iXetky0LMK9F1IvEQ4vBTPUasJM2B0UvUbpxNQC1NSIWrw_tih92FaguMvbDLg8SJQD7JIiytux8dB0xB9WHFTXW2iSUaHBuiV1l4sf3_ifQvqo4abrEmaAXQES19hVgaN9TaNr7UplUkBrlb-DTzNhL2w52AAYt9lg1AgeIKgbj8i23_UFQ8KqAK-lUxdQCQdua0Z3MT9jgEWvKjWBkjxyrsFHJpBpNifIKmp4W_xkkyLV0jtQdFLHWoq8rIt9JI_kjFV5JtySya0m637xhzQy9S9Y8HtPEsStxH0nuJ_n7-2QT7lhAk1PNsWXlf0eycUe6uVkNqM3yfjmspye0G3sF0MUgZw_iUgoYngy_YD6QHKyLxH6wlSdK3co3q56riZtFGq2fZLcZE3ksc2bQRZ1NUIm7l4lx1mnDvq3B18aha5wjLxrSRn5Qc5bZFZV3bscygaqzkdmKrQFnyrzHQrZvEiDONksnh073877mexrdWDpOsmQucdPZue2v5J4sqrNOpsp3pwlXiT2ZVUYUtCTdr11UNUQocFj4xVTtxMFXyNziEEvnFSLWQIoFHHFe7eGGbr_a-ApC_JzDbRoMDR9NfiLb0nRBysNtn5CXjXcP0PTZw4zDZE4GxzmYsuidB2ja0_KeNKUFPLoHYFpdpE5eIV2PX28s2xFmQKIVv-LVlX-O80oiCMN_rd2zOmmBMIhAQlp_a5I1BjljZHt1s0LddZssF-uiM16AT0oODS5mANL_MATqj6yzIwNpbyak9FJYCAHSeVYROzy1yiTFyJ6GUU9cXV6nuw_EVWlb1lO3uietmUumpWmyb7jSzrOLLxZf2wYkMnUq7We-30an_ve1io6tI0EUiGFLTgABkoUfy7-ZP7QrTRMqO1lZpFzPH1uPyrADeQLUL7i4zA9dn2KrJVY0RUXgZg1UeMPlibYN9WrVwu2cQHuO-XpYqb4KC3OnNj0UuPyKqVuBvGjNK7U7RAY0leo4sUDC5f0svGhuzsIXrUW64ai_7g__aGQhTEjkEyF0DkmXvBy9YM2kZ8upagdr35eZROZ4sAvB2mdqTsHm3enpirviIt0ayghDSbkiEgNQlZ_4zScFvQRobAXxrs_oFxV9c7tGzCilheAbmWoAERrPFj2nkNgpvdja12oNFT15_qFmFQVEqVwJiHWmMaRA--s0QDdGkc0t_1JvpNzwdFQWM_QIwV6bIzgS8ptiKBPd6iCuBw4Ro7bbuNE4Lkxxgq9WnhdUioaBkwP1APbFWKpKFqtEFJ8hBNt8gAdVGML5kVTquD-_wKWGFH5YoH2XgkW6LL5pa0wyenK1paTATmnnogfq4b84F_P9cwl2iabStuayt02EYFZNia2GGQuUS_NTVxGozzZQerBH3abtTqIfGWDBjGuZprhIXwkvvc8SEs833Up0V7WX9q3Ng3mzDHl6VDvzlHFc2rxHQrWYH8fPsLxP4U_LZCOWTNU97FtwxMxaGSWi0.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_08fd11c4c6f98f27016ac1b04848f487d18e4bd961e48725db",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3083,
+      "completion_tokens": 1661,
+      "total_tokens": 4744,
+      "cost": 0.0012158,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 3080,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0012158,
+        "upstream_inference_prompt_cost": 0.0003853,
+        "upstream_inference_completions_cost": 0.0008305
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 335,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.0012158,
+  "output_text": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":false,\"reason\":\"Drops the meaningful contrast that the goal is not doing more.\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":false,\"t\":true,\"r\":false,\"reason\":\"Drops the meaningful contrast that the goal is not doing more.\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+  "status": "complete",
+  "parsed": {
+    "ratings": [
+      {
+        "id": "decorative-contrast",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "B",
+        "m": false,
+        "t": true,
+        "r": false,
+        "reason": "Drops the meaningful contrast that the goal is not doing more."
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "C",
+        "m": false,
+        "t": true,
+        "r": false,
+        "reason": "Drops the meaningful contrast that the goal is not doing more."
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      }
+    ]
+  },
+  "accounted_cost_usd": 0.0012158,
+  "finished_utc": "2026-10-04T01:48:01.261813+00:00",
+  "latency_seconds": 9.725,
+  "original_request_sha256": "98cf15c08eade3ce882564177b5f4d6e6a087dca2c4953bfed993c895b9a3bb3"
+}

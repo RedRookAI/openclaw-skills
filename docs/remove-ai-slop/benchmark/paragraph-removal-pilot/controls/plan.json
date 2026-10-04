@@ -1,0 +1,10 @@
+{
+  "purpose": "Check that system-message changes affect live output on the GPT case that previously returned identical edits. Markers are explicit observable controls, not naturalness instructions or verification of the meaning review.",
+  "markers": {
+    "with_validation": "CONTROL-CEDAR-6V4Q",
+    "without_validation": "CONTROL-BIRCH-8R2M"
+  },
+  "case": "gpt-personal-post",
+  "maximum_requests": 2,
+  "local_cap_usd": "0.10"
+}

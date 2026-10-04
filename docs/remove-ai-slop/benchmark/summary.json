@@ -1,0 +1,489 @@
+{
+  "research_and_run_date": "2026-10-04",
+  "case_count": 16,
+  "model_count": 14,
+  "editor_api_requests": 57,
+  "complete_editor_batches": 55,
+  "recorded_case_outputs": 880,
+  "matched_three_arm_groups": 17,
+  "total_api_requests_including_demos_and_judges": 103,
+  "reported_cost_usd": 0.842597122,
+  "accounted_upper_bound_usd": 0.842597122,
+  "missing_cost_receipts": 0,
+  "editor_statuses": {
+    "complete": 55,
+    "response_failure": 2
+  },
+  "editor_failures": [
+    {
+      "job_id": "glm-0-general",
+      "status": "response_failure",
+      "parse_error": "invalid_json",
+      "http_status": null
+    },
+    {
+      "job_id": "mistral-0-general",
+      "status": "response_failure",
+      "parse_error": "output_token_limit",
+      "http_status": null
+    }
+  ],
+  "mechanical_by_arm": {
+    "baseline": {
+      "attempted_batches": 19,
+      "scorable_outputs": 304,
+      "outputs_with_review_flags": 13,
+      "outputs_with_notes": 6,
+      "targeted_style_outputs": 133,
+      "targeted_outputs_without_flags": 120
+    },
+    "family": {
+      "attempted_batches": 19,
+      "scorable_outputs": 304,
+      "outputs_with_review_flags": 4,
+      "outputs_with_notes": 14,
+      "targeted_style_outputs": 133,
+      "targeted_outputs_without_flags": 129
+    },
+    "general": {
+      "attempted_batches": 19,
+      "scorable_outputs": 272,
+      "outputs_with_review_flags": 5,
+      "outputs_with_notes": 11,
+      "targeted_style_outputs": 119,
+      "targeted_outputs_without_flags": 115,
+      "failed_batches": 2
+    }
+  },
+  "mechanical_by_family": {
+    "claude": {
+      "baseline": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 1,
+        "outputs_with_notes": 6,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 13
+      },
+      "family": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 5,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 14
+      },
+      "general": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 3,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 14
+      }
+    },
+    "command": {
+      "baseline": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      },
+      "family": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 3,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 4
+      },
+      "general": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 4,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 3
+      }
+    },
+    "deepseek": {
+      "baseline": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 2,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 12
+      },
+      "family": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 14
+      },
+      "general": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 1,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 14
+      }
+    },
+    "ernie": {
+      "baseline": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      },
+      "family": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 9,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      },
+      "general": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 8,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      }
+    },
+    "gemini": {
+      "baseline": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 14
+      },
+      "family": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 14
+      },
+      "general": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 14
+      }
+    },
+    "gemma": {
+      "baseline": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 1,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 6
+      },
+      "family": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      },
+      "general": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      }
+    },
+    "glm": {
+      "baseline": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 1,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 6
+      },
+      "family": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      },
+      "general": {
+        "attempted_batches": 1,
+        "failed_batches": 1
+      }
+    },
+    "gpt": {
+      "baseline": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 14
+      },
+      "family": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 14
+      },
+      "general": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 14
+      }
+    },
+    "grok": {
+      "baseline": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 1,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 6
+      },
+      "family": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      },
+      "general": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      }
+    },
+    "kimi": {
+      "baseline": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 3,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 4
+      },
+      "family": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      },
+      "general": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      }
+    },
+    "meta": {
+      "baseline": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 1,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 6
+      },
+      "family": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      },
+      "general": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      }
+    },
+    "minimax": {
+      "baseline": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 1,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 6
+      },
+      "family": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      },
+      "general": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      }
+    },
+    "mistral": {
+      "baseline": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 7
+      },
+      "family": {
+        "attempted_batches": 1,
+        "scorable_outputs": 16,
+        "outputs_with_review_flags": 1,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 7,
+        "targeted_outputs_without_flags": 6
+      },
+      "general": {
+        "attempted_batches": 1,
+        "failed_batches": 1
+      }
+    },
+    "qwen": {
+      "baseline": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 2,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 12
+      },
+      "family": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 14
+      },
+      "general": {
+        "attempted_batches": 2,
+        "scorable_outputs": 32,
+        "outputs_with_review_flags": 0,
+        "outputs_with_notes": 0,
+        "targeted_style_outputs": 14,
+        "targeted_outputs_without_flags": 14
+      }
+    }
+  },
+  "exact_text_overlap": {
+    "baseline_vs_general": {
+      "identical": 169,
+      "comparisons": 272
+    },
+    "general_vs_family": {
+      "identical": 236,
+      "comparisons": 272
+    }
+  },
+  "judge_scores": {
+    "openai/gpt-6-luna": {
+      "baseline": {
+        "ratings": 272,
+        "meaning_pass": 253,
+        "task_pass": 253,
+        "restraint_pass": 257,
+        "all_pass": 234
+      },
+      "family": {
+        "ratings": 272,
+        "meaning_pass": 262,
+        "task_pass": 253,
+        "restraint_pass": 266,
+        "all_pass": 247
+      },
+      "general": {
+        "ratings": 272,
+        "meaning_pass": 260,
+        "task_pass": 257,
+        "restraint_pass": 265,
+        "all_pass": 248
+      }
+    },
+    "google/gemini-3.8-flash": {
+      "baseline": {
+        "ratings": 272,
+        "meaning_pass": 264,
+        "task_pass": 257,
+        "restraint_pass": 268,
+        "all_pass": 249
+      },
+      "general": {
+        "ratings": 272,
+        "meaning_pass": 270,
+        "task_pass": 258,
+        "restraint_pass": 269,
+        "all_pass": 257
+      },
+      "family": {
+        "ratings": 272,
+        "meaning_pass": 270,
+        "task_pass": 256,
+        "restraint_pass": 271,
+        "all_pass": 255
+      }
+    }
+  },
+  "judge_errors": [],
+  "generation_demo_statuses": {
+    "complete": 10,
+    "response_failure": 2
+  },
+  "limitations": [
+    "Author-written cases; ten development examples plus six additional authored cases, not an independent held-out corpus.",
+    "Batched cases and uneven replication: one pass for all models, two passes for five preselected models.",
+    "LLM judges, not human raters; condition/editor labels hidden but biases may remain.",
+    "Profiles based on older generation studies are being used as conditional editing guidance, not validated current-model trait lists.",
+    "Mechanical flags are diagnostics, not a complete quality or authorship score.",
+    "Hosted skill discovery and reference loading were not tested: the benchmark explicitly supplied the compiled instructions.",
+    "Catalog IDs and reported providers do not establish immutable model snapshots; default sampling applies where a parameter was unsupported.",
+    "No hidden retries, repaired outputs, or omitted failed requests."
+  ]
+}

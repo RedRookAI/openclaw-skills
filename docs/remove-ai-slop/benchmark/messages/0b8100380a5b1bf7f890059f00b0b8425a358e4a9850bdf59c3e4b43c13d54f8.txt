@@ -1,0 +1,18 @@
+Remove AI slop from this draft. Keep the facts, uncertainty, and intended request. Shorten it if useful; the original 100-140 word target no longer applies. Use a direct peer voice. Return only the edited email. The original brief is included to check claims. If the draft introduced an unsupported fact, flag it briefly rather than inventing evidence.
+
+Generating model: qwen/qwen3.8-max-0902
+Original brief:
+Write a 100-140 word email to the engineering team in a natural peer voice. Output only the email body.
+Facts: Maya helped deploy a cache on Tuesday to two of ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. Cold starts and the other eight servers have not been tested. Any reduction in support tickets is uncertain. The dashboard still shows yesterday's data. Ask who owns fixing the dashboard. Do not invent further facts.
+Draft:
+Hey team,
+
+Quick update on the cache rollout. Maya helped deploy it on Tuesday to two of our ten servers. We ran a 30-minute test and saw median latency for repeated requests drop from 80 ms to 60 ms, which is promising.
+
+That said, we haven't tested cold starts or the remaining eight servers yet, so we're still early. It's also too soon to tell whether this will reduce support tickets.
+
+One issue: the dashboard is still showing yesterday's data, so we can't track progress in real time. Who owns fixing that?
+
+Let me know if you have questions or want to dig into the numbers.
+
+Thanks!

@@ -1,0 +1,7 @@
+FolderSweep keeps your downloads folder tidy without moving anything behind your back.
+
+It watches one folder and groups files by type. Before it moves anything, it shows a preview, and nothing moves until you confirm. If you change your mind, you can undo the last move. It runs on Linux and macOS.
+
+Preview first. Move when ready.
+
+Try FolderSweep today.

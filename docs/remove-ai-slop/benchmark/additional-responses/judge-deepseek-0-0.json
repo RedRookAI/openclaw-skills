@@ -1,0 +1,490 @@
+{
+  "job_id": "judge-deepseek-0-0",
+  "requested_model": "openai/gpt-6-luna",
+  "started_utc": "2026-10-04T01:47:07.694712+00:00",
+  "request": {
+    "model": "openai/gpt-6-luna",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05.txt",
+        "content_sha256": "4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/5029273744e7861d09560d5a4157e37e4264f9f5346b09ab7f617d68705c11fa.txt",
+        "content_sha256": "5029273744e7861d09560d5a4157e37e4264f9f5346b09ab7f617d68705c11fa"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.2,
+        "completion": 1.0,
+        "request": 0
+      }
+    },
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "e17a635521aa7f0062f8102d0ba05a757eeecd0b31bf37b77f87d4b5de901ed5",
+  "reservation_usd": 0.0071116,
+  "response": {
+    "id": "gen-1791078427-lgNHAc1wP7nwPNSirPYN",
+    "object": "chat.completion",
+    "created": 1791078427,
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Adds an explicit “not more” limit beyond the requested once-only behavior.\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":false,\"reason\":\"Changes the protected quotation’s straight quotes to curly quotes.\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"“It” has an unclear referent, obscuring that the cache is the speculative source of the benefit.\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbAhcPFmvPX2Man6KKmv4B311wt8P0byhfiL9gTWMJ-Cqi2szn7Z8zMAzXH7SQowKMPFxBLJF_bZVt-iTOlI5qfy81Xh8gYAVwqmOMYoLnSdZm1PaWHCjDL_CvSWa-PsdgQW1ndj7HG5zRi2Iw8Nt65oTdW87d8VhC0juYGN0YheY2F_dNu0d0fXXIgDeyExRZaP97_-g6wo6dGj7kpVouk_FW_2r19v27Ni2dpfQTz45wsgtqBuO7YESLG-9q6V37_ZEuuwgPuPTapnF4zyIMd2-MjVZ-417ZhByqMRn6_POykJFbfieDty0mqu9HFKPJNBqO_hgL3ANRdkOVLLX2DnRUMfwK-1JD_O9VnIFwK4ekUBAYhNARj5rOzSKWqwgeMrG6fjQmkIyqF75E_E_5333Kugkv3F1woqSWkB7Y69Zqafl6Y5SWKlfiX-1IJPwdCN7SDQCynnN6b2xiGkFYcIjYxOXb5gyNvDvzyn4EprkX5w2_9JspIvbkcCsktRz9QE1emNbTq-avRfo3FL1lfgdbB99AhrDdahgWQKv60Hv3YdQfmGu3vMIvf8FrqXzAiRqbA-CaC2fry2DemE1_qfgCPlU_56y2aMf9pxFOw9lv4VUiYPybfW-PsGcEwFxslR25hKxhJdFfg-7uEDBf2feT5aTt7ybarE4LRvGYvWl5IjjZyY7rzxA7IRl_KM2rZek9-lpSeRnuQWCh-4DmHGjSd2j2DQ1PwKQZDWNGJl0PxA8GlNMW_0_dMPILvY70KB2LibHci8ZHrZKvLTXehvN-vi8U5PjTIgyhBMZOuyVLujrgAU6Do018Xdn851vidsTm1UXwJEwkcvvuz3sgbj7mdLQuniEYUrgGjDl9CEepysmNz8VcHIfl9jrBhhtBHX7yCURpSOvOCqFNZIq39rvGvyVV4YYSwBPUAPBNcxbhHOA4YJGQ0N6wbXgEIb8k1-09JdyH7xiUJ5WK5vZ3ybN4hfc-mMZFowlXax2MGLx0qzt3ceXRQAYjggO9tV2hLIoKamlXsaqMfzM8QDJ5oD89axyr3W7msCeoyDvglvRuK5st0owfVGmskOAjuXvZdTy4w7NT3ASt5E8MDYbEWcYTZy4kapLpT0Ah9UT91-699QUfcZaQ2bYlpl88XiKiVxNFL_aELMdK8AUwy_406Nw0hLuL9wdxMogrAnIoLHDcZcqlWDga-98mET_IAx25-oSsNbJOW0WPfRqVXzpsu89GjehxOCeQfEiXzQQ8Yka-_SOggOMF39HHlt5jDSipOsAWzqursCTQ2lTSdO1zFCuODvWD0Ci8O-nNQc58MR0422BPe89yE8T4XLdSauxIAf7Zl2QxkG466_PSryyzf6XXMvc9Nkn9m9UG-Jmqe4awzCAFr7VjEtrKacWstvlso_eQwgWYB2PFzJOOaT-OTJlgEsnknUiUsjRYmnS03X_gV8XdyUzXove-WauCjINYjMOlXZ-nJueosOWdUX5Z2qNRLgXJouc2fk311inO-IGslZiP6gPPGFjWg35wNhLCKK40kxMyz3SRhm528rl-FDhD0Bz64YsZFyMksERM0eiUQBLwKqLeahqcYYoH0ANhhg2a3V_iY8Xou7tTku6aGnSrqYNYHYBvoGKjElKcbnP0j3KkkA6JvdcUR-puXncw1EVl70ysEXDkYVo9B4vNzAJ-kQU4j5Gl5-jWzTd6BcSM8ApRh7SzikjTrVEpJvlClRJQvkB4QtCnNoKniXTcnjxOqNSHuDazcGFHaxU9S4wbMrPO6gN4aITucsevsSSXS0__38ey-dvyjBG5L4MLA5jxlIy2sUSC5Ww4b6wUxcsQcmnhUIRHzzte-fqBgJ06kBzJaUR-Rx-ABv0agcYYiU-f-DzIf7eE3i0S_l_7kJMhIp8BL-DnEhVeoU-8dfgKIofvGyyORMksTqp0ijWCauZuPDDcraHc1l1W51LZMe5zmqO6k7ikM6Ww90rZknIA5x5fC2QzQWsWdwaBCG_Fnu8ZmgOqQi0fU6eo1ik9kubwiJV6OG0YsSrXFKTTT8Fmj6OMuW4GSDhGL0aLPCDT5yex_d0oIWAScuHsIFwb__nf8zFWs5jMA3G0RK3l6zUUfuYVLQpmjcAJd62IgZ_s5xC5VZkG1feUPU0TnPIA9YimfECmiUe9fcsfz92EvXZp3fpOR3MPZtahMtEEIqRJqCi9r5hlnoFhV2FQCwzUOwrGCq6JlMQ6cXNTMakjAWJuYYF0VM949aHMLURTnIYemYByszYwy1MOZOVmf88lyeuKtKdoW6S-Zx9qeDlKgiLmJG7lheiJINist7LD1gPbbjPdLXMr6Hh8ffhA26MubEt9SyW8xUaLkDjtL8taIgEXL0akjmtGxmJ3hvWKlpncL0k5FVV5k_WpaLPge1CQ8yB9CBmf4MUIOlJptIe6jjQW-Ddwiq-5yhG5MQ2Dp7mfe0WzztBaJOY69Hp-0c15j78F5gTKiaoOSD8RVcK-nqpg7Ew6oKXD5PrE-my-CjS-MnunZKa_SjRED9-5vjAfZ3QmG10ATJjg6QNrYG2grbqmKGFMfTJUwnOVPR1ar9d7lCvO0j13FFcbYWwAeNDlk3f0d3olIp_LKD-LAM4EFN7_RQ9Oq10neus8-VQsRb3eeSDNUW4XPMlpqajvExEyp_OI7lb6Bp9U88WOMCMY2GDxXn3Ws4sV0fiQ9MFDlXXRuwwyVuuxjqeesAQv29X8gdb32SPuPophJMouo_WDi7tVSWaPUm30c3oUSX21GW-7gKcy1sGqBJSOxNUCyswUsz2Mi031wx5cF-rtW_iNp04d7BIW5SZnhxAF6NqAKZyYpUsH_KcFl0vCok_nO_mfE6MPBGAeZ5jhcLsm4SAnKhd1LLd9ZUR0jHy6wIq6_GkAnSvwy12tQwUPtUXase4ReLE5w8F9T5ft72tliqx2t_cRS8i2HngojUzMa3SHSJXUpHQaiBz05HtJZoBKhFkJ5PBjI2LjrdRk40zoPSeiPN-yks7S2Bt85txLLavEZYWYMlDgEt9A3GoekG3FdTe_AVxaYB_kp7qOE3RTwXetuddU_yCZiVdf81C1dFi6INYFfkPqhaceIkIdEVO4x0QqzAs44G4yNYQzyTIjoGN1JZvlotEFvViZj8qWc_lY5R6RodzI9d2PQXv-Kx6QesFHAbuL7d_GOHm_VdNLPttWtFalm1L6b_aObxcb3AuNXM9KhUeXIJHNVrjArGlyWyzM7CEKGy3Q_9hb_n3LzsF4_kTkOGh9j5Qiamc1mEq3kgiHOLdvvCT5KrdPAcKLBmdMjASrgCKNMWu_Y0tap5X6JENDgirMt0AfRwR8CqKdaqzBqd6xS3cayL2xEhq_vofc1MVZtob6HJJTigSa6ftn-ayAMpTxpplPKuEwom0GOD3XiTOhEzQwZXnXK9q2x1BocEtwhU38m2p6dD8TyyG4j7PWtSqljnlVu6CH5DtF8P0M5GgyUHl0TAzIXXXqmzYsqq46KoAekpPZvqSKQrF4eITwAU0EjXXrfO5e9CIvRRiRCF9WS6BgZxA72MN9lb7bfK3LrR8tIpgz-RYnuZI_V2ErXgqqrH2oeRcxdo5PuOXThyP7_W-QiMZDK9fIFaK3XmiP20iabqFwOhui65Il6uRPfADeDwL09LKBppVYWCUteSrRTjxuGRndfNEU9AsZeHyR7lsfMaihXwpuaACXv2BqCgcay6dQ5Q_1ltNSfXoswQooeMpXRTrj8liSPwvVSqBBBw3jh8HGm5ruQd7M4j1jkbidYjIPUHcqdBtrf-frfX50Il8A9S-3xsEFmUNUOTLFOWUi52VaeSSBt4ewIlnenS3oQ7QjsR1-K_aGFFoW_2zpcsUjArSBpUXLd8Y2oZiYPMjkRiezI6IrBBY00u7xkz2h72m2dUqWWaRLBgn00y2TyIYAmpGEsaC0-p83FTGdO7llGugmrJW67bl9J3-rqYJ3iEUhu-G_Cwe27slcnYdUjz1jYdlEZqLmvUu4To_tUFqCvCHlm1VkdkVDmjHGe_TKZM9VyNJ-CMbSCnKwtQbrX3HJ1iNv6_aS2U3h_y-0QET-58VfgAH41jJmXy8eEguhz3UJvPaWnG3eF3nKxWGlB7JVDVMkhg5hMfesHpdA7fEZhk6nwDwGsDuxvJjHabH7vHHk3vwt_Fuj7PHO3xYOottK23FGi33axJuoWptUkzlJajn4MKpzni9YyFao23F30n1SPWiyRiBBg1Lmy4qHy8ftILkft5GUvbjRprrgkh1JG6qoLu21STKCbIwyFCRHG7SThoIDVG_4GpZJCRiqlfaoZl0QQtqQUaOdHzxXXRHBoSPv0Ve1n-0if1xwrAQ4elaQbL6pn3jmtkFUVfGWEGLVVeAU8Qc06z6PmAsXJ3jsUP9TqtMGgEKlQtbezgkBSQxdT-ZfAtftwZwXGi1dzYjz9zDmjRv5GRp5b-nCxlFbf_JG5eWR7GL3MyP4H0.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_059e886681d0eecd016ac1b01c7d5887d1a47478acb4aa87a7",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3080,
+      "completion_tokens": 1833,
+      "total_tokens": 4913,
+      "cost": 0.001301425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 3077,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001301425,
+        "upstream_inference_prompt_cost": 0.000384925,
+        "upstream_inference_completions_cost": 0.0009165
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 484,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.001301425,
+  "output_text": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Adds an explicit “not more” limit beyond the requested once-only behavior.\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":false,\"reason\":\"Changes the protected quotation’s straight quotes to curly quotes.\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"“It” has an unclear referent, obscuring that the cache is the speculative source of the benefit.\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+  "status": "complete",
+  "parsed": {
+    "ratings": [
+      {
+        "id": "decorative-contrast",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "C",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "Adds an explicit “not more” limit beyond the requested once-only behavior."
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "B",
+        "m": false,
+        "t": true,
+        "r": false,
+        "reason": "Changes the protected quotation’s straight quotes to curly quotes."
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "B",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "“It” has an unclear referent, obscuring that the cache is the speculative source of the benefit."
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      }
+    ]
+  },
+  "accounted_cost_usd": 0.001301425,
+  "finished_utc": "2026-10-04T01:47:19.118228+00:00",
+  "latency_seconds": 11.423,
+  "original_request_sha256": "e17a635521aa7f0062f8102d0ba05a757eeecd0b31bf37b77f87d4b5de901ed5"
+}

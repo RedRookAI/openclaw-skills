@@ -1,0 +1,20 @@
+{
+  "finished_utc": "2026-10-04T04:04:45.107374+00:00",
+  "completed": 2,
+  "reported_cost_usd": "0.0137908",
+  "cumulative_receipted_spend_usd": "1.439167872",
+  "before_punctuation": {
+    "em_dashes": 5,
+    "en_dashes": 1
+  },
+  "after_punctuation": {
+    "GPT": {
+      "em_dashes": 0,
+      "en_dashes": 0
+    },
+    "Claude": {
+      "em_dashes": 0,
+      "en_dashes": 0
+    }
+  }
+}

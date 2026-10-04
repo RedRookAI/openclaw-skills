@@ -1,0 +1,90 @@
+{
+  "job_id": "demo-claude-after",
+  "requested_model": "anthropic/claude-sonnet-5.5",
+  "started_utc": "2026-10-04T01:45:58.746339+00:00",
+  "request": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/ffdef66035482accc2a36bc07ea344f83c3886c9da44294432e72e5a8a9afb3d.txt",
+        "content_sha256": "ffdef66035482accc2a36bc07ea344f83c3886c9da44294432e72e5a8a9afb3d"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/85bb12d303fa382c55bfb6604ae21542923b80991c6621b060b224078a4858b6.txt",
+        "content_sha256": "85bb12d303fa382c55bfb6604ae21542923b80991c6621b060b224078a4858b6"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 4.0,
+        "completion": 20.0,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    }
+  },
+  "request_sha256": "2f9d761f2f8f86502d32e57dccc4fd65f21f824c0340219882a106e68f1be54d",
+  "reservation_usd": 0.153568,
+  "response": {
+    "id": "gen-1791078358-ZT2ppz3tIHuNe9ALkxOI",
+    "object": "chat.completion",
+    "created": 1791078358,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Azure",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Hi all,\n\nMaya helped deploy the cache on Tuesday, but only to two of our ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms.\n\nWe haven't tested cold starts or the other eight servers. Any drop in support tickets is uncertain, so I'd hold off on claiming one.\n\nThe dashboard still shows yesterday's data. Who owns fixing it? If it's unclear, let's sort that out today.\n\nThanks,\n[Name]\n\nNote: The draft added two claims not in the brief: that the dashboard \"can't confirm any of this,\" and that the fix is needed \"before rolling the cache out further.\" I cut both. I also dropped the claim that faster responses \"will help\" tickets, since the brief gives no basis for it.",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 8894,
+      "completion_tokens": 258,
+      "total_tokens": 9152,
+      "cost": 0.020368,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.020368,
+        "upstream_inference_prompt_cost": 0.017788,
+        "upstream_inference_completions_cost": 0.00258
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.020368,
+  "output_text": "Hi all,\n\nMaya helped deploy the cache on Tuesday, but only to two of our ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms.\n\nWe haven't tested cold starts or the other eight servers. Any drop in support tickets is uncertain, so I'd hold off on claiming one.\n\nThe dashboard still shows yesterday's data. Who owns fixing it? If it's unclear, let's sort that out today.\n\nThanks,\n[Name]\n\nNote: The draft added two claims not in the brief: that the dashboard \"can't confirm any of this,\" and that the fix is needed \"before rolling the cache out further.\" I cut both. I also dropped the claim that faster responses \"will help\" tickets, since the brief gives no basis for it.",
+  "status": "complete",
+  "accounted_cost_usd": 0.020368,
+  "finished_utc": "2026-10-04T01:46:01.907030+00:00",
+  "latency_seconds": 3.161,
+  "original_request_sha256": "2f9d761f2f8f86502d32e57dccc4fd65f21f824c0340219882a106e68f1be54d"
+}

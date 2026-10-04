@@ -1,0 +1,497 @@
+{
+  "job_id": "judge-command-0-0",
+  "requested_model": "openai/gpt-6-luna",
+  "started_utc": "2026-10-04T01:47:00.042465+00:00",
+  "request": {
+    "model": "openai/gpt-6-luna",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05.txt",
+        "content_sha256": "4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/5a36eb344eca18e8325159e60981b50a03d44a2240b70e95b9d9ed7c813e8100.txt",
+        "content_sha256": "5a36eb344eca18e8325159e60981b50a03d44a2240b70e95b9d9ed7c813e8100"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.2,
+        "completion": 1.0,
+        "request": 0
+      }
+    },
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "a36d2c13485b7199ed9d48708ff8f505494791941b5547e7d996f36aacfa72d5",
+  "reservation_usd": 0.0071354,
+  "response": {
+    "id": "gen-1791078420-SSR2tWnxVF1Jvy9MiQpz",
+    "object": "chat.completion",
+    "created": 1791078420,
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"ratings\":[\n{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Drops the contrast that the goal is not doing more.\"},\n{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Preserves the decorative contrast instead of removing it.\"},\n{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Drops the contrast that the goal is not doing more.\"},\n{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"Leaves the unnecessary introductory phrase unchanged.\"},\n{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"Leaves the unnecessary introductory phrase unchanged.\"},\n{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Retains the inflated paradigm-shift rhetoric.\"},\n{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Retains the inflated paradigm-shift rhetoric.\"},\n{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Omits the still-uncertain possibility of helping the finance team.\"},\n{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Retains the commitment-to-efficiency filler.\"},\n{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Keeps the dash aside despite the explicit no-dash request.\"},\n{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Drops the implication that completion was delayed or awaited.\"},\n{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Keeps the dash aside despite the explicit no-dash request.\"},\n{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Omits the speculative possibility of reducing support tickets.\"},\n{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Changes helped deploy to sole deployment and omits speculative support-ticket benefit.\"},\n{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}\n]}",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbAZaANWL9m8zxtZx3hMAHUuah95iFRfzqEcKzZhrwsM5_Og8dvH4jtUtAjaQ0hYYe25H0RFDKuQSSnT3j97MKPFQjEzBWXNVmNteRxVvPxRuzrPXRGp9LF1CgARYX348Ka6eOJMny-cfPFImAVYjHtAp1SAE93rPn5KWAG8bMo7GafZtGxf_0MRFJwRf7PKckJvj8mD4I0r8j3VSc3U3WxcTiznw_LhFRBqLEbyfjiX0f6uJL8Szs_P9DNSgbEkppnyUwBgLC9E40t4Ttt46lzXMCaOlN-W-pEIyEBQ3NBA9kx1M6iH1v1lDDoiOCCXxO3H4VCRfyi5zTKsBzakVSZbvX3Y6aaUAX8XXONy_ZcpXsj396JvHjHaaK-AMTvThGom9ps4sfvhak-jiybghUpWTVsZMazqI-7Aj_4R2-PS2g_-LaCAxK71et9mDWrk2XuAfBR-d2mNh6fIrkauM9tl6JK3hpOEXsTkRXsraKIdgI6FL1hIbPm2tbLl4cYn8aMxJWHMYpM96lmI7-DjjsjpxovHt9tiz7kpUmJg2DRzYHo1l3XJaKC2Xbizgf38JbpZPYDM-6-s0Gx_xhwgCLHcd6ygizXEfULsMXw86YPJGHdj5nKQ5-YSajrPrGor1z6vsD0ci3MqsW8d2_qL0UiKUx1Yf1siVqLRtVIZcFw4tqv5cp38T6TNJufXZ1r5KcA8E8asjUs0dSMTIzAkyZeJ9uT9V3h1mdOEpOCWqLb6RpAnfn0ipJ_Yfx5p8dYGaiV2kue8yN-VxsMp2k2wTm6MQkJcsKep0Of1d_hrn1Qq2YTaOJJ9kzZUuY6sF_vZUrKOl0GBQDvPgseDbSmE3rBNWlKPTHRqqaChSBiA4eryriPGeG6l6M7wvaxSt6hZZb9KfUMyCeKeib6bp_FDcqlT48nDtWVT0OpdeBx_Z14Fx5TvGkLS9c6ConLZLW046iURHpNI1gd6G7nnXtp_F6OK7Qt36LK8v4vv00UXaPvLEL227LaCpQVgV_6elhU2yUU-rarJ7q_jX1sYgUeWMDobfpkv-QodBRa_WkDCNIs3cOgdlevS9HCycVr1YX6oba7BpTG5Tnlv8A5pM5wOyo1PEejsZJQKAr0GLvG4lJsMD5UhTvWPXEHNs5CHpsq8qWuYLmS4XsGUQVTlip5IIk6OjwnRVK01Z6Ht9oiaSs1D_U4-d_hDZRssHs-GbqhzFgFWXSzy0ijf2dkIKc_c1bWJebdw6FDiACfmag0VOEWM3PH2q2o2w9mPHzNlMgja0feYAZwE4-TrHMPy4-JuPYpAtSyYNSVb-QESKSea9fhGK2s1B6rM9JS7N-CKnCQK8xLa0gb9o2EsoG4KsOaMGhvyb0oW11SJWTkVxURoNa8O4r1_B-bLmr8FyL6Xu2Gutss23ZUEgf4ZV7g-rvUhD6MAEi7Ez1i_OE5h_kbPxZAEFE-fWx8uZXqY3AgAZ00IcYFWqgk1SWIvpO9D9SEz-NRvwDoqQamJo4hpmAfhi3OAZ9zHXm_i7rarPL7_kmEHO41Kq1ng7dNa3ptOXEzrrkrG4NoLmegSrnjtWz1rkfG1_tosu62Z6tvtXAdbz-1FIRQ_OXC0aJ7_wO8qBFd79K0qBtD4m7RUwC-tezprw2wntk-Wv_RMquZXkvMXBWvOZbrvET8ezsAL60D0UOpmDvMCXEp9QqcaZPCa4J5wZtIQ4FqKHuWOSUxwrZcIS1_XeML4IvpEyiCIzJSiTfO8IOwAgqPTzvQN1aZFE-89DBeXB6p6H1eRm1zaKDWzeDgfMq9TtVMCPNSkiCfZ83JuzvvNfDW2bA9ydAnN7rS9uwUv_RzIjqtb2tTBFEFQyZ5QoEyzKTBDItrS7zhWusaefOT16Y778IleOnjup6xYlaM1NOTWLeAdT_MRP_w8yJwVG032F2wRLXBr3RFbOfLa7AGRWktEk_o8e9eyaDny1i2wSzFMrCG5t9oQ1qqa4pTKzX2eA6v5sA45NhbW2YC7ujhZVenF-_dkrM4w4t124MABAUxqKjyV1qYKj7fVJTfkU_uQG7zuXCoYMzHNsxP84NxUElwQuziJSrsfi38wsxXDHelmmlL3h07oHZanNDzCJzJWP0fSQFjb3uR5XjXCOVb89Ylj21gXryySZUBWpK4QxohEbtpZSTDoWb5suip_ceX-t9lyG4C7XtI4d0UcRYQ6zvzh8jRiPUwyZDwYNKHBl2lhjrmB1Njm9FpUGC3GVmf2DnkVQTU2FYDqqxeem9ol2XGfqJk7GO3Gw1grswv6tUTJFJ9MSnR-TvS3XbE3ge2mWyUe4MY1WaESMYG1Dc7evw6uAug6S7kCEbQ0FdrgXOzieak0Q9g3CYr7CASgYL5HlyCT51AH8CotYfW-Q7aFxHssFIg2d_Rkv9hdJYvl3cPn0-xcI43K1Cnwt1ievF7UrgjSiHln_jhWVx5EBjAAPp8Qj-JGDv24eivW35AeHQr6aAl9ogXlsYngjvrgBeNrDQe2R1MI1fQV9GgPHPO717nslsUahIAzSjAOFQXrE6qdhVBwQTqDTACljNzHhGEJ4_X9Fib-OlCCA4MaNpUQEqYQGre650pPkeFgFY9X-CKwg9VH45twL4szszcn_sVxMGkGJGmYuwACwAym0kE4dzd6wxKjDVtyjvVg5seG2i2sFfDGdNeHLvwUjOTdRpo4FeLp6qnPcS1v3mZcMFpY1RdBhlv5dNifXsbHaeq80CyBS4JSf2OUc6LXzGhnmVa95oOG6UdEpa5in6urbiONLVDZg5aw1bkrVJrfqPX8cNYrv7LVbs893Q3yp30CzQKRtoBmfuZmqB9tYAiZ8DdROAzEcmI6C3GUZfzb3lEAliyiIHfsO42lOHFBV1aMRJd6pgQdL5uyLDLQnzVERIuVJNAZVRDzhL5u8gVl4is79rvs-wjeRUxtDO5msBt5hq1jliwVsT2pr2FSu9WsrO7hoLQEW8O-P6BvUEwrjzF-KbiFYnjWZCWHuDTmw9qtVLohM4A_ZWIqYfg8C0yH66W0xSUiFje4U4lC-RQGSMEzNa6q3tApg6-QfIMzXDtFDQWSWTUcyhKHEOyBo3qAyD_CsPsZSYN6x0Scn5MgJ13GoGU_MeI5_GC0Cg8wyaG0jLMme-N0xtJAbkXY7PHa5rGTer3e3dvvkqs9oxfiU73AD-ndLRJepd3wg56S4uy1TcOz99p-TNKaaLUPFnDsc2RCNe6xFoo4s_2VjO9lis5JyUYDlXWQcOxopT9nBooP481leXpPm4EQyn0jmpviOjGlQX_9Etvoj7umrHfygbqErGzlX5zMg9oeibmx0UzgcEb177NDeYNhmgwZg6HcN362bFJ8JGHVKSN_Ec_JHKYEMZ2CvGaaWIQjWkDD-6JrysNuzTjjLIcrhO0G6GWexxE8XnzDURTYYwOnnRe5JkWQqgBRhBWGqwafdDkJJ-7aOQgGZM_48ZsLDV3WHzHXSG717gNy7jnpzfmI8tCiAXeUQNrM1nUUQTXgrPwYzNQt2xQLD8msRe2zxF1UVhhhEmxMXsEpPYrw76ujFPVhhU6_wnvjm8s34oyQ0Xb1vFHKcGJkK9jJuFURcS68jKxKH0MIYuZtLMlKopfrAEdJSXRwsbrserr0Yu7pupOBID5WEJA0AgYNa6E1H0bBDCpm5TEMhkAd0fn2nSPyBiKoc5p9d9czjJylwU9G3H0j8Fhrk_9Tl8LojFEZakvciIhhi-q9FWkadKr_0LV4t3E5XB5n7tmb4XLgSSkdoqUnWo5Wtr1AiEdy1p1pvZ0sLhqG7EuATfw3-Sz6RS9pksvo5dKCw7vAyW4rmsXN6VP655lXUi1DQL3n9OM9axxxtwDGsjg-TvjReAmoa50uW-QbXZcesoto72DokyGRWb4FgTya17o_2cmM-AixcbMsEeNq-6BQ4-1rYhyZUiv-VZqoRfqCBNBneQuPn_5N-YwYcNWO8ocM12_ELKXeuzrn-qD5yGGH3FR3jOa8kOAMG91uJM4wE8ESu-aGVysA9nqsDfqqmWw845B2hr8YcPWwrabzq6BvNxRES8K4bL88cb16fdH2sMWpKo8bomIR3oTgDfolkedLbdVlH2ZFNc1W23YkAaJazJK-4xAkszbXNGqnQH0Y-p4ED0WxCy6cTeCRyUlITM4vcAIgxPUxiKF102p8tJpFU2d7G5R-24sNdW8GAn5kKwltN4JAGr3CtVD7qLjaWhmcoAeFauFgar_gvzVKW9vUC_4Nk-KPaYIN93Lzef_Ecgyw-QP9LYQFPdmxfvrH8Se2YgfVRzFhtqxq_rJe_cytdOW0-m3ZGq0P088ev3fGOE2S6Rn9V3OK2OZTPWPStLWtqoUFTluBumANGYqR0yQe3maU5HPeqpbrSqJ7oupGXpiVsU62sKIFgxRUGqMIDksDpZN4WfdQXVBMjGwd40c8TyfzfWyi0gK4JIf-4YzFSdQQFClKWOzT9wUTk4Uh24MlO0xpNkrKEof5azF9jZJDoMILm1wVmF92OpxaB3nWb6akYVW3cHsJZEMxi2iLJwFBQpqGXMc9bJce-ubfZk0FLBCHUJqBMttAjqLtWpxOmjeN1ib8poMvMDncRuu3lHJ2WqnX9w03r7ZPhu9eN6mha_aNKBZA8FiKmIuy2OeMbpbvYtrsUAcaYLrRpebgA3kKnnxYZjGJtlR7FRW7O9qOzk7H44jTw7UqvUgpvtxpEbzK30NonbHtBh-npfvRQNXhb7uUs0pn4bwnRXIJx51Ne3PF0O1wFEAWx6IIchQWvGt8QREAcZJIJeaUTaMfxmnc57sNcPMwFKZx0y01kiX696fl9mEfTB_og_WcF6PX8nF5hgSNgVMgsid0VtSKs-Wle9QzThv9TeH6LX1FivdsmfanZgp1AaJ8p6yzK2LZ9p1E1NVtyhNrA_pc7IB6pvOmGi8gQFow-nEt4ofj1OMjUWejF9n63Nf3LZzUXXA7o8DkLnmgir8kz8WWx4OhdhHu.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_0532d1c738a0c422016ac1b014ffd887d195d6d3013b76505b",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbAazkZxlPz8yW6CKHmKr3VJzMaYlz8tTxCUGOhzaRS0XvzafqDg9RyNZybwFqPuyzvx-_74hVyiJKOlCJRnGUOI_rn--mn7fT7wXnTUGH_nSxGtyZyytF9vEJwvcxiaYjEkxPt6TiYmtXiU2AMr51poGxmZKnBX4yXLzVw7QU9otefucRmv9deLnOhwmdL9Qdvi2KOO4xez-lttUin7Gj4lLUMpUgiKdfhQ_sWWAx_UquNVQSwxad-siI1POeHdOkh2fIa5r7N01bwxSJ5vwrAVTLSG_rOiDowkr7vqbvZphtJctMweiKzuwOWRYfsx3ktu0uT6a1FwcTdqZOtqC4DEppuJwdCcSyUU9OFdoVfeKs9UpaK1jfMWFcOyuoN-NwwvW2DKnp1eD1QIuVD1M-beBCXhNVy5LVW3b8Z4G0a2MW2YPPCZ-5nNTDKdQcggypOoY0ReFWMpR8-nTDk6lwGodz5tAsSZQJuchV2DazkEJ0cE-Jt-lh17TkVg6fHQWu-peVQq_yGD3I2Mh4F7mlwfJx-yv2d4siRtJGML0GunL0XajSYOFtQHdTxWyazXEnoNqZ4Jz9sJn-Rcg7YYWMxg_QmwsdHdZEuzv_1_TE6vyH9RtnfJtGD3fQ73Y0nL0ZPKoGFbciT2Qd8_w5IIN0-vds8HdoBiWXkpumrT_AUGzxhybvaVIv2gMTVu11IwgR537ovYo-eYybJ_NuLbcvjxHU7fKGP0k0ao4JHKySiBYiQO7LrFTBPgKX9etuMuBCAkfNb9V1FZJ7JTlzH_bFWyYpCZI-BXdLh10u-8u9xxVURcHHvgWWh4bG4JqGM-Ro_sHIJHyXqoLklxwzXxjTcd3IUaca1IuoiFJCs_low_vVe3bJerMo47kXQ05517b1EzWIeRqk98JvOLBMkuqA5JI7yItmu2pU3tDrw0EeJkwx9U3AHbmhILxqndmbdvKbw5IWN2YrIJ3uRxF-9GJ16_9Ik3uef8SMMnax3b4Q-FcSuc0qsW4Ba9vLGmJF9EbDRr9KnweBtWY2qWaL_qHDcsRGobEQlGB8DgJqrzuWmxoSD2HieDgr8MBQ5XffllZwfqVDl0ShFBUtSqaNhf2_fGljOSK8YT7Gp5JhqVnwktWVsJ6iLcv59dMi__Ly6r8BvtNphe7VxgmRuK6Jykj4wVJBNeCY7bjBZbGYRIsPc4BOhyW4ErocZFMrKuFGb6vtGzkHIylaNMJA0wXVyYXyOA0PCtZHdpQuh7iFGdnVi2U0lgEixFaFE-KRf71AcyRQcY2nkHJ-a2eDJ-kXEgR0fCllltLIwtwK-FNY3PwR8ujp47-PwofCBzyk6Z-PyYYJlMf34LN-4IlGCe2DKZPzdKxj25EvYlCoqyVdgJlVQy19xd_3cUADJg6QE7qBhk8_egas8DdFViAmvw49U0PAH4cuRdsgx3Pm5xMkJU82TS30vnx5tMC2RFIVDL4GnTyZx2n2gL-q4l1CMU65mUJYAr25k61RgimUkMa0zLQOlRcpqtPU09-qe5z_OCSHSb-_5Nd12-bMKA_h2XvQLfThfdx15KnU8iLLsmcdyM1-r_27oNn8aZpjSB8VII3SfO5_wxWAzLAJDwvnkazsTzLnXx7s8L8TC8FvE_PpxySK_WNTZpIgdSA1cPKPM9CQFx5fzt6NgCiDw8HE5FvhJGvXWWUzuBKKM5soGXWHxG9wS5yjHsbdUTpfkFnOT5XvW0oAankIeLyod2yMbuYm6wHIq5ox32Jbhvo6K_TuuOoaKh2fMAMoiZ3pnfjBDOEo6UDGD5eBQRWP0NTlYZQleeu-KO5pYWFmuLB6GeoyuS7zS684DDwOtwFk4B3Dw4jhQpdKAXQ5rSyR6rcQrRJpUble_CAAwOfOjuEGlQYlYEL8pwt9QLwkZvkr7EUvkx0X4g79juJHx9l0JgkCd6EGns4aRYM3nvy95F6h4wz4Stfvh2XyFYHtW1evyXMdc4RBtEo0n_Hl9NykkOkkrUPX5buKXPMFjrxIIlDw8ene0TsuQrfqARgmLyjIztoYCut6upuVHbKwQ45OWINzewiGhZzsnYjgRCJ6U_Mj0oZF6Lu3SSyens6slRpjnX927koQqke4M7fvrWBpCl5zho8kNy2BeErpdi4Ge8nF6jlRRURSokS3d19yMcIhQY-gRZ8v2Y21mQNsFxjoZ1wJSC9v7Rhilny2n_Q0BxVuEL6cLJrYyafhc=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_0532d1c738a0c422016ac1b019a23c87d189b3d68ad9d0fecb",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3101,
+      "completion_tokens": 2138,
+      "total_tokens": 5239,
+      "cost": 0.00145655,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 3098,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00145655,
+        "upstream_inference_prompt_cost": 0.00038755,
+        "upstream_inference_completions_cost": 0.001069
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 653,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.00145655,
+  "output_text": "{\"ratings\":[\n{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Drops the contrast that the goal is not doing more.\"},\n{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Preserves the decorative contrast instead of removing it.\"},\n{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Drops the contrast that the goal is not doing more.\"},\n{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"Leaves the unnecessary introductory phrase unchanged.\"},\n{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"Leaves the unnecessary introductory phrase unchanged.\"},\n{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Retains the inflated paradigm-shift rhetoric.\"},\n{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Retains the inflated paradigm-shift rhetoric.\"},\n{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Omits the still-uncertain possibility of helping the finance team.\"},\n{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Retains the commitment-to-efficiency filler.\"},\n{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Keeps the dash aside despite the explicit no-dash request.\"},\n{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Drops the implication that completion was delayed or awaited.\"},\n{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Keeps the dash aside despite the explicit no-dash request.\"},\n{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Omits the speculative possibility of reducing support tickets.\"},\n{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Changes helped deploy to sole deployment and omits speculative support-ticket benefit.\"},\n{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},\n{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}\n]}",
+  "status": "complete",
+  "parsed": {
+    "ratings": [
+      {
+        "id": "decorative-contrast",
+        "candidate": "A",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "Drops the contrast that the goal is not doing more."
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "B",
+        "m": true,
+        "t": false,
+        "r": false,
+        "reason": "Preserves the decorative contrast instead of removing it."
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "C",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "Drops the contrast that the goal is not doing more."
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "A",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "Leaves the unnecessary introductory phrase unchanged."
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "Leaves the unnecessary introductory phrase unchanged."
+      },
+      {
+        "id": "already-clear",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "A",
+        "m": true,
+        "t": false,
+        "r": false,
+        "reason": "Retains the inflated paradigm-shift rhetoric."
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": false,
+        "reason": "Retains the inflated paradigm-shift rhetoric."
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "B",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "Omits the still-uncertain possibility of helping the finance team."
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": false,
+        "reason": "Retains the commitment-to-efficiency filler."
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "A",
+        "m": true,
+        "t": false,
+        "r": false,
+        "reason": "Keeps the dash aside despite the explicit no-dash request."
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "B",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "Drops the implication that completion was delayed or awaited."
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": false,
+        "reason": "Keeps the dash aside despite the explicit no-dash request."
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "A",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "Omits the speculative possibility of reducing support tickets."
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "B",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "Changes helped deploy to sole deployment and omits speculative support-ticket benefit."
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      }
+    ]
+  },
+  "accounted_cost_usd": 0.00145655,
+  "finished_utc": "2026-10-04T01:47:13.336194+00:00",
+  "latency_seconds": 13.294,
+  "original_request_sha256": "a36d2c13485b7199ed9d48708ff8f505494791941b5547e7d996f36aacfa72d5"
+}

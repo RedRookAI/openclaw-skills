@@ -1,0 +1,106 @@
+{
+  "job_id": "demo-grok-before",
+  "requested_model": "x-ai/grok-4.7",
+  "started_utc": "2026-10-04T01:46:02.379960+00:00",
+  "request": {
+    "model": "x-ai/grok-4.7",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/61a921c68a626059fb7c748191af3599a6c17f0176fa639b26d691e9f3e882cb.txt",
+        "content_sha256": "61a921c68a626059fb7c748191af3599a6c17f0176fa639b26d691e9f3e882cb"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/f44388cd9a52812b65d1ce05f40592d2aad7e37bd7fa5195b4ee838b319b28ed.txt",
+        "content_sha256": "f44388cd9a52812b65d1ce05f40592d2aad7e37bd7fa5195b4ee838b319b28ed"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 4.0,
+        "completion": 12.0,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    }
+  },
+  "request_sha256": "178ff15ef4c6179968f081f3be26601098f1f7fc03e3eaa0e6231206fc9e2c5f",
+  "reservation_usd": 0.031048,
+  "response": {
+    "id": "gen-1791078362-LZmF9wKdxzrVDFj9vjq6",
+    "object": "chat.completion",
+    "created": 1791078362,
+    "model": "x-ai/grok-4.7",
+    "provider": "xAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "Hi everyone,\n\nI wanted to share where the cache work stands. Maya helped deploy a cache on Tuesday to two of ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. That result is limited to the test we ran.\n\nCold starts have not been tested. The other eight servers have not been tested either. Any reduction in support tickets is uncertain, so I do not want us to treat ticket volume as evidence yet.\n\nThe dashboard still shows yesterday's data. Can someone tell me who owns fixing the dashboard? I would like to know who to ask so we can get current numbers in front of the team.\n\nThanks for taking a look.",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "I will draft a 100-140 word email to the engineering team in a natural peer voice.\n\nThe email will cite Maya's cache deployment on two servers, the 20 ms latency drop in the test, and the untested cold starts and remaining eight servers. It will note the uncertain ticket impact and ask who owns the stale dashboard.\n\nI am trimming the draft to avoid interpretive additions. The revised version will open with a direct update on the cache deployment and the measured latency drop.",
+              "format": "xai-responses-v1",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "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.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkvemRyIn0",
+              "format": "xai-responses-v1",
+              "id": "rs_78255b1f-feca-9897-a74f-ced38a2b8cca",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1358,
+      "completion_tokens": 1230,
+      "total_tokens": 2588,
+      "cost": 0.008368,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008368,
+        "upstream_inference_prompt_cost": 0.000988,
+        "upstream_inference_completions_cost": 0.00738
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1088,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.008368,
+  "output_text": "Hi everyone,\n\nI wanted to share where the cache work stands. Maya helped deploy a cache on Tuesday to two of ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. That result is limited to the test we ran.\n\nCold starts have not been tested. The other eight servers have not been tested either. Any reduction in support tickets is uncertain, so I do not want us to treat ticket volume as evidence yet.\n\nThe dashboard still shows yesterday's data. Can someone tell me who owns fixing the dashboard? I would like to know who to ask so we can get current numbers in front of the team.\n\nThanks for taking a look.",
+  "status": "complete",
+  "accounted_cost_usd": 0.008368,
+  "finished_utc": "2026-10-04T01:46:18.257546+00:00",
+  "latency_seconds": 15.878,
+  "original_request_sha256": "178ff15ef4c6179968f081f3be26601098f1f7fc03e3eaa0e6231206fc9e2c5f"
+}

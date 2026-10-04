@@ -1,0 +1,91 @@
+{
+  "job_id": "demo-qwen-before",
+  "requested_model": "qwen/qwen3.8-max-0902",
+  "started_utc": "2026-10-04T01:46:20.650456+00:00",
+  "request": {
+    "model": "qwen/qwen3.8-max-0902",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/61a921c68a626059fb7c748191af3599a6c17f0176fa639b26d691e9f3e882cb.txt",
+        "content_sha256": "61a921c68a626059fb7c748191af3599a6c17f0176fa639b26d691e9f3e882cb"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/f44388cd9a52812b65d1ce05f40592d2aad7e37bd7fa5195b4ee838b319b28ed.txt",
+        "content_sha256": "f44388cd9a52812b65d1ce05f40592d2aad7e37bd7fa5195b4ee838b319b28ed"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 4.0,
+        "completion": 12.0,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    }
+  },
+  "request_sha256": "06fac087c33ae3a101c284d28552d8c27b60d428b91686690def869d2f3bbe8b",
+  "reservation_usd": 0.031048,
+  "response": {
+    "id": "gen-1791078380-T8kFqUsU0LEEr98VSAuO",
+    "object": "chat.completion",
+    "created": 1791078380,
+    "model": "qwen/qwen3.8-max-0902",
+    "provider": "Alibaba",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Hey team,\n\nQuick update on the cache rollout. Maya helped deploy it on Tuesday to two of our ten servers. We ran a 30-minute test and saw median latency for repeated requests drop from 80 ms to 60 ms, which is promising.\n\nThat said, we haven't tested cold starts or the remaining eight servers yet, so we're still early. It's also too soon to tell whether this will reduce support tickets.\n\nOne issue: the dashboard is still showing yesterday's data, so we can't track progress in real time. Who owns fixing that?\n\nLet me know if you have questions or want to dig into the numbers.\n\nThanks!",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 162,
+      "completion_tokens": 293,
+      "total_tokens": 455,
+      "cost": 0.002082,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002082,
+        "upstream_inference_prompt_cost": 0.000324,
+        "upstream_inference_completions_cost": 0.001758
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 151,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.002082,
+  "output_text": "Hey team,\n\nQuick update on the cache rollout. Maya helped deploy it on Tuesday to two of our ten servers. We ran a 30-minute test and saw median latency for repeated requests drop from 80 ms to 60 ms, which is promising.\n\nThat said, we haven't tested cold starts or the remaining eight servers yet, so we're still early. It's also too soon to tell whether this will reduce support tickets.\n\nOne issue: the dashboard is still showing yesterday's data, so we can't track progress in real time. Who owns fixing that?\n\nLet me know if you have questions or want to dig into the numbers.\n\nThanks!",
+  "status": "complete",
+  "accounted_cost_usd": 0.002082,
+  "finished_utc": "2026-10-04T01:46:27.462431+00:00",
+  "latency_seconds": 6.812,
+  "original_request_sha256": "06fac087c33ae3a101c284d28552d8c27b60d428b91686690def869d2f3bbe8b"
+}

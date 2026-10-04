@@ -1,0 +1,91 @@
+{
+  "job_id": "demo-deepseek-after",
+  "requested_model": "deepseek/deepseek-v4.1-flash",
+  "started_utc": "2026-10-04T01:46:16.559868+00:00",
+  "request": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/1ba566bd5bb3b853696e91ad4398f3c0f7e69ded2a7d46f6084296744eae9f66.txt",
+        "content_sha256": "1ba566bd5bb3b853696e91ad4398f3c0f7e69ded2a7d46f6084296744eae9f66"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/5a26a50d00bb75f2319de15b9a6876ab2a92f4ad482eadc2d77aaf6d5c1c6d9a.txt",
+        "content_sha256": "5a26a50d00bb75f2319de15b9a6876ab2a92f4ad482eadc2d77aaf6d5c1c6d9a"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.6,
+        "completion": 2.4,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    }
+  },
+  "request_sha256": "bad2d1fe057a79479c5a34c6121acecd150cd30ae9fcd1095e1b855152514216",
+  "reservation_usd": 0.021693,
+  "response": {
+    "id": "gen-1791078376-VIpEZvMjOrMJ2bZIuenV",
+    "object": "chat.completion",
+    "created": 1791078376,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Hey team,\n\nCache update: Maya helped deploy it Tuesday to two of our ten servers. In a 30-minute test, median latency for repeated requests dropped from 80 ms to 60 ms. Cold starts and the other eight servers haven't been tested, so any reduction in support tickets is still uncertain.\n\nThe dashboard is still showing yesterday's data. Who owns fixing that? I want current numbers before we draw conclusions.\n\nThanks,\n[Name]",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5382,
+      "completion_tokens": 548,
+      "total_tokens": 5930,
+      "cost": 0.00032684,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00032684,
+        "upstream_inference_prompt_cost": 0.00010764,
+        "upstream_inference_completions_cost": 0.0002192
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 457,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.00032684,
+  "output_text": "Hey team,\n\nCache update: Maya helped deploy it Tuesday to two of our ten servers. In a 30-minute test, median latency for repeated requests dropped from 80 ms to 60 ms. Cold starts and the other eight servers haven't been tested, so any reduction in support tickets is still uncertain.\n\nThe dashboard is still showing yesterday's data. Who owns fixing that? I want current numbers before we draw conclusions.\n\nThanks,\n[Name]",
+  "status": "complete",
+  "accounted_cost_usd": 0.00032684,
+  "finished_utc": "2026-10-04T01:46:20.649718+00:00",
+  "latency_seconds": 4.09,
+  "original_request_sha256": "bad2d1fe057a79479c5a34c6121acecd150cd30ae9fcd1095e1b855152514216"
+}

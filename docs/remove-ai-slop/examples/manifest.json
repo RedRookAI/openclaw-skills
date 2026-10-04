@@ -1,0 +1,142 @@
+[
+  {
+    "family": "gpt",
+    "example": "gpt/README.md",
+    "record": "gpt-0-general",
+    "condition": "general",
+    "original_general_failed": false,
+    "source_kind": "authored_fixture",
+    "model": "openai/gpt-6.1-sol",
+    "started_utc": "2026-10-04T01:37:24.489977+00:00"
+  },
+  {
+    "family": "claude",
+    "example": "claude/README.md",
+    "record": "claude-0-general",
+    "condition": "general",
+    "original_general_failed": false,
+    "source_kind": "authored_fixture",
+    "model": "anthropic/claude-sonnet-5.5",
+    "started_utc": "2026-10-04T01:37:43.233692+00:00"
+  },
+  {
+    "family": "gemini",
+    "example": "gemini/README.md",
+    "record": "gemini-0-general",
+    "condition": "general",
+    "original_general_failed": false,
+    "source_kind": "authored_fixture",
+    "model": "google/gemini-3.8-flash",
+    "started_utc": "2026-10-04T01:38:16.854258+00:00"
+  },
+  {
+    "family": "grok",
+    "example": "grok/README.md",
+    "record": "grok-0-general",
+    "condition": "general",
+    "original_general_failed": false,
+    "source_kind": "authored_fixture",
+    "model": "x-ai/grok-4.7",
+    "started_utc": "2026-10-04T01:38:17.025199+00:00"
+  },
+  {
+    "family": "deepseek",
+    "example": "deepseek/README.md",
+    "record": "deepseek-0-general",
+    "condition": "general",
+    "original_general_failed": false,
+    "source_kind": "authored_fixture",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "started_utc": "2026-10-04T01:38:59.996566+00:00"
+  },
+  {
+    "family": "qwen",
+    "example": "qwen/README.md",
+    "record": "qwen-0-general",
+    "condition": "general",
+    "original_general_failed": false,
+    "source_kind": "authored_fixture",
+    "model": "qwen/qwen3.8-max-0902",
+    "started_utc": "2026-10-04T01:40:03.161358+00:00"
+  },
+  {
+    "family": "meta",
+    "example": "meta/README.md",
+    "record": "meta-0-general",
+    "condition": "general",
+    "original_general_failed": false,
+    "source_kind": "authored_fixture",
+    "model": "meta-llama/llama-4-maverick",
+    "started_utc": "2026-10-04T01:40:04.275748+00:00"
+  },
+  {
+    "family": "mistral",
+    "example": "mistral/README.md",
+    "record": "mistral-0-family",
+    "condition": "family",
+    "original_general_failed": true,
+    "source_kind": "authored_fixture",
+    "model": "mistralai/mistral-medium-3-5",
+    "started_utc": "2026-10-04T01:40:44.492558+00:00"
+  },
+  {
+    "family": "gemma",
+    "example": "gemma/README.md",
+    "record": "gemma-0-general",
+    "condition": "general",
+    "original_general_failed": false,
+    "source_kind": "authored_fixture",
+    "model": "google/gemma-4-31b-it",
+    "started_utc": "2026-10-04T01:41:13.958290+00:00"
+  },
+  {
+    "family": "kimi",
+    "example": "kimi/README.md",
+    "record": "kimi-0-general",
+    "condition": "general",
+    "original_general_failed": false,
+    "source_kind": "authored_fixture",
+    "model": "moonshotai/kimi-k3",
+    "started_utc": "2026-10-04T01:41:33.488580+00:00"
+  },
+  {
+    "family": "glm",
+    "example": "glm/README.md",
+    "record": "glm-0-family",
+    "condition": "family",
+    "original_general_failed": true,
+    "source_kind": "authored_fixture",
+    "model": "z-ai/glm-5.3-flashx",
+    "started_utc": "2026-10-04T01:41:39.107965+00:00"
+  },
+  {
+    "family": "command",
+    "example": "command/README.md",
+    "record": "command-0-general",
+    "condition": "general",
+    "original_general_failed": false,
+    "source_kind": "authored_fixture",
+    "model": "cohere/command-a-plus",
+    "started_utc": "2026-10-04T01:41:43.008456+00:00"
+  },
+  {
+    "family": "ernie",
+    "example": "ernie/README.md",
+    "record": "ernie-0-general",
+    "condition": "general",
+    "original_general_failed": false,
+    "source_kind": "authored_fixture",
+    "model": "baidu/ernie-4.5-vl-424b-a47b",
+    "started_utc": "2026-10-04T01:41:48.608696+00:00"
+  },
+  {
+    "family": "minimax",
+    "example": "minimax/README.md",
+    "record": "minimax-0-general",
+    "condition": "general",
+    "original_general_failed": false,
+    "source_kind": "authored_fixture",
+    "model": "minimax/minimax-m3",
+    "started_utc": "2026-10-04T01:42:20.638074+00:00"
+  }
+]

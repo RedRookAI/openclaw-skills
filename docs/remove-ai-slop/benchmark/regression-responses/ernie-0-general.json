@@ -1,0 +1,126 @@
+{
+  "family": "ernie",
+  "arm": "general",
+  "replicate": 0,
+  "job_id": "ernie-0-general",
+  "revision": "meaning-and-note-guard-v2",
+  "requested_model": "baidu/ernie-4.5-vl-424b-a47b",
+  "started_utc": "2026-10-04T01:54:32.876333+00:00",
+  "request": {
+    "model": "baidu/ernie-4.5-vl-424b-a47b",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/6fb4f38135a0336a1cec50ca7a14e456255e00b525024e645481870122d94a62.txt",
+        "content_sha256": "6fb4f38135a0336a1cec50ca7a14e456255e00b525024e645481870122d94a62"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/e70d9c0942a10ed79c7c121058ea03c1614e6304b06560c771da3f7c82def1b2.txt",
+        "content_sha256": "e70d9c0942a10ed79c7c121058ea03c1614e6304b06560c771da3f7c82def1b2"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.84,
+        "completion": 2.5,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "seed": 20261004,
+    "reasoning": {
+      "enabled": false,
+      "exclude": true
+    }
+  },
+  "reservation_usd": 0.03410188,
+  "response": {
+    "id": "gen-1791078872-DTiRMtalfWKVk8yq4fJE",
+    "object": "chat.completion",
+    "created": 1791078872,
+    "model": "baidu/ernie-4.5-vl-424b-a47b",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"results\": [\n    {\n      \"id\": \"contribution-boundary\",\n      \"text\": \"I helped build the scheduler.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"uncertainty-and-condition\",\n      \"text\": \"The cache may reduce latency by about 10% for repeated requests, but cold starts remain untested.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"protected-quotation\",\n      \"text\": \"Her note read: \\\"Not today—but soon.\\\"\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"already-clear\",\n      \"text\": \"Please send the invoice by Friday.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"participial-tail\",\n      \"text\": \"The team launched the dashboard on Tuesday.\",\n      \"note\": \"The edit removes the participial tail and figurative claims ('paradigm shift') as they add no factual information about the launch.\"\n    },\n    {\n      \"id\": \"business-paragraph\",\n      \"text\": \"On Tuesday, I helped deploy the cache to two servers. Median latency for repeated requests fell from 80 ms to 60 ms in our 30-minute test. We have not tested cold starts or the other eight servers. The dashboard still shows yesterday's data.\",\n      \"note\": \"Removed inflated openings, unnecessary interpretations, promotional claims, and closing announcements. Retained all facts, uncertainties, and the dashboard data issue.\"\n    }\n  ]\n}",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5679,
+      "completion_tokens": 349,
+      "total_tokens": 6028,
+      "cost": 0.00282143,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00282143,
+        "upstream_inference_prompt_cost": 0.00238518,
+        "upstream_inference_completions_cost": 0.00043625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.00282143,
+  "output_text": "{\n  \"results\": [\n    {\n      \"id\": \"contribution-boundary\",\n      \"text\": \"I helped build the scheduler.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"uncertainty-and-condition\",\n      \"text\": \"The cache may reduce latency by about 10% for repeated requests, but cold starts remain untested.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"protected-quotation\",\n      \"text\": \"Her note read: \\\"Not today—but soon.\\\"\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"already-clear\",\n      \"text\": \"Please send the invoice by Friday.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"participial-tail\",\n      \"text\": \"The team launched the dashboard on Tuesday.\",\n      \"note\": \"The edit removes the participial tail and figurative claims ('paradigm shift') as they add no factual information about the launch.\"\n    },\n    {\n      \"id\": \"business-paragraph\",\n      \"text\": \"On Tuesday, I helped deploy the cache to two servers. Median latency for repeated requests fell from 80 ms to 60 ms in our 30-minute test. We have not tested cold starts or the other eight servers. The dashboard still shows yesterday's data.\",\n      \"note\": \"Removed inflated openings, unnecessary interpretations, promotional claims, and closing announcements. Retained all facts, uncertainties, and the dashboard data issue.\"\n    }\n  ]\n}",
+  "status": "complete",
+  "parsed_results": [
+    {
+      "id": "contribution-boundary",
+      "text": "I helped build the scheduler.",
+      "note": ""
+    },
+    {
+      "id": "uncertainty-and-condition",
+      "text": "The cache may reduce latency by about 10% for repeated requests, but cold starts remain untested.",
+      "note": ""
+    },
+    {
+      "id": "protected-quotation",
+      "text": "Her note read: \"Not today—but soon.\"",
+      "note": ""
+    },
+    {
+      "id": "already-clear",
+      "text": "Please send the invoice by Friday.",
+      "note": ""
+    },
+    {
+      "id": "participial-tail",
+      "text": "The team launched the dashboard on Tuesday.",
+      "note": "The edit removes the participial tail and figurative claims ('paradigm shift') as they add no factual information about the launch."
+    },
+    {
+      "id": "business-paragraph",
+      "text": "On Tuesday, I helped deploy the cache to two servers. Median latency for repeated requests fell from 80 ms to 60 ms in our 30-minute test. We have not tested cold starts or the other eight servers. The dashboard still shows yesterday's data.",
+      "note": "Removed inflated openings, unnecessary interpretations, promotional claims, and closing announcements. Retained all facts, uncertainties, and the dashboard data issue."
+    }
+  ],
+  "accounted_cost_usd": 0.00282143,
+  "finished_utc": "2026-10-04T01:54:42.692011+00:00",
+  "latency_seconds": 9.816,
+  "original_request_sha256": "d014e3a174edc583dc54bf6550cef7d9a7c130528396aff4974659a8d3d6ab9c"
+}

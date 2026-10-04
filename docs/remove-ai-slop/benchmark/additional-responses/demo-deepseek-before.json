@@ -1,0 +1,91 @@
+{
+  "job_id": "demo-deepseek-before",
+  "requested_model": "deepseek/deepseek-v4.1-flash",
+  "started_utc": "2026-10-04T01:46:09.047224+00:00",
+  "request": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/61a921c68a626059fb7c748191af3599a6c17f0176fa639b26d691e9f3e882cb.txt",
+        "content_sha256": "61a921c68a626059fb7c748191af3599a6c17f0176fa639b26d691e9f3e882cb"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/f44388cd9a52812b65d1ce05f40592d2aad7e37bd7fa5195b4ee838b319b28ed.txt",
+        "content_sha256": "f44388cd9a52812b65d1ce05f40592d2aad7e37bd7fa5195b4ee838b319b28ed"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.6,
+        "completion": 2.4,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    }
+  },
+  "request_sha256": "833ec412b28a5bbe21bb6cba53b8fdada9fe846802521c3e978e7d0744872a3b",
+  "reservation_usd": 0.005886,
+  "response": {
+    "id": "gen-1791078369-ZfDLmMjEwmbKPKU4vGLp",
+    "object": "chat.completion",
+    "created": 1791078369,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Hey team,\n\nJust wanted to share where things stand on the cache work. Maya helped deploy it Tuesday to two of our ten servers. In a 30-minute test, median latency for repeated requests dropped from 80 ms to 60 ms. That's promising, but we haven't tested cold starts or the other eight servers yet. So any reduction in support tickets is still uncertain.\n\nOne blocker: the dashboard is still showing yesterday's data, so we can't fully trust what we're seeing there. Who owns fixing that? Want to make sure we're looking at current numbers before drawing conclusions.\n\nThanks all,\n[Name]",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 143,
+      "completion_tokens": 1427,
+      "total_tokens": 1570,
+      "cost": 0.00057366,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00057366,
+        "upstream_inference_prompt_cost": 2.86e-06,
+        "upstream_inference_completions_cost": 0.0005708
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1300,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.00057366,
+  "output_text": "Hey team,\n\nJust wanted to share where things stand on the cache work. Maya helped deploy it Tuesday to two of our ten servers. In a 30-minute test, median latency for repeated requests dropped from 80 ms to 60 ms. That's promising, but we haven't tested cold starts or the other eight servers yet. So any reduction in support tickets is still uncertain.\n\nOne blocker: the dashboard is still showing yesterday's data, so we can't fully trust what we're seeing there. Who owns fixing that? Want to make sure we're looking at current numbers before drawing conclusions.\n\nThanks all,\n[Name]",
+  "status": "complete",
+  "accounted_cost_usd": 0.00057366,
+  "finished_utc": "2026-10-04T01:46:16.559237+00:00",
+  "latency_seconds": 7.512,
+  "original_request_sha256": "833ec412b28a5bbe21bb6cba53b8fdada9fe846802521c3e978e7d0744872a3b"
+}

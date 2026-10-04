@@ -1,0 +1,178 @@
+{
+  "family": "ernie",
+  "model": "baidu/ernie-4.5-vl-424b-a47b",
+  "arm": "family",
+  "replicate": 0,
+  "prompt_key": "ernie",
+  "job_id": "ernie-0-family",
+  "started_utc": "2026-10-04T01:41:52.713765+00:00",
+  "reservation_usd": 0.03600868,
+  "request": {
+    "model": "baidu/ernie-4.5-vl-424b-a47b",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/59c836dccf761744da1dcbe2934bbae89454b76ba42c0a625acc33c7fc168f1d.txt",
+        "content_sha256": "59c836dccf761744da1dcbe2934bbae89454b76ba42c0a625acc33c7fc168f1d"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a.txt",
+        "content_sha256": "162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.84,
+        "completion": 2.5,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "seed": 20261004,
+    "reasoning": {
+      "enabled": false,
+      "exclude": true
+    }
+  },
+  "prompt_sha256": "59c836dccf761744da1dcbe2934bbae89454b76ba42c0a625acc33c7fc168f1d",
+  "user_payload_sha256": "162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a",
+  "response": {
+    "id": "gen-1791078112-f1zL6M61VsgYacTrTPkS",
+    "object": "chat.completion",
+    "created": 1791078112,
+    "model": "baidu/ernie-4.5-vl-424b-a47b",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"results\": [\n    {\n      \"id\": \"decorative-contrast\",\n      \"text\": \"Run the job once.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"substantive-negation\",\n      \"text\": \"We did not retry failed payments; we retried failed notifications.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"critical-citation\",\n      \"text\": \"We found no improvement in the smaller sample, unlike Lee et al. [4].\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"pat-humor\",\n      \"text\": \"I reconciled the invoices.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"intentional-humor\",\n      \"text\": \"The deployment finally worked. My celebratory dance was undocumented.\",\n      \"note\": \"Retained true anecdote per user request.\"\n    },\n    {\n      \"id\": \"contribution-boundary\",\n      \"text\": \"I helped build the scheduler.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"uncertainty-and-condition\",\n      \"text\": \"The cache may reduce latency by approximately 10% when requests repeat, but cold starts remain untested.\",\n      \"note\": \"Rephrased 'we have not tested' to 'remain untested' for conciseness while preserving uncertainty.\"\n    },\n    {\n      \"id\": \"literal-review-word\",\n      \"text\": \"The tapestry shows a coastal scene.\",\n      \"note\": \"Replaced 'depicts' with 'shows' and 'landscape' with 'scene' for clarity; original meaning preserved.\"\n    },\n    {\n      \"id\": \"protected-quotation\",\n      \"text\": \"Her note read: \\\"Not today—but soon.\\\"\",\n      \"note\": \"Removed ceremonial opening; quotation preserved exactly.\"\n    },\n    {\n      \"id\": \"already-clear\",\n      \"text\": \"Please send the invoice by Friday.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"participial-tail\",\n      \"text\": \"The team launched the dashboard on Tuesday. This is a significant update.\",\n      \"note\": \"Removed participial tail and promotional language; retained factual launch announcement.\"\n    },\n    {\n      \"id\": \"aspiration-not-capability\",\n      \"text\": \"The prototype aims to detect duplicate invoices. We have not tested its accuracy. It may help the finance team.\",\n      \"note\": \"Removed untested claims about efficiency commitment.\"\n    },\n    {\n      \"id\": \"mathematical-representation\",\n      \"text\": \"The vector represents velocity. Robust regression estimates the slope while reducing outlier influence.\",\n      \"note\": \"Replaced 'limiting the effect' with 'reducing influence' for conciseness; mathematical meaning preserved.\"\n    },\n    {\n      \"id\": \"plain-punctuation\",\n      \"text\": \"The migration is complete. The manager said, \\\"Ready to launch.\\\" We still need to check the backups.\",\n      \"note\": \"Applied plain punctuation: removed dash and emoji, used straight quotes.\"\n    },\n    {\n      \"id\": \"business-paragraph\",\n      \"text\": \"On Tuesday, I helped deploy the cache to two servers. Median latency for repeated requests fell from 80 ms to 60 ms in our 30-minute test. We have not tested cold starts or the other eight servers. The dashboard still shows yesterday's data.\",\n      \"note\": \"Removed all promotional language, ceremonial openings, and unsubstantiated claims. Retained all facts, uncertainties, and the latency result.\"\n    },\n    {\n      \"id\": \"useful-parallel-list\",\n      \"text\": \"Before release:\\n- Verify the signature.\\n- Verify the checksum.\\n- Verify the version.\",\n      \"note\": \"\"\n    }\n  ]\n}",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6153,
+      "completion_tokens": 874,
+      "total_tokens": 7027,
+      "cost": 0.00367676,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00367676,
+        "upstream_inference_prompt_cost": 0.00258426,
+        "upstream_inference_completions_cost": 0.0010925
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.00367676,
+  "parsed_results": [
+    {
+      "id": "decorative-contrast",
+      "text": "Run the job once.",
+      "note": ""
+    },
+    {
+      "id": "substantive-negation",
+      "text": "We did not retry failed payments; we retried failed notifications.",
+      "note": ""
+    },
+    {
+      "id": "critical-citation",
+      "text": "We found no improvement in the smaller sample, unlike Lee et al. [4].",
+      "note": ""
+    },
+    {
+      "id": "pat-humor",
+      "text": "I reconciled the invoices.",
+      "note": ""
+    },
+    {
+      "id": "intentional-humor",
+      "text": "The deployment finally worked. My celebratory dance was undocumented.",
+      "note": "Retained true anecdote per user request."
+    },
+    {
+      "id": "contribution-boundary",
+      "text": "I helped build the scheduler.",
+      "note": ""
+    },
+    {
+      "id": "uncertainty-and-condition",
+      "text": "The cache may reduce latency by approximately 10% when requests repeat, but cold starts remain untested.",
+      "note": "Rephrased 'we have not tested' to 'remain untested' for conciseness while preserving uncertainty."
+    },
+    {
+      "id": "literal-review-word",
+      "text": "The tapestry shows a coastal scene.",
+      "note": "Replaced 'depicts' with 'shows' and 'landscape' with 'scene' for clarity; original meaning preserved."
+    },
+    {
+      "id": "protected-quotation",
+      "text": "Her note read: \"Not today—but soon.\"",
+      "note": "Removed ceremonial opening; quotation preserved exactly."
+    },
+    {
+      "id": "already-clear",
+      "text": "Please send the invoice by Friday.",
+      "note": ""
+    },
+    {
+      "id": "participial-tail",
+      "text": "The team launched the dashboard on Tuesday. This is a significant update.",
+      "note": "Removed participial tail and promotional language; retained factual launch announcement."
+    },
+    {
+      "id": "aspiration-not-capability",
+      "text": "The prototype aims to detect duplicate invoices. We have not tested its accuracy. It may help the finance team.",
+      "note": "Removed untested claims about efficiency commitment."
+    },
+    {
+      "id": "mathematical-representation",
+      "text": "The vector represents velocity. Robust regression estimates the slope while reducing outlier influence.",
+      "note": "Replaced 'limiting the effect' with 'reducing influence' for conciseness; mathematical meaning preserved."
+    },
+    {
+      "id": "plain-punctuation",
+      "text": "The migration is complete. The manager said, \"Ready to launch.\" We still need to check the backups.",
+      "note": "Applied plain punctuation: removed dash and emoji, used straight quotes."
+    },
+    {
+      "id": "business-paragraph",
+      "text": "On Tuesday, I helped deploy the cache to two servers. Median latency for repeated requests fell from 80 ms to 60 ms in our 30-minute test. We have not tested cold starts or the other eight servers. The dashboard still shows yesterday's data.",
+      "note": "Removed all promotional language, ceremonial openings, and unsubstantiated claims. Retained all facts, uncertainties, and the latency result."
+    },
+    {
+      "id": "useful-parallel-list",
+      "text": "Before release:\n- Verify the signature.\n- Verify the checksum.\n- Verify the version.",
+      "note": ""
+    }
+  ],
+  "parse_error": null,
+  "status": "complete",
+  "finished_utc": "2026-10-04T01:42:16.401404+00:00",
+  "latency_seconds": 23.688,
+  "accounted_cost_usd": 0.00367676,
+  "original_request_sha256": "bde16a5584d3be0a775c88fb9c05b8427daac079676680edbe2b2ebaacc349ca"
+}

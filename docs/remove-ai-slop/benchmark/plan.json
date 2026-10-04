@@ -1,0 +1,854 @@
+{
+  "created_utc": "2026-10-04",
+  "user_authorized_max_usd": 20,
+  "runner_max_usd": 4,
+  "purpose": "Compare baseline, general skill, and family edition on identical editing cases.",
+  "selection": "One available writing-capable representative per family; versions are catalog IDs, not guaranteed immutable provider snapshots.",
+  "case_count": 16,
+  "development_cases": 10,
+  "new_cases": 6,
+  "new_case_limit": "Written by the skill author after the prompt draft; not an independent held-out corpus.",
+  "replicate_policy": "One pass for all 14 families; second pass for the five preselected families.",
+  "max_output_tokens": 4096,
+  "concurrency": 2,
+  "jobs": [
+    {
+      "family": "gpt",
+      "model": "openai/gpt-6.1-sol",
+      "arm": "general",
+      "replicate": 0,
+      "prompt_key": "general"
+    },
+    {
+      "family": "gpt",
+      "model": "openai/gpt-6.1-sol",
+      "arm": "family",
+      "replicate": 0,
+      "prompt_key": "gpt"
+    },
+    {
+      "family": "gpt",
+      "model": "openai/gpt-6.1-sol",
+      "arm": "baseline",
+      "replicate": 0,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "claude",
+      "model": "anthropic/claude-sonnet-5.5",
+      "arm": "baseline",
+      "replicate": 0,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "claude",
+      "model": "anthropic/claude-sonnet-5.5",
+      "arm": "family",
+      "replicate": 0,
+      "prompt_key": "claude"
+    },
+    {
+      "family": "claude",
+      "model": "anthropic/claude-sonnet-5.5",
+      "arm": "general",
+      "replicate": 0,
+      "prompt_key": "general"
+    },
+    {
+      "family": "gemini",
+      "model": "google/gemini-3.8-flash",
+      "arm": "family",
+      "replicate": 0,
+      "prompt_key": "gemini"
+    },
+    {
+      "family": "gemini",
+      "model": "google/gemini-3.8-flash",
+      "arm": "baseline",
+      "replicate": 0,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "gemini",
+      "model": "google/gemini-3.8-flash",
+      "arm": "general",
+      "replicate": 0,
+      "prompt_key": "general"
+    },
+    {
+      "family": "grok",
+      "model": "x-ai/grok-4.7",
+      "arm": "general",
+      "replicate": 0,
+      "prompt_key": "general"
+    },
+    {
+      "family": "grok",
+      "model": "x-ai/grok-4.7",
+      "arm": "baseline",
+      "replicate": 0,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "grok",
+      "model": "x-ai/grok-4.7",
+      "arm": "family",
+      "replicate": 0,
+      "prompt_key": "grok"
+    },
+    {
+      "family": "deepseek",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "arm": "family",
+      "replicate": 0,
+      "prompt_key": "deepseek"
+    },
+    {
+      "family": "deepseek",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "arm": "baseline",
+      "replicate": 0,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "deepseek",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "arm": "general",
+      "replicate": 0,
+      "prompt_key": "general"
+    },
+    {
+      "family": "qwen",
+      "model": "qwen/qwen3.8-max-0902",
+      "arm": "baseline",
+      "replicate": 0,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "qwen",
+      "model": "qwen/qwen3.8-max-0902",
+      "arm": "family",
+      "replicate": 0,
+      "prompt_key": "qwen"
+    },
+    {
+      "family": "qwen",
+      "model": "qwen/qwen3.8-max-0902",
+      "arm": "general",
+      "replicate": 0,
+      "prompt_key": "general"
+    },
+    {
+      "family": "meta",
+      "model": "meta-llama/llama-4-maverick",
+      "arm": "general",
+      "replicate": 0,
+      "prompt_key": "general"
+    },
+    {
+      "family": "meta",
+      "model": "meta-llama/llama-4-maverick",
+      "arm": "family",
+      "replicate": 0,
+      "prompt_key": "meta"
+    },
+    {
+      "family": "meta",
+      "model": "meta-llama/llama-4-maverick",
+      "arm": "baseline",
+      "replicate": 0,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "mistral",
+      "model": "mistralai/mistral-medium-3-5",
+      "arm": "general",
+      "replicate": 0,
+      "prompt_key": "general"
+    },
+    {
+      "family": "mistral",
+      "model": "mistralai/mistral-medium-3-5",
+      "arm": "family",
+      "replicate": 0,
+      "prompt_key": "mistral"
+    },
+    {
+      "family": "mistral",
+      "model": "mistralai/mistral-medium-3-5",
+      "arm": "baseline",
+      "replicate": 0,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "gemma",
+      "model": "google/gemma-4-31b-it",
+      "arm": "family",
+      "replicate": 0,
+      "prompt_key": "gemma"
+    },
+    {
+      "family": "gemma",
+      "model": "google/gemma-4-31b-it",
+      "arm": "general",
+      "replicate": 0,
+      "prompt_key": "general"
+    },
+    {
+      "family": "gemma",
+      "model": "google/gemma-4-31b-it",
+      "arm": "baseline",
+      "replicate": 0,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "kimi",
+      "model": "moonshotai/kimi-k3",
+      "arm": "baseline",
+      "replicate": 0,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "kimi",
+      "model": "moonshotai/kimi-k3",
+      "arm": "family",
+      "replicate": 0,
+      "prompt_key": "kimi"
+    },
+    {
+      "family": "kimi",
+      "model": "moonshotai/kimi-k3",
+      "arm": "general",
+      "replicate": 0,
+      "prompt_key": "general"
+    },
+    {
+      "family": "glm",
+      "model": "z-ai/glm-5.3-flashx",
+      "arm": "general",
+      "replicate": 0,
+      "prompt_key": "general"
+    },
+    {
+      "family": "glm",
+      "model": "z-ai/glm-5.3-flashx",
+      "arm": "family",
+      "replicate": 0,
+      "prompt_key": "glm"
+    },
+    {
+      "family": "glm",
+      "model": "z-ai/glm-5.3-flashx",
+      "arm": "baseline",
+      "replicate": 0,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "command",
+      "model": "cohere/command-a-plus",
+      "arm": "general",
+      "replicate": 0,
+      "prompt_key": "general"
+    },
+    {
+      "family": "command",
+      "model": "cohere/command-a-plus",
+      "arm": "baseline",
+      "replicate": 0,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "command",
+      "model": "cohere/command-a-plus",
+      "arm": "family",
+      "replicate": 0,
+      "prompt_key": "command"
+    },
+    {
+      "family": "ernie",
+      "model": "baidu/ernie-4.5-vl-424b-a47b",
+      "arm": "general",
+      "replicate": 0,
+      "prompt_key": "general"
+    },
+    {
+      "family": "ernie",
+      "model": "baidu/ernie-4.5-vl-424b-a47b",
+      "arm": "family",
+      "replicate": 0,
+      "prompt_key": "ernie"
+    },
+    {
+      "family": "ernie",
+      "model": "baidu/ernie-4.5-vl-424b-a47b",
+      "arm": "baseline",
+      "replicate": 0,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "minimax",
+      "model": "minimax/minimax-m3",
+      "arm": "baseline",
+      "replicate": 0,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "minimax",
+      "model": "minimax/minimax-m3",
+      "arm": "family",
+      "replicate": 0,
+      "prompt_key": "minimax"
+    },
+    {
+      "family": "minimax",
+      "model": "minimax/minimax-m3",
+      "arm": "general",
+      "replicate": 0,
+      "prompt_key": "general"
+    },
+    {
+      "family": "gpt",
+      "model": "openai/gpt-6.1-sol",
+      "arm": "family",
+      "replicate": 1,
+      "prompt_key": "gpt"
+    },
+    {
+      "family": "gpt",
+      "model": "openai/gpt-6.1-sol",
+      "arm": "general",
+      "replicate": 1,
+      "prompt_key": "general"
+    },
+    {
+      "family": "gpt",
+      "model": "openai/gpt-6.1-sol",
+      "arm": "baseline",
+      "replicate": 1,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "claude",
+      "model": "anthropic/claude-sonnet-5.5",
+      "arm": "general",
+      "replicate": 1,
+      "prompt_key": "general"
+    },
+    {
+      "family": "claude",
+      "model": "anthropic/claude-sonnet-5.5",
+      "arm": "family",
+      "replicate": 1,
+      "prompt_key": "claude"
+    },
+    {
+      "family": "claude",
+      "model": "anthropic/claude-sonnet-5.5",
+      "arm": "baseline",
+      "replicate": 1,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "gemini",
+      "model": "google/gemini-3.8-flash",
+      "arm": "baseline",
+      "replicate": 1,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "gemini",
+      "model": "google/gemini-3.8-flash",
+      "arm": "family",
+      "replicate": 1,
+      "prompt_key": "gemini"
+    },
+    {
+      "family": "gemini",
+      "model": "google/gemini-3.8-flash",
+      "arm": "general",
+      "replicate": 1,
+      "prompt_key": "general"
+    },
+    {
+      "family": "deepseek",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "arm": "baseline",
+      "replicate": 1,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "deepseek",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "arm": "general",
+      "replicate": 1,
+      "prompt_key": "general"
+    },
+    {
+      "family": "deepseek",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "arm": "family",
+      "replicate": 1,
+      "prompt_key": "deepseek"
+    },
+    {
+      "family": "qwen",
+      "model": "qwen/qwen3.8-max-0902",
+      "arm": "baseline",
+      "replicate": 1,
+      "prompt_key": "baseline"
+    },
+    {
+      "family": "qwen",
+      "model": "qwen/qwen3.8-max-0902",
+      "arm": "family",
+      "replicate": 1,
+      "prompt_key": "qwen"
+    },
+    {
+      "family": "qwen",
+      "model": "qwen/qwen3.8-max-0902",
+      "arm": "general",
+      "replicate": 1,
+      "prompt_key": "general"
+    }
+  ],
+  "model_metadata": {
+    "gpt": {
+      "id": "openai/gpt-6.1-sol",
+      "name": "OpenAI: GPT-6.1 Sol",
+      "created": 1790702882,
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.0000025",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.000004",
+            "completion": "0.000015",
+            "input_cache_read": "0.0000002",
+            "input_cache_write": "0.000005"
+          }
+        ]
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "context_length": 1050000
+    },
+    "claude": {
+      "id": "anthropic/claude-sonnet-5.5",
+      "name": "Anthropic: Claude Sonnet 5.5",
+      "created": 1790618686,
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
+        "input_cache_write_1h": "0.000004"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "context_length": 1000000
+    },
+    "gemini": {
+      "id": "google/gemini-3.8-flash",
+      "name": "Google: Gemini 3.8 Flash",
+      "created": 1788362056,
+      "pricing": {
+        "prompt": "0.00000075",
+        "completion": "0.00000375",
+        "image": "0.00000075",
+        "audio": "0.00000075",
+        "input_audio_cache": "0.000000075",
+        "web_search": "0.014",
+        "internal_reasoning": "0.00000375",
+        "input_cache_read": "0.000000075",
+        "input_cache_write": "0.0000000416666666666667"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "context_length": 1048576
+    },
+    "grok": {
+      "id": "x-ai/grok-4.7",
+      "name": "SpaceXAI: Grok 4.7",
+      "created": 1790007541,
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000006",
+        "web_search": "0.005",
+        "input_cache_read": "0.0000005",
+        "overrides": [
+          {
+            "min_prompt_tokens": 200000,
+            "prompt": "0.000004",
+            "completion": "0.000012",
+            "input_cache_read": "0.000001"
+          }
+        ]
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "context_length": 500000
+    },
+    "deepseek": {
+      "id": "deepseek/deepseek-v4.1-flash",
+      "name": "DeepSeek: DeepSeek V4.1 Flash",
+      "created": 1789021285,
+      "pricing": {
+        "prompt": "0.0000003",
+        "completion": "0.0000012",
+        "input_cache_read": "0.000000006"
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "context_length": 1048576
+    },
+    "qwen": {
+      "id": "qwen/qwen3.8-max-0902",
+      "name": "Qwen: Qwen3.8 Max (0902)",
+      "created": 1788469704,
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000006",
+        "input_cache_read": "0.00000025",
+        "input_cache_write": "0.0000025"
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "context_length": 1000000
+    },
+    "meta": {
+      "id": "meta-llama/llama-4-maverick",
+      "name": "Meta: Llama 4 Maverick",
+      "created": 1743881822,
+      "pricing": {
+        "prompt": "0.0000001875",
+        "completion": "0.0000006525"
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "context_length": 1048576
+    },
+    "mistral": {
+      "id": "mistralai/mistral-medium-3-5",
+      "name": "Mistral: Mistral Medium 3.5",
+      "created": 1777570439,
+      "pricing": {
+        "prompt": "0.0000015",
+        "completion": "0.0000075"
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "context_length": 262144
+    },
+    "gemma": {
+      "id": "google/gemma-4-31b-it",
+      "name": "Google: Gemma 4 31B",
+      "created": 1775148486,
+      "pricing": {
+        "prompt": "0.00000009",
+        "completion": "0.00000034",
+        "input_cache_read": "0.00000005"
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "context_length": 262144
+    },
+    "kimi": {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "created": 1784215858,
+      "pricing": {
+        "prompt": "0.000000499",
+        "completion": "0.000013",
+        "input_cache_read": "0.00000049"
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "context_length": 1048576
+    },
+    "glm": {
+      "id": "z-ai/glm-5.3-flashx",
+      "name": "Z.ai: GLM 5.3 FlashX",
+      "created": 1789744020,
+      "pricing": {
+        "prompt": "0.00000037",
+        "completion": "0.00000125",
+        "input_cache_read": "0.00000009"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "context_length": 1048576
+    },
+    "command": {
+      "id": "cohere/command-a-plus",
+      "name": "Cohere: Command A+",
+      "created": 1790102896,
+      "pricing": {
+        "prompt": "0.0000003",
+        "completion": "0.0000015",
+        "input_cache_read": "0.00000015"
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "context_length": 192000
+    },
+    "ernie": {
+      "id": "baidu/ernie-4.5-vl-424b-a47b",
+      "name": "Baidu: ERNIE 4.5 VL 424B A47B ",
+      "created": 1751300903,
+      "pricing": {
+        "prompt": "0.00000042",
+        "completion": "0.00000125"
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "context_length": 123000
+    },
+    "minimax": {
+      "id": "minimax/minimax-m3",
+      "name": "MiniMax: MiniMax M3",
+      "created": 1780245374,
+      "pricing": {
+        "prompt": "0.0000003",
+        "completion": "0.0000012",
+        "input_cache_read": "0.00000006"
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "context_length": 1048576
+    }
+  },
+  "prompt_sha256": {
+    "baseline": "fb46a9972be9e8e00d55c00399d207eede659d5f6fd998266a6221d302db67b0",
+    "general": "c5d7cae1aa58453a19a329e1cb2a86adc851bbefff9faee8c7c2509aef7db992",
+    "gpt": "d5f899dc246008b4d37fe6442b7204803cea8ddb908167a230483bc35b5e3b41",
+    "claude": "ca54ab683e698b41f5ab72854b250f8da719c572c4e348d57a0e53171c8eb39f",
+    "gemini": "1c77381c155878735f0bab509b8ed0d4470456ff92a97020e5152fb429a50216",
+    "grok": "86aa3fc828fe198ac4fa1dc785dafaa61bfb9df23a9e5bca81eec09519cddb0a",
+    "deepseek": "87f4258b8d0e63f24b8c051ebd1ff476c0579f816a8c6d8787e4196954b50db4",
+    "qwen": "d5abd3ef1840d4952d1058a5256063cab9c12e5979ac2f8bd2ff5cfcc709eee1",
+    "meta": "0abbce7da54ee1b366e6e82d18a22a39a2dba32ea26497ead2e19c4a1d667804",
+    "mistral": "855f6d4202fa85af0c5cf8885b16d5154911bd7cb32e2d65fd3e1d582c3a4338",
+    "gemma": "e2e3cb1250082e67171921cd27b3843f2f6ea3401d422827efacdbe2c70f31df",
+    "kimi": "8316484ba8a536fc7d82a62b56ceaa0db022f767267418ec917efb4f7d9a450f",
+    "glm": "41293c89a2eb1d76a6df7c978b587cea04b6136be3da52e7a18bb65205d291ca",
+    "command": "c29119eed4331b811d5c1ab65f187b6958ed6ca97ebd1b27d8f7bba571dc6fa2",
+    "ernie": "59c836dccf761744da1dcbe2934bbae89454b76ba42c0a625acc33c7fc168f1d",
+    "minimax": "205246f9203a1531c4347c3ee997943924e40c461eb872c39d6b275af0ef8ab1"
+  },
+  "case_sha256": "da33eaed293a19dd2366f3007291afe938b6cc23b24c4c537a793efe1fcfeaf7",
+  "user_payload_sha256": "162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a",
+  "evaluation": "Mechanical constraints reported separately from semantic checks; blind cross-family judge review and disclosed author inspection."
+}

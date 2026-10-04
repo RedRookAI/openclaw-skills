@@ -1,0 +1,90 @@
+{
+  "job_id": "demo-gpt-after",
+  "requested_model": "openai/gpt-6.1-sol",
+  "started_utc": "2026-10-04T01:45:59.811375+00:00",
+  "request": {
+    "model": "openai/gpt-6.1-sol",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/903bee2707f64089f6343250c209fc18c26d562c68feaabb3a7cf66dab0928b5.txt",
+        "content_sha256": "903bee2707f64089f6343250c209fc18c26d562c68feaabb3a7cf66dab0928b5"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/dab1704bc8f374424f6fa3a8d787902de836fefc112b857daa29986f18244d02.txt",
+        "content_sha256": "dab1704bc8f374424f6fa3a8d787902de836fefc112b857daa29986f18244d02"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 4.0,
+        "completion": 20.0,
+        "request": 0
+      }
+    },
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    }
+  },
+  "request_sha256": "686f246a387e32d3f3bd58075f4412b3645ecb81ff03d04f5652cdf7247f1182",
+  "reservation_usd": 0.153236,
+  "response": {
+    "id": "gen-1791078359-AzOIDBA9BVMr2fNUGXlX",
+    "object": "chat.completion",
+    "created": 1791078359,
+    "model": "openai/gpt-6.1-sol",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "Hi team,\n\nMaya helped deploy the cache on Tuesday to two of our ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. We haven't tested cold starts or the other eight servers, so this isn't a fleet-wide result. Any reduction in support tickets is still uncertain.\n\nThe dashboard still shows yesterday's data. Who owns fixing it?\n\nThanks!",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5311,
+      "completion_tokens": 87,
+      "total_tokens": 5398,
+      "cost": 0.014146,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 5308,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.014146,
+        "upstream_inference_prompt_cost": 0.013276,
+        "upstream_inference_completions_cost": 0.00087
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.014146,
+  "output_text": "Hi team,\n\nMaya helped deploy the cache on Tuesday to two of our ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. We haven't tested cold starts or the other eight servers, so this isn't a fleet-wide result. Any reduction in support tickets is still uncertain.\n\nThe dashboard still shows yesterday's data. Who owns fixing it?\n\nThanks!",
+  "status": "complete",
+  "accounted_cost_usd": 0.014146,
+  "finished_utc": "2026-10-04T01:46:02.379244+00:00",
+  "latency_seconds": 2.568,
+  "original_request_sha256": "686f246a387e32d3f3bd58075f4412b3645ecb81ff03d04f5652cdf7247f1182"
+}

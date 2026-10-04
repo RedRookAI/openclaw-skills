@@ -1,0 +1,106 @@
+{
+  "job_id": "demo-grok-after",
+  "requested_model": "x-ai/grok-4.7",
+  "started_utc": "2026-10-04T01:46:18.258369+00:00",
+  "request": {
+    "model": "x-ai/grok-4.7",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/3bc67efcb2ddcda122f22fc7957789bc6d9b997c1e0098c5e17afe8dd5359b2c.txt",
+        "content_sha256": "3bc67efcb2ddcda122f22fc7957789bc6d9b997c1e0098c5e17afe8dd5359b2c"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/2432a28f9ab9591287e4ecf3a31102732355da711760e63c4c84779fffebfab5.txt",
+        "content_sha256": "2432a28f9ab9591287e4ecf3a31102732355da711760e63c4c84779fffebfab5"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 4.0,
+        "completion": 12.0,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    }
+  },
+  "request_sha256": "31e92a099211aa108f172e60691eef1c237e4d0e2a84564970ac7795923c745f",
+  "reservation_usd": 0.135936,
+  "response": {
+    "id": "gen-1791078378-ujVgDD2k0VVX0V5QUJeM",
+    "object": "chat.completion",
+    "created": 1791078378,
+    "model": "x-ai/grok-4.7",
+    "provider": "xAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "Hi everyone,\n\nMaya helped deploy a cache on Tuesday to two of ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. Cold starts and the other eight servers have not been tested. Any reduction in support tickets is uncertain.\n\nThe dashboard still shows yesterday's data. Who owns fixing it?",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "I will remove AI slop from the draft. I will keep the facts, uncertainty, and intended request. I will use a direct peer voice.\n\nI am checking the draft against the brief to flag any unsupported claims.\n\nThe draft contains ceremonial framing and a redundant limitation. The instruction to avoid treating ticket volume as evidence is an interpretation beyond the brief.\n\nI will keep the uncertainty without inventing a stronger policy. I noticed the draft adds a purpose for the dashboard data that is not in the brief. I must decide whether to flag it briefly or return only the edited email.\n\nI will remove the unsupported additions directly from the email. I will not add a commentary preamble or flag unsupported facts, since the user explicitly requested only the edited text.\n\nI will cut the invented phrase about current numbers in front of the team. I will keep the note about not treating ticket volume as evidence, since it is a stance drawn from the uncertainty already stated.\n\nI will remove the extra policy about ticket volume as evidence. The redundant scope note is also unnecessary. I am now drafting the direct peer voice email.\n\nThe draft is now clean. It keeps the uncertainty and asks the dashboard ownership question directly. I am trimming empty closing warmth and punctuation. I still need to decide whether to flag the unsupported \"current numbers\" claim.",
+              "format": "xai-responses-v1",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "D+A0BCrcxkqUvwbkpGxzI9YFo2LBZcjn7Ks/dyzvu7MGrCABZPEH5u3Xzsxr9/hy38Q83oBuOHwb+lvhbzzmlCeUie7Uh2OZwZ2Xzm9Ij9nZc066vZ28/CnmU1ddw/LEfEHHGqvQXCmRKB1Tbe1zeGszEJGJcC1F7At1r/kixRQXEMSvkVcyQRRegqcOFcrnwgpKtgabdTF+VHH6/DTl9gNvrSRE7yXbXb7eTtlyXt/61+CVNCa0PvEyxRJTp+XZhH9Gda0uOtdQmvcPsWFm0kXhfizBLeKdZdfzq/2nlzl6OYAE/UrMnsNLJ3HisgwqsohhtHhKGcKACrh80oNDLvxvehfIwixwt2U2PVE6gNJPFRAJx7UMjoJhsEDNWdZJza1p6nA7KUNsmMXEktV2MKkGzuoICAVnVVsKMymJBCVXp7q/Gs90AXGXyzPgeObb2DvLnFaZFbI2vuDosQuHvpnUr/xbcHj92CXKR1GaMgeNBFWCrWu33vxlCpWDfXJxl17XlKfjpelHbuycfIe34NeDSvw+VjxtJweYPEqDya+FF8kVo0DcOGz+9uPFz/mERXa8qtzZ0CTzHIQqMSMdYP7alczfm456t0Kg9XhN0HW0gZBG5FSvwfc5/TkNERNV7vRLxuBehuHz+EWWytZQQF8R2oW8J+PQaLxTOycJO1bEexV75vJCjHvXl5W2LY/BU/TgXksXtkMMI72G/+WKmjGvPMhovMx7MPDAjQhT+PrXuQzec1aKfa5TiZQzUw9LEqGiXBoFlXkPaT1jNrTA5gzzSu4WutKglnN8etJGYBF72DEYp2hRJTw2Mddr6sU9UczDBz35fkPPQymvfvbzpmaUrfa69D0XgR8wcbB49q6JGCz5l7OGWeRK5HePNtBVuuhWwj0kIY5rT+fcxSLClG2AIpub75PF9vVNE3gDMOi9H+GrbOyuIpwRnzokoRNpUFDyV11e6DIr60RKd7lzPA4WBVk/KviPLIR3ZRUGMAEp1JAPmvUt/1Wqr50NY7Kr/djgDdC0xYQwV/ICPwAXiLLU5vZNb8krK4cVYG4k2MkYPZ4F3oV7ghyL+gxhXGtertRYw0Fu4i43qqQMHufteOqrQYLUN6aCyamLPoc0YRmwwGFxjiL62cNsY1uxtTB/CFrxkfkU5r6CURNmM34TBIsvQMJfoSbJiA7n/0JIe7Cs7CQsilsnP7EoO+9+UshyP0OSz3RRQw872f/4c4SDSoXTLEjXzY5AX4qiiqNFCofCyM6ns+Mol5+MGtyPCoPrHUbYwk0Fuy8WZl8qclBWOAiktGPUnuqhlEMugqqyxc5Vz064PGGZh2l16a0oiZjGeGz5GlYDYMEi0ma+9sHUaSpB8GD9pZ/O40rmFDVvtUfXy/ZqUvfVQyNQ+6VgGf8BNG7D7xM1jVjtHikgmYmhLk94DIltmtQugBlIqkMB1/DtO4R5XukxbANl8zXoK+JMzUiNDN8wFx0VRK4OBnseaKVx3wyMDCREeBOoBsDwD+XT/9aokMSDBDMRBBLzWTDBjDkC0yWSSKC/4wRKwLNAmivCuchzAXwMC0N0AA0kyrBxR7PAf6JqN7ig8MRp/Zk6OcS5D7Zyp7BYjnT1I1kES6/qhYxM21lW+fHiZylOvbBex9nLZA9BRdi3In5a//9V011YU5Ue0+/N3Q8LEZrZDq8SxqwHGOQZKvw0V91waKxcxW2qEJPdNjeoZ6WU4yDfOnsieil9TTmT9iO9PGd0dhH8lAc+h1ReXyRiX0I79ljattOXWStb5COmGYvpOV1z7fyfonqDG4uxbTg2Vwr/X0CrSLIYAz7bPLexk9KfToQIC5+dgxtE45QZe1B7qt/gBTaLaJhvO+4hGxhmtT5aOqpTUkK1GSTaOqlmkFlLmlrmVegM6H7W+A6uwulcI3aF8BAmU0UOglRwLNyGgwgCAAmJ67UI5ByiJaKqR0Os/ov/WsNrrxr4qcbzvzqZgZXtGJ2nzdE/GGGCIqZcRZ7PCWm+i3TFQCL9HhyFPgY38eVfwuAMVnpVq/tfpmuVAb5WwIvDw2tUlGrkPg0Af1oBpNVesXq1wHmiIVh7jU7qQdKorJBMnEKPGrNakYEUSNSmXv3wyLSOwGUTLlnAngb+BJ9vdMl10ah4TbAp7b4Lx+3s8t81eMRURCnrgCX57wbL1tDYb4ipwNStQjpsTeNEfFNOLum9IMmOq7hoAE3XjWT/D7o53Rkz8VAi0iWAuArv+VTmwZdFjwMhg9KQ7u1UfJ5NLaASTbMA9nki7hNOsZtUYpvRrr2mZ2XJnUiXRWVhihj/O/ZorxE9BdgMnOd4prhCYFLP0LBa4gAFdQ8E5sq7PdjgNcbGMHk2BAYs62izQVFBqzxru8Zi9Mgh5y3qfCiFvYbVOE85jc7S9Auny5Vesk6t6P/H8fdu3l46txIwAPm2txSjLe2vk6f4/7Row2N6PW9e7jmV16wZN7wry6LtnjaKizxtFTBfZ13gtSGWfusIO118xFWG0hkUee9cbl22BRun0fW3ty8MKJ5i+lOLB6EFfCIA1cPNxCPC5mGAyIsuYadP1rKKkmXmvPO+/yK6LrGo1enJE7ChfUT82x8nwaL1zpS7Q7MZRIZjUTm928872bpb4PyI81qY5UdvmJvt3GwAd4EmfVdZtsGRKzr+dQXubpA8ESGEApiKpLTqGkcMqfWx3b0/hYzZTr/5MUXrJ/6lCuUyijYAmyNlJXsDCNsF54G34KCisrKm/RZV2ZRnT1u+GXAJrKFzjRcIPvxYhCBr20Kw1ayZ8PBVRg5jDF+5ZR7PRS7IvxzIqFFpmDaCGRHUA7L7vUTY/T+P2Q3Bpu8uUKZRzBUtvd1PWeiagPI/E5us7lO6ulVhru6/r9S5VOzNJtL3wpeMShZkfGkfGVTMrOl0ZpgTUej7hoNaYhOV0wgP4AvStF9gHYL/zoDyqyPGdpC8ke5qY7UOLKVvzcHhtV+nMfJeMSNEmsVYyiTNWab+r4/e7O8xMHVFEl+0dbAl9oQpO2a66Uqvwo1sFzBkhfigMy+4Un7q2SusBIiCwEDMvysiR5mViEgVVM8o9SI0zFg55RRAzFwBUHFz6xOq52zrZ5b+065+DiPmytrBCkcm2pQar0hpncz9090vMi9G4/yHamJVZEwWuLlvKcy1UvmFPP/X14KeB4IIcj/jSeczfkGMKbaoQnMsWweo15GNsmsWkwOFfKYEYmNF2pL4HVniAo3m9r+3IJRRvVNpcS53wA0//58FlfrGdpmXap0YYRcZJXUWQIcQVBwhGi3Tl9tcVZg92dmJkZVXvhJIBJPiXoYen72dK3tkXSXthzRaT6RE+YZ4qN1o4KTroPvU/51B8F0yr36wm4CEjXoMWhk401zvIOeUymwJcMVnziu6MLWKfV7fJ90ZGaGFoSbmDy1gnvy/e1yy6RbnzUH4a4stTHe106Dw/lhGkzwnUCcXHse2nwTJlL+lC5wy7XxIqSIk/CCeHK+k62BlEi/FLewa2yFRL0+HSte7Cq5Fug1QZm/eBE2dmilcA8EwX3JfD9/xCE4QNaNbC/VhFbWurBudtHc7KJdnYrtObvAXbsWw/4YnkM0FS5TP+8wNFrAn1lnEreOuZnEF3grK7tEhfPqEPrRJ0X3Mh8EjgY/O94/9cb8MsPXI66z+cefYC2JQFoyY6zqhLARWNF+Ja+SGtq/8U/5MwnmOkwGkkfxTbehorz0llxlYPCwK+bVlCYaJZt83v/7ZfwsPl2DXKxhl8K5//0mii3Ck6XWeztQ64Fq/2BSSZ3YI/5ig4RLGGgykrMjznew7NDwX2YA8dGr0VSJQZ9MidyAzllNLBTMuvMRjvebBgIpo8MfbgU6dkVwG3ZXWkDTYlr9XQrwVezrs2Uvf67CX9Tz2uFgCPuG9gVCuKshV5cqFX7BO2GsBXw79PRpTYBMUHxDSPv4+wYBdAjLaX4OD5SQgGXH26o//jsgomCUeyEZW7WWGcGfwmc93tyZlh97qMC2xRGYzjyZL6TgmAFqL/QbXi28raNJ+H4Kusfej6MpGLfPrUWRaRsHmqZuudmHCRc1dN09WQz9649lMP/aWDp8ilnkNrn42Jp25gQ57ACOaOBLhQXulfMixX3NNiOLw2tI1tZSv8f6jDF2rH4krXdOVAoXrysL+ze5pSIj4qxD87rRqJx9o0eiu3USScse6N645OUI1gc4SRRo36B9kjM3PXHdw95tQGbugJRGBboPzhqn6awhEMmHA0Rf1ckBcRMsU0Ws7EKHVqN2gscFXeExAKwDc0eBarn64iBJWwGx+R9yy/aU7kul0tbntBFPU07EshiyOMWfq27AHAnDn8TMXmk/LIXNZE5DMPCMic5dSXVv6gAfivsQT5SnbLDsVPETVF1qvStC4Si8uSHRXsZTm7pgB4gyu9Btp5gU6KZs6EQqDlS84g9kBL+rnlxDgqAhW4v9WbHbkmBSh0HVCJgmAbD5Lk/S5SejNMp7K6bqkR8cnlWAytpnUjsATP9sYiNyl+np+sUcyC/UN5kTcTbNDK2xxxvTDLCojo0NaPPN4s5ZJA1Zab/KMzUP4Zvd4gxaenMVmv3Fpq7aivNUY+r7wgqi4wPd594jFAvoGo3zNyuRkjliZkAuyvkowFqVz/sp/pTS4bTYyshQHrRMZqBA8Ko80nL/Ftx8Ci3hHncF9rgEiYVlArpaoJFcxizwkB+tpp/AvrMWSiygnga/ZqZ13OGFY7moP6uf+enOBZThEzn9Y132Wc+t1qYWOyVKi5qgUiJj79uSlykNqS02HL9musjgcZiOpsss60WSHnVqTgtnPLpoXbLnNCk3vmKP+EYSktxJcR3bkl6yaQ6BS6YtTviUUlnGTrTQgflMoMQQ83mvrAp34UHUlWPQfGa4b0bwXOTqGl7/DKHU02D3Q4IcVC//w/A44Wm4tgLUcHZsn4f+RZqaZq2y1FPVskkTwUzUQNrxNO36o/1L0pXF99/6MDBAHaEzBlaKWW8ggca4SzaK2lRLpIzkcc7AHWoBkhGk65FyuiKPpKe/NmvnjSbhxMS7cyIOGEDA9xraQFeOHGTv15z/lBIR+9ex1WUvzNcwMyn+Y9KQHHTfI+5VI6cunroUfxitTjqT6roROKeOBrEqxMCHxB+LpC9NeDSjH1y12EmK6U9RHehIlplHUFyfwHWGxzEyiHMoGkLT1xhIfpC+D/VRh7buyJJX8tZDTmI4+Emi8EFbx9X/RvI8AcJGeNL+A2F32p29dOAEYlxJmrlcDB5LlFvzNlz+b9FGO0BeTxZfH+sG8yeK6dda2T1dvVebbeQTvn5/kaOMnk2n0titf2He7Ya0teEHhJsLQna8qXzkqWPfqmuGtS2SW4mmatMWIvnHe3/WjlVwGiNAsMycpmaNnwcF8f+vqrAoZiQGld6jGlcK3LxqOefPYBqwGFGJz4RYAzD4p+gVJoW4oJvWO6ffesbpqbB/jsdDcmN8r0ZWXToJBHKMjPM2FqCcehA+RRYln60zss0nmhCbdwnxX1R2ihmJTVykrYhNmp0OH/duicXngw2gwz4JNa2OnCzdqAEpCLiRT8PILcMbyq4CccD5RPO/vrMzE5iu81Y4Uygv6FAwj2RjrkrknXCCADN5lbqL9W0PW7LHWvphbq9gFrsb3SNFUkr7zbdKY/pvCtofR+2CgkjdgaeGkFQnNPA3SSftJx9iifSRl+Zwqnt7yc6dwKUC7dEHdHE1vATECEeLfXfgKo9kgRDsMyUQKucMWZk8edgE48eKubjNGAPGSlL3qZgVvOULMxc8CiSY1wmXeg7SSEs3oE6cUWLpiwgAtBNnQQR6O2mGfT1pyVtxsaqBZ0P0OVUEl/k7n3wNVWFPSexh0eyq9PHK1vuGuiOD6CdQshATqql8Wux6BdfRH2v1lzKoycsgRdEN7F+ixnYrTKl9VeWRNBplUH7bTCTutji14yD2SkwbNrpsg0g2BJgQBThta/+RzCn02eD8g7lLP2YiQdEmFJQ27fFt9Utswm18Drt9EqYSmgt0LNEc6XI8qHNlDq+qlev+GIsKxLXGcOCwi8psGoiB1AZ3KNITHlJ8d8/rHsL+GKt3uPPHcOXlKGVzRGXYF/QQ/4JmDq8GmwxY1Gc5P8s18s1ZsYx/V1pP4itg84SaNqacKNE5Xbl2QFhX+k88jwhHsyfVR7b+THmc579AKovyhFJyjZk0mJDvIRMynm5SEL1j9udflDMlK4fXEXXX8WCgEbdF9xsvpQCeg7+gctW3GC0aCBIoj0Oj66Gki59zckcfMreImz8efMnYDFz6eNuAwrTTdC1vk59wB4V4i7Dbw2zS861nazYGfHBHjjqYsl7x9ChCM6j3LXoVa9AnZ26D+/EegLToZBy/zuUfTXp9uGQDzEvGtqlCIDmspPM2gyn4VjfZi4hxymmtWbt6cqGrzyOme0OoZ1Ti8qw+SkHu4Lz7O3FB9e9sxt507RaW4YC0hwhPEB0bo8yQdlVSq7Y+0r1RG7PYVaoz5+c5CyE6IJVD7uFGwb9nou3OLVsgrwbe4vEduDgljRdjSCgrqCmAyLwmEmZwmpVKItmLjSTeFaQWgHrGLeAP2XF1NBAX/um/DswfdOD+lBqW5T6Dg/a75YKY8iLxnXpYwvz9/.eyJlbmRwb2ludF9zbHVnIjoieC1haS9ncm9rLTQuNy0yMDI2MDkxNnx4YWkvemRyIn0",
+              "format": "xai-responses-v1",
+              "id": "rs_99d44f1f-82b1-9d6f-a5b5-f60159657373",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6511,
+      "completion_tokens": 1120,
+      "total_tokens": 7631,
+      "cost": 0.018014,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.018014,
+        "upstream_inference_prompt_cost": 0.011294,
+        "upstream_inference_completions_cost": 0.00672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1048,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.018014,
+  "output_text": "Hi everyone,\n\nMaya helped deploy a cache on Tuesday to two of ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. Cold starts and the other eight servers have not been tested. Any reduction in support tickets is uncertain.\n\nThe dashboard still shows yesterday's data. Who owns fixing it?",
+  "status": "complete",
+  "accounted_cost_usd": 0.018014,
+  "finished_utc": "2026-10-04T01:46:29.221964+00:00",
+  "latency_seconds": 10.964,
+  "original_request_sha256": "31e92a099211aa108f172e60691eef1c237e4d0e2a84564970ac7795923c745f"
+}

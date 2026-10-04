@@ -1,0 +1,497 @@
+{
+  "job_id": "judge-gemma-0-0",
+  "requested_model": "openai/gpt-6-luna",
+  "started_utc": "2026-10-04T01:47:46.076716+00:00",
+  "request": {
+    "model": "openai/gpt-6-luna",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05.txt",
+        "content_sha256": "4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/8bc2e418e1d57a1422e291ceb955b0c7a9f57e0253d6ce5fca33b8e5e30f9f10.txt",
+        "content_sha256": "8bc2e418e1d57a1422e291ceb955b0c7a9f57e0253d6ce5fca33b8e5e30f9f10"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.2,
+        "completion": 1.0,
+        "request": 0
+      }
+    },
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "cb1d30c6d5ebcdccae55f9e79cb763ccb5ae6777c466769799f226e04ab249b9",
+  "reservation_usd": 0.0071144,
+  "response": {
+    "id": "gen-1791078466-nsitQUlfQg1qsx1BGMiO",
+    "object": "chat.completion",
+    "created": 1791078466,
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Keeps the unwanted rhetorical contrast instead of removing it.\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":false,\"reason\":\"Rephrases the intended humorous wording unnecessarily.\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"“Not yet tested” implies future testing is expected, which the source does not establish.\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"“Not yet tested” suggests future testing is expected, which the source does not say.\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":false,\"reason\":\"Unnecessarily removes the checklist’s consistent end punctuation.\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbBHfnywe8vT_xmCrMB7EC_PLbF2Q_07ZnoNLp4vW3j4UEX4Fwm0nV7bPCR2XCWTu3IzByszqHgHtvpmiYYUECg1Mz_R9_0aMmom-XoKpwrZ2dQ9HSv7pDbhxzDzBnCsAhEeRjQ1z0XSFpvTUBQplSuTruqztm6cb-cR4zSdiTlTuXLLljOsPSOjOTq62JtJWlr8bpgNoHUYuQkUrqoe3VSFqLKJS7hF01U74iyC3Ev0FbJin-5XwFFNQXB0sFaKqqwUxa4lN751VWU8K-dHgfE1SE7mfTu2keWBCbwZLZseojlkvhQmJMKtlCvWGRWhRaUlNPxBHYh9J_9ctUD7nD_J2ZDkHXviWUdEwEw3BTKdbW8VcK63lFEYb7ZZwBHCR9eeE7HoWKc2eqkLfw52NMm5QhAqXOBeIumcz7o5Jf1saXcPmn0QWPIYV7zra5RWl6UyBOH-i2wKKWXmiEE6hVYOF2Sp703IakDCAymD9WWXcuZElRIvxANjL5aCjv8tuRAZiHxYTuoHTGQILT8S7eEZIJQTdC2tiOhuRKkMj5ZrkF79GDiNwDJGl46wTBl7Pj6TnpuXbvvsUe_Vkd-Uw1ZeIzwMej5dSNpYzr_MzV1qdJZ3nIAFMm7vCVhNuXYK5YziD74NUuDxs0OkhiCtwlEoQb7q4dCdsoDYSmVRjyIaULRzugMCra5sQ3cCkQ4H0-jrBETUedNUra4ub1K3uamfEwO2LKSrZSJ9KC-VfuO58N39JmutBGqaA999CZ4BO5A7EHGmHC3XKwSXNCJMsJdQ5QHexzmRoapE3zlmtgA5MwsxI4wgD1MtGyoJ6wOUJNVUOguSNr5Ml0TmchoFiL4ay_fCJMygnXBagAYTUAzWssJ9K7IrBoHg3fYOhWMMzG_Wfp4FJAmp0yG3vS7JI0ruPgoESZmio5NyVCHRPf4GgvcGL1o0maHgIVKHq4mVf-MaHuodw4iimymcWQtecMeDpxqr3yp6fWsZ2Vr1qKdf-byiTlRtg1PGLwIjZbZUf_1a9Zt9xnqnSUOVoMe699Rps03QSKnMwvsa4F3Ko5HIbkqV3Oh3DOWFZcMi6YAwkV4lIzz4H2RxoLhziTD2S5Agvu1zEgcD4ajiUp_-8O1XWeG37uIq-JQokZeaKwGY9DcjZ5WRq7gXUMcP5O59x3YE18UROHCIKailb-NaLZN_5jQLh7ItJX2uNK_xpYytSCwUATAFWb604ACXXG01xgcQVIzhBMuJ4BL3OdzodVS5UAX1ue7xsogWyQkNBkIjonLdbpchhWptctOvHXcGKsHqA88e0QsSz0D7tL692EpCoja1WHCA3Xbgs6eYdP2yyj9YTMBSZ-zMrzFxOInkXun_osEjAq0IDmCzJguTOOr1M1IjiMRiCNEB_S2BomqHpQNABlP3oKRud6OdcvLtVZA-FN7VppgUGJ4f76-iEOzdstkzQrdP6rs-t4WG51UpW5b64htL8i0I6oZFd6krCG74VZAZt7qIKSkSPFdr3dFRiG5DoR2aKM8-EEYtWqpT_aFw1hwQ8Tyhgwsjw9s6OPpbt4PRc4DPzhmaUb3-AwkyZ9XDn5lqSRpRWo1zg-e2gUZDC8wphR6wwL1P4VXE4Mmf3f8fmSSBmw2TnOqwr0MbZ0gSCohRINmjHDNNPj5Qpt8RcuFqwLwARziKMA-C6BQi9yGQ-dmHT3pVc1mcNccS0OjBN_Zx6n_A-k3K6ozO_At7hDxUYXSLlKXdKqLWT5N4kWaGc_vrOVjCFLXHnblWDNTNgNuWGrFfQe4VLTOdH8_T7HQSsGrI02938zogBqRMdCXLakS3qxoKkI4NhRbOHQL16xscv_pXhkaEyNvziFpK1HcouHUUuptJyp2zVktrVfT5AtT0LWMhvDwjFfMvwWWaVMtw5ZnfPi_aImQsKK156yAHK2slcrLRLiYL4mA4HHS1h9RiGsx8RIpYMprcYxKTh0gFcB3qSXS6BetK38csKJ9VyWcfD7dlV2fN7ER1QsRBdooTdYFxy8Vq01295tqB5yN0vhgqW74nvMiIYztPV1vuHPH36m2vM58Qg0OfUrHi22c5FFP1A_JtI2GQm9Gek3_aso1NFUG3UG-bgMqhN2DnQLeSObd7D9pvel9mwQcGpimRZhMydr0e55WPGcsg4r0nFPYLRgdT0OSl6RJyutJ_d7B45QTWXvNJzQsVtXDsg3TRwZk-IRSEpMMGKmY6G2Pz05ghZ1SdC0G5DjvPmA0iJkJ89KVo8sj8obdhgJH44kHJXbR3qVukoS2KJjYD4KNr-tsNuGBnaNAyyvAIGY19zZgBhphmi2FNrfUVitw8YNaqWoZ0ecOAoZwqmmUnwoKqniJ5h5JoNL1dnVJaTnuwmZZzyWve8HyEs83zfJF-yoyTCC17-BaACwGSnL5lxebDcg6t9UhGx1NxN2kk6SOOUf4V-fjmjtYCFG4IPqzi64Bw2-mkjleRvff-4Wtk_TdKIb7tPQrd8WizbVl0lUkff1KaD2RVkmQGlgpwOMb1bvMEcG_MXv-TaMniWF-qt3TTQAxfythPgwB97SJHdJqdSOgLZ7afrziTMp_1jn1RKG6qhLRswihqslRl5ITob-4LDUlT_FHqC3Vmh1FlrC0XK1JxIWCskYGNwt7AsKJXRgQqLgJRMZD_lG_TcF8QQtjUtTsSYstAM_9hvQiTy8W0oa_6QNz3nmMYYN0ntv9P-5Tsa_6bXzDDVGjwiO6_lTQGY8XzcrT2KAsv9Czp-s5YyuaNvwkrpul9c5Z3mIgwPJzTxRpdFhk7va7o6gMPkOLqBMxz_TaoJuRroh7UtJ6NM8K8wA8nNTZZmoO8rQoFnCsIH4zY-3i4g0zNOgxPV-LawlvdWBp6B6G6RYkIOZ5-Voub1Yie_itL_YT1DtNZoYMlc8sOlatmOUDY7X2gD3ffEfsAPHRGA9uFa1UJiC-KBoC8g3kQjpDqznWftjXZFTS88FMK9vFjOw0ETAXlW_lHvroZmJYngGBhpyWr0LPKQi8UttQEOxAylBVChFPYyjeCLtRgbqrvIMo8AV1EMVGzUEsxs_l-Blh1SEwMCSJ3KB48xSa-iGHcN4d5RPx9XlHGc9a1RgU8c_vgxJw5F_9k23VS-9Wj_ze-_-WeXKo58sjrcpZcpWDDjEafFf2jKFvgOyh7Kbds-apecLWtRcSvlFhXW8o1tffAOCC8tO3EmqewN7G7rJuv-YcOa5HZcnv8hBiD5a-OZPIjtry9pS-bovptDAkm8T0UZcGeW1StBLgn0OVuO9OTDvttPNxIv_EW5MV7vRZrjY6MSag-2FHn37Liqis1FFCm5VMPhNMBpOchAoE24h3UL5RazngxrrruxGdNGfRYw6aTM3Fs32dKBF4bEYuEnadU7CL8ZS6Mgf0vP-fLT4bCvoq3RjiUEX7yUga4VQVfNQAsj-yN-Iwygq7lNkunAxrRZ99jKNRTRf1sAe1Uw6ENxCbcNA-qZ8qc2dELKxGDAZJLCLklFCmGvujMKBVhNQfdBLnc-wGuP4WbfEUqbBuA_0hgrSXL4He9Uehzyyfdn7EVxBa6G72B6C-_WpqiuenI6EniQCpm1cpxy_GJc7cIf96FOdO6xMgho-7JtTEgFeHeLtvcgJnFx1IwKJTyE2XOg2VC-R3-MZ0cb3F6XgyIu7HcUS_ZAgglCQc8Ziaeinuc1IToJ2RJa8xi_MIWYwS28GkYLQtp5lUI24D5s5jdjoTZsrrpIuQ60m506EQyuZKRyNcilCYMEI95CVBqeVgVWMQydzOynuk6oNz67FC2INYOu2YrWhMi0XIUaetXeaTDS6-vdLE1KBLHJ7pjmK2LnBZSJJVLwFbIZSgYIIrKaauVqUqR9hgEv4hnmdYMt_q0GD7jMdC7xFqAa31sDC-9374KiWeBCzvCsKVbWbIkdn59-7xGmRuSv7yzfRId06eQKlYcaGjwDjvvpuQLHsQjDlyB94j8LPMf2iKGVvVyWYo_Jyh9fm3fDMRcvIGySN7hHiUqfCnQW7zFqapjpQn_qOhqKMaTCc-BfK0-s3S6cPih8P_MhIYuMEjuRmD4DvRqUZ_KSSYoYNO2oXbxNk_b0ZvqcAnfnecBVS_6fk6WseJoowtfTwqZuN210eU5Ya4iph0lEm5PySMQhWHf836COvEIxXV3z1VATfZtaPWWCQ_dTU_ppwesW5Kut8y0LyzZ0Z71Apa2ExfEs3323OS1HTD9aKOEkW5sA8lK_bTyuskt2wUbmAI86dGXVi1b2SmNHe2r4XpdqreS1vAKgAHYglgC0WMJt3WrmlloMsm_U2ZffzXTubA-H0N9atBuJbVg-nxmyhUEjStYdnsxE_fLXDhvs_pgGMHxSUT98RjSxEvYdzZ-SyB3atvqijb_bgbqP-TcFNb_29S8zKgASy_UwlifzQehVy_-DMEiP3r7scStBET6Uj80GmmUVnI0qS4rWOWgEWZWHnIgVPbI4MNLvoif3d6m2UIw2hR_cXwn-Dj_2j1w2cTKOx_DNjoiLK5DyaeyC-gbKh1KhAC76FkePLXGOvJx2V9ObJ-ZjfqV6u1fppIOYcStwn_qU3wFM_4EEpdmHeRqAvdWn48Gorn7Mk7fax0xhIEWhLhAMp9MXS3En0KH_AsYuDxieCEEMpxDd0Mgjc33tlJPD5optaoPwC0czvYt_U37BMlkWeVcjZxa6ABSBjeZ1BytASZQhMmFHFk=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_0ea96b26f156f5a5016ac1b042b77487d1b439c8b9dd4c91a4",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbBJbvXx3P6m5pWHy4QKNYAetA5IQEvtzq7XxstUdiRqvEkaa1hn8dMZDum5avWT-rhS1NA0UsebwdSz5720fsEE40ZUkzgayYsijysRn04djwh5Z9MmOrLjL0_FE1EcpIFpBLolYS51nrXNMa2jfqAc8If9c_SeYTuc-s6qwVLAdGBHHTgzfR9Zwe7w2XNlDbIe9nuTkiG4DIhL8GsBVSJPeWTIN_MHWJdPZwZSLEve5mwEDEjh4SXSyVxWKI5BKpWE3t3ePuvTJwcviZOH8AtvcPVfk0HKSXtVvolpJ0KOghSD2xGWj5M8Mp83UPEBLh7AITzK3Qa5cvjq-HVMbiCIKMaxCZl5OZK-IwoC1HxLvBcW7xrbg3UEQnTK8Fl5znz_Zi52jX0oBbH-JRoMH19mNdY-Ty5xEeW3I5rV7mC5zUKDx4Jc6vINRlg2upYWCeXcLOJvqx3Dm5blNzlgSsvB5uxWBIXKTP3jjDJJee5erAaiN7A_dJYJSURXr7b-wtEVvksM7qRfRzjJzf1Mue-D2zlxMkfs4fFOS_GVSBa6Jfp4VmxaYNpNWVZSfXQRrHSVAUg3jA6psP3om1m81d7IMdtzz2eRonD45EQpF0CgHkkOmjNB52Ermq4lkAYma74UFmEncEHSr6BL7jDdr7nhLEFpN7U3jtTvdC7KAkTI96LF-T5wnNumYd5jdxVMbgCJvtR2qjvPjqE4ONdAD4MqUg_CBHOH71EHGXEE9jQzRKUy3UtTtrCrCrSKVq3kMmxU49VI-T6NlVtnGfKpZxaX4FaFA0O9epFeZbwLNDymo-p3pjAVcl7R5MGTdLVfr1q0nNrFDxcWdec63LpBnuWnEqduAB_oGNA3SBe4-vgIBBvbFzC63dmAair-DVfaI1dOdvv8gAZfzWmf1vQb6u9RJOFLKSX1uQTYeElKt1ZMcpRhiUiAzmBrTT_fCPf2hfbWc61a8WADnwsW-mag2zxDSUg5WtfSKQ7NAi1SY0E8CFAWOewaG146kLUORLNx1Sv9W64v6QsyLYyCUlnXxT55wRk5IMjIXKGZXZurfSvQ2g_B7irvTD3K6KY4kE18U4PArfQQ8aXPQaCSop88xMlUTtzEQ_YuJO2PV5acU8wNwr5yn8MzKcXtL-4clovzX5E1-aQbZlGv1alvSDXK-QhElYs_sW9WWFllP31DsP7pAPAKYjLvmTVNs1QEkfkaQlYWk7BY9S0ZufERacOShAYbZdctqTcz1Eq6-mEGwTL_6EUoydpmwL2wlANoeXXwW7is_Tsa44aCPtm13IIt5CuotZj0OAMKsabWz8o9kVNkCtkvn6_69DhUtrgnOZB4qrp43ZoVgL8SrKGeaMwhphMbIj37ywkkfU1amGMmzI4zxlTT5NocTvtiYwAqfwv3uKP8m3-tYpVlo7_J3pwSlgJhkr3u61TgQQyMUHPDXOe4KCTtKGFcYCQ_OfKBBcjDFn4tE7DAcvM95q4IZMx12l3VrQXULuBUvhL5zuDFeDnKsqKmHZJ0KuwE3GgrJTJJ2PqQLH9x4qAx21mncybzXlcls5sCgxd4hKG1tKJjSOBzjTo1B0ueCELtar4qvhCM711WGbhuPTyTS3mWyXKjBY3X1zMCB7zl0fzj9q65xcHbThpPEhrMkpKYGwf3xancJ9cQQ5gQxP3H64SGqjneAOelOiGnZjtC1MIoqI-HZKplM_IClXtg-P-4WhQtUiWxTLC3j5S6bTNDW9tF8gSeYAd59OVFmAar_iAQqw1Nzbf5ti_ZR8GO-yIYJq0n04nI6_v2NNQCuevT7apttqqXEyl_lznD7aKtRCdS_kOdMlKAxR3zWCvJZRlH08AG-nV7oKweDiO2Db0YV8F0Y2yZWKUZrWn8_YGb3QGsGxTeEkkG9hdzsNbUkc1IJOpbJQ4S6HznRJ9ECj1KaEVt5ePouXxrF3VCfWM6ZqHYd1Wyn4SX0k1a8lI8ENVpRTwKUmx0t8Y7XmuMvJoYZs-BHPxgD5SjadNHY4pnzjrEbyh6A_vs6H7p5KrBoISr2Pm1spFy4Q3Atp-wqK82FkDNns41_P6g50wBtQmYOe0ZyqPGNZiGv8bTZ5XVIq5eny8JDng5ZDV4EmnkZ3KXzi0cjznsFrmcdiwQH8JqJFAxz2LCKxWZg-8UNiM8zC6d67joB17kVlm9I_tO49ao9yjZaGUwa38Bjwd8vwNh679cjiLQTn6Y-Jj9ZJctdeTMDo26q7jMJ1TdmsoZ5T3Vgxfucx__LS-nE2L2hpf4tfyJXX9TxdV3eSC-OA66FcL4eFgJTJNqSHzebAgeKOFqBfOU7tLfzx5qKqOmfTJMufJ5vBEjBrdTdWsWvgWSYWPvBrDdTYdbnL3y7FxPLxzX51J20wgTein7xIFFwNG8Gms_OHTf1He62gVT_pTPyssjB3Eef1JfJvgcKEP9qMBV1rQsCiq3SFo1Tjj5BYGMe5daq_HgZtydLx2pbHdry7XAGFCBuI8It1qW.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_0ea96b26f156f5a5016ac1b047bb7087d198a92e3300c2200a",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3075,
+      "completion_tokens": 2042,
+      "total_tokens": 5117,
+      "cost": 0.0014053,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 3072,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0014053,
+        "upstream_inference_prompt_cost": 0.0003843,
+        "upstream_inference_completions_cost": 0.001021
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 677,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.0014053,
+  "output_text": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Keeps the unwanted rhetorical contrast instead of removing it.\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":false,\"reason\":\"Rephrases the intended humorous wording unnecessarily.\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"“Not yet tested” implies future testing is expected, which the source does not establish.\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"“Not yet tested” suggests future testing is expected, which the source does not say.\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":false,\"reason\":\"Unnecessarily removes the checklist’s consistent end punctuation.\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+  "status": "complete",
+  "parsed": {
+    "ratings": [
+      {
+        "id": "decorative-contrast",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "B",
+        "m": true,
+        "t": false,
+        "r": false,
+        "reason": "Keeps the unwanted rhetorical contrast instead of removing it."
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": false,
+        "reason": "Rephrases the intended humorous wording unnecessarily."
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "B",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "“Not yet tested” implies future testing is expected, which the source does not establish."
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "B",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "“Not yet tested” suggests future testing is expected, which the source does not say."
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": false,
+        "reason": "Unnecessarily removes the checklist’s consistent end punctuation."
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      }
+    ]
+  },
+  "accounted_cost_usd": 0.0014053,
+  "finished_utc": "2026-10-04T01:47:59.128602+00:00",
+  "latency_seconds": 13.052,
+  "original_request_sha256": "cb1d30c6d5ebcdccae55f9e79cb763ccb5ae6777c466769799f226e04ab249b9"
+}

@@ -1,0 +1,90 @@
+{
+  "family": "claude",
+  "model": "anthropic/claude-sonnet-5.5",
+  "case_id": "team-email",
+  "condition": "without_validation",
+  "job_id": "claude-team-email-without_validation",
+  "started_utc": "2026-10-04T02:19:36.215213+00:00",
+  "request": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "messages": [
+      {
+        "role": "system",
+        "content": "# Remove AI slop\n\nRewrite for clarity and concision. Remove canned phrasing and make the prose read naturally. Change words freely, combine or split sentences, reorder material, and cut repetition or empty claims. Keep the author's point and recognizable voice. Follow the user's audience, genre, length, and style preferences.\n\n## Remove the habits that get in the way\n\nLead with the point the reader needs. Cut ceremonial openings, commentary about the writing process, repeated summaries, prompt echoes, and closing sentences that merely announce importance. Preserve greetings, context, and conclusions that serve the relationship or the argument.\n\nPrefer concrete nouns and direct verbs to inflated abstractions and stacks of adjectives. Use the shortest familiar expression that preserves the distinction. Use active voice when it clarifies responsibility; retain passive voice when the actor is unknown, irrelevant, or deliberately withheld. Shorten tangled sentences, but keep natural variation rather than turning every sentence into a fragment.\n\nCheck for repeated “not X, but Y” reversals, rhetorical questions answered immediately, decorative groups of three, grand lessons, forced metaphors, invented compound labels, and balanced slogans. State the supported point directly when the flourish adds nothing. Keep genuine contrasts, necessary lists, and intentional literary devices.\n\nReview stock words such as “delve,” “unlock,” “landscape,” and “tapestry” in context. Replace vague promotional uses; retain literal meanings and useful technical language. A word, punctuation mark, or sentence shape alone is not a defect or evidence of AI authorship.\n\nRemove unearned praise, excessive reassurance, automatic agreement, generic excitement, unsolicited defensive framing, and apologies for things that do not warrant them. Keep warmth, tact, humor, and a real apology where they serve the user's purpose. Preserve dialect and cultural voice.\n\nUse headings, bold text, and lists when they help the reader scan or act. Avoid turning ordinary correspondence into a miniature report. Reduce distracting punctuation and repeated em-dash asides when they interrupt the reading; retain punctuation the author's voice or meaning needs. Do not force equal paragraph lengths or manufacture variation just to look human.\n\nDo not replace polish with fake slang, deliberate mistakes, invented personal anecdotes, or a new persona. Keep distinctive phrasing that works. Leave already good text alone.\n\nFor ordinary business prose, default to the plain-punctuation style: straight quotes, no emoji, and periods, commas, colons, or parentheses in place of em-dash, en-dash, or double-hyphen asides. Preserve punctuation inside protected quotations, code, citations, and identifiers. Keep compound-word hyphens, URLs, and accurate ranges. The user's explicit house style or literary voice takes priority.\n\nInspect sentence-final participial tails that announce commitment, importance, or transparency without adding a fact. Cut the tail; keep an informative clause, as its own sentence if clearer. Replace symbolic interpretation with the actual thing or action when possible. Preserve precise uses of terms such as “represents” in mathematics or “indicates” in qualified evidence.\n\nRemove artificial balance when it obscures the author's supported position. Give relevant contrary evidence its actual weight. Check repeated bold-header-and-colon bullets and listicle scaffolding, but keep consistent formatting when it makes a comparison or procedure easier to follow. Do not add a fourth item, nested bullet, or arbitrary fragment merely to break a pattern.\n\n## Check and deliver\n\nRead the result as a peer, as an editor looking for filler, and aloud for natural rhythm. Fix awkward or canned phrasing. Allow fresh wording and structure. Leave already good prose alone.\n\nReturn the edited text. Explain changes when asked; add a note only if an unresolved ambiguity blocks the edit. Do not append a change log, a quality score, or a claim about passing an AI detector."
+      },
+      {
+        "role": "user",
+        "content": "Remove AI slop from this email. Make it sound like a colleague writing to the team. Return only the edited email.\n\nHi team,\n\nI wanted to take a moment to share an update on the new signup flow. I helped test it on Wednesday with six people. Four finished without help; two got stuck on the confirmation screen. That's encouraging, but there's still room for improvement.\n\nThis isn't about chasing perfection. It's about creating a seamless experience. The smaller test suggests we may get fewer support requests, though we haven't looked at that yet.\n\nCould someone from design take a look at the confirmation screen before Friday? At the end of the day, a little clarity goes a long way.\n\nThanks,\nSam"
+      }
+    ],
+    "max_tokens": 3072,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 4.0,
+        "completion": 20.0,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    }
+  },
+  "request_sha256": "0a193de301450feeea642212b239ffc32ea69262bd91b2445aadff21bb56114d",
+  "reservation_usd": 0.085152,
+  "response": {
+    "id": "gen-1791080376-vRS4FZrpQnRTLxKgOQTH",
+    "object": "chat.completion",
+    "created": 1791080376,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Azure",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Hi team,\n\nHere's an update on the new signup flow. I helped test it with six people on Wednesday. Four finished without help, and two got stuck on the confirmation screen.\n\nThe small sample suggests we may get fewer support requests, but we haven't checked that yet.\n\nCould someone from design look at the confirmation screen before Friday?\n\nThanks,\nSam",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1586,
+      "completion_tokens": 118,
+      "total_tokens": 1704,
+      "cost": 0.004352,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004352,
+        "upstream_inference_prompt_cost": 0.003172,
+        "upstream_inference_completions_cost": 0.00118
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.004352,
+  "output_text": "Hi team,\n\nHere's an update on the new signup flow. I helped test it with six people on Wednesday. Four finished without help, and two got stuck on the confirmation screen.\n\nThe small sample suggests we may get fewer support requests, but we haven't checked that yet.\n\nCould someone from design look at the confirmation screen before Friday?\n\nThanks,\nSam",
+  "status": "complete",
+  "accounted_cost_usd": 0.004352,
+  "finished_utc": "2026-10-04T02:19:38.364138+00:00",
+  "latency_seconds": 2.149
+}

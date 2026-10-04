@@ -1,0 +1,17 @@
+Remove AI slop from this draft. Keep the facts, uncertainty, and intended request. Shorten it if useful; the original 100-140 word target no longer applies. Use a direct peer voice. Return only the edited email. The original brief is included to check claims. If the draft introduced an unsupported fact, flag it briefly rather than inventing evidence.
+
+Generating model: anthropic/claude-sonnet-5.5
+Original brief:
+Write a 100-140 word email to the engineering team in a natural peer voice. Output only the email body.
+Facts: Maya helped deploy a cache on Tuesday to two of ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. Cold starts and the other eight servers have not been tested. Any reduction in support tickets is uncertain. The dashboard still shows yesterday's data. Ask who owns fixing the dashboard. Do not invent further facts.
+Draft:
+Hi all,
+
+Quick update on the cache work. Maya helped deploy it on Tuesday, but only to two of our ten servers so far. In a 30-minute test, median latency for repeated requests dropped from 80 ms to 60 ms, which is a nice improvement.
+
+To be clear about what we don't know yet: we haven't tested cold starts, and the other eight servers haven't been tested at all. I'd also hold off on claiming any drop in support tickets. It's possible the faster responses will help, but we have no evidence of that yet.
+
+Separately, the dashboard is still showing yesterday's data, so it can't confirm any of this right now. Who owns fixing it? If it's unclear, let's sort that out today so we can check results properly before rolling the cache out further.
+
+Thanks,
+[Name]

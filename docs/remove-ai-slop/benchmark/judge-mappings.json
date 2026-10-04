@@ -1,0 +1,342 @@
+{
+  "judge-claude-0-0": {
+    "family": "claude",
+    "replicate": 0,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "baseline",
+      "B": "family",
+      "C": "general"
+    }
+  },
+  "judge-claude-0-1": {
+    "family": "claude",
+    "replicate": 0,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "baseline",
+      "B": "general",
+      "C": "family"
+    }
+  },
+  "judge-claude-1-0": {
+    "family": "claude",
+    "replicate": 1,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "general",
+      "B": "family",
+      "C": "baseline"
+    }
+  },
+  "judge-claude-1-1": {
+    "family": "claude",
+    "replicate": 1,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "family",
+      "B": "general",
+      "C": "baseline"
+    }
+  },
+  "judge-command-0-0": {
+    "family": "command",
+    "replicate": 0,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "family",
+      "B": "baseline",
+      "C": "general"
+    }
+  },
+  "judge-command-0-1": {
+    "family": "command",
+    "replicate": 0,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "baseline",
+      "B": "family",
+      "C": "general"
+    }
+  },
+  "judge-deepseek-0-0": {
+    "family": "deepseek",
+    "replicate": 0,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "family",
+      "B": "general",
+      "C": "baseline"
+    }
+  },
+  "judge-deepseek-0-1": {
+    "family": "deepseek",
+    "replicate": 0,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "family",
+      "B": "baseline",
+      "C": "general"
+    }
+  },
+  "judge-deepseek-1-0": {
+    "family": "deepseek",
+    "replicate": 1,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "general",
+      "B": "family",
+      "C": "baseline"
+    }
+  },
+  "judge-deepseek-1-1": {
+    "family": "deepseek",
+    "replicate": 1,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "family",
+      "B": "general",
+      "C": "baseline"
+    }
+  },
+  "judge-ernie-0-0": {
+    "family": "ernie",
+    "replicate": 0,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "family",
+      "B": "baseline",
+      "C": "general"
+    }
+  },
+  "judge-ernie-0-1": {
+    "family": "ernie",
+    "replicate": 0,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "baseline",
+      "B": "family",
+      "C": "general"
+    }
+  },
+  "judge-gemini-0-0": {
+    "family": "gemini",
+    "replicate": 0,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "baseline",
+      "B": "general",
+      "C": "family"
+    }
+  },
+  "judge-gemini-0-1": {
+    "family": "gemini",
+    "replicate": 0,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "family",
+      "B": "general",
+      "C": "baseline"
+    }
+  },
+  "judge-gemini-1-0": {
+    "family": "gemini",
+    "replicate": 1,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "family",
+      "B": "general",
+      "C": "baseline"
+    }
+  },
+  "judge-gemini-1-1": {
+    "family": "gemini",
+    "replicate": 1,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "baseline",
+      "B": "general",
+      "C": "family"
+    }
+  },
+  "judge-gemma-0-0": {
+    "family": "gemma",
+    "replicate": 0,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "family",
+      "B": "baseline",
+      "C": "general"
+    }
+  },
+  "judge-gemma-0-1": {
+    "family": "gemma",
+    "replicate": 0,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "family",
+      "B": "general",
+      "C": "baseline"
+    }
+  },
+  "judge-gpt-0-0": {
+    "family": "gpt",
+    "replicate": 0,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "baseline",
+      "B": "general",
+      "C": "family"
+    }
+  },
+  "judge-gpt-0-1": {
+    "family": "gpt",
+    "replicate": 0,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "baseline",
+      "B": "family",
+      "C": "general"
+    }
+  },
+  "judge-gpt-1-0": {
+    "family": "gpt",
+    "replicate": 1,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "family",
+      "B": "general",
+      "C": "baseline"
+    }
+  },
+  "judge-gpt-1-1": {
+    "family": "gpt",
+    "replicate": 1,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "baseline",
+      "B": "family",
+      "C": "general"
+    }
+  },
+  "judge-grok-0-0": {
+    "family": "grok",
+    "replicate": 0,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "family",
+      "B": "general",
+      "C": "baseline"
+    }
+  },
+  "judge-grok-0-1": {
+    "family": "grok",
+    "replicate": 0,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "baseline",
+      "B": "family",
+      "C": "general"
+    }
+  },
+  "judge-kimi-0-0": {
+    "family": "kimi",
+    "replicate": 0,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "baseline",
+      "B": "family",
+      "C": "general"
+    }
+  },
+  "judge-kimi-0-1": {
+    "family": "kimi",
+    "replicate": 0,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "baseline",
+      "B": "family",
+      "C": "general"
+    }
+  },
+  "judge-meta-0-0": {
+    "family": "meta",
+    "replicate": 0,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "general",
+      "B": "baseline",
+      "C": "family"
+    }
+  },
+  "judge-meta-0-1": {
+    "family": "meta",
+    "replicate": 0,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "general",
+      "B": "baseline",
+      "C": "family"
+    }
+  },
+  "judge-minimax-0-0": {
+    "family": "minimax",
+    "replicate": 0,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "family",
+      "B": "general",
+      "C": "baseline"
+    }
+  },
+  "judge-minimax-0-1": {
+    "family": "minimax",
+    "replicate": 0,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "general",
+      "B": "family",
+      "C": "baseline"
+    }
+  },
+  "judge-qwen-0-0": {
+    "family": "qwen",
+    "replicate": 0,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "general",
+      "B": "family",
+      "C": "baseline"
+    }
+  },
+  "judge-qwen-0-1": {
+    "family": "qwen",
+    "replicate": 0,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "general",
+      "B": "family",
+      "C": "baseline"
+    }
+  },
+  "judge-qwen-1-0": {
+    "family": "qwen",
+    "replicate": 1,
+    "judge_model": "openai/gpt-6-luna",
+    "labels": {
+      "A": "baseline",
+      "B": "family",
+      "C": "general"
+    }
+  },
+  "judge-qwen-1-1": {
+    "family": "qwen",
+    "replicate": 1,
+    "judge_model": "google/gemini-3.8-flash",
+    "labels": {
+      "A": "general",
+      "B": "baseline",
+      "C": "family"
+    }
+  }
+}

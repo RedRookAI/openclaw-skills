@@ -1,0 +1,181 @@
+{
+  "family": "minimax",
+  "model": "minimax/minimax-m3",
+  "arm": "baseline",
+  "replicate": 0,
+  "prompt_key": "baseline",
+  "job_id": "minimax-0-baseline",
+  "started_utc": "2026-10-04T01:42:16.402278+00:00",
+  "reservation_usd": 0.0132054,
+  "request": {
+    "model": "minimax/minimax-m3",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/fb46a9972be9e8e00d55c00399d207eede659d5f6fd998266a6221d302db67b0.txt",
+        "content_sha256": "fb46a9972be9e8e00d55c00399d207eede659d5f6fd998266a6221d302db67b0"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a.txt",
+        "content_sha256": "162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.6,
+        "completion": 2.4,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "seed": 20261004,
+    "response_format": {
+      "type": "json_object"
+    },
+    "reasoning": {
+      "enabled": false,
+      "exclude": true
+    }
+  },
+  "prompt_sha256": "fb46a9972be9e8e00d55c00399d207eede659d5f6fd998266a6221d302db67b0",
+  "user_payload_sha256": "162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a",
+  "response": {
+    "id": "gen-1791078136-hbGC0TWzrkXgpPx4QlIH",
+    "object": "chat.completion",
+    "created": 1791078136,
+    "model": "minimax/minimax-m3",
+    "provider": "CoreWeave",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"results\": [{\"id\": \"decorative-contrast\", \"text\": \"This isn't about doing more. It's about running the job once.\", \"note\": \"\"}, {\"id\": \"substantive-negation\", \"text\": \"We did not retry failed payments; we retried failed notifications.\", \"note\": \"\"}, {\"id\": \"critical-citation\", \"text\": \"Unlike Lee et al. [4], we found no improvement in the smaller sample.\", \"note\": \"\"}, {\"id\": \"pat-humor\", \"text\": \"I reconciled the invoices.\", \"note\": \"\"}, {\"id\": \"intentional-humor\", \"text\": \"The deployment finally worked. My celebratory dance was mercifully undocumented.\", \"note\": \"\"}, {\"id\": \"contribution-boundary\", \"text\": \"I helped build the scheduler.\", \"note\": \"\"}, {\"id\": \"uncertainty-and-condition\", \"text\": \"The cache may reduce latency by approximately 10% when requests repeat; we have not tested cold starts.\", \"note\": \"\"}, {\"id\": \"literal-review-word\", \"text\": \"The tapestry depicts a coastal landscape.\", \"note\": \"\"}, {\"id\": \"protected-quotation\", \"text\": \"Her note read: \\\"Not today—but soon.\\\"\", \"note\": \"\"}, {\"id\": \"already-clear\", \"text\": \"Please send the invoice by Friday.\", \"note\": \"\"}, {\"id\": \"participial-tail\", \"text\": \"The team launched the dashboard on Tuesday.\", \"note\": \"\"}, {\"id\": \"aspiration-not-capability\", \"text\": \"The prototype aims to detect duplicate invoices. We have not tested its accuracy. It could help the finance team.\", \"note\": \"\"}, {\"id\": \"mathematical-representation\", \"text\": \"The vector represents velocity. The robust regression estimates the slope while limiting the effect of outliers.\", \"note\": \"\"}, {\"id\": \"plain-punctuation\", \"text\": \"The migration is complete, finally. \\\"Ready to launch,\\\" the manager said. We still need to check the backups.\", \"note\": \"\"}, {\"id\": \"business-paragraph\", \"text\": \"On Tuesday, I helped deploy the cache to two servers. Median latency fell from 80 ms to 60 ms for repeated requests in our 30-minute test. We have not tested cold starts or the other eight servers. The cache could reduce support tickets. The dashboard still shows yesterday's data.\", \"note\": \"\"}, {\"id\": \"useful-parallel-list\", \"text\": \"Before release:\\n- Verify the signature.\\n- Verify the checksum.\\n- Verify the version.\", \"note\": \"\"}]}",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1114,
+      "completion_tokens": 552,
+      "total_tokens": 1666,
+      "cost": 0.00078614,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00078614,
+        "upstream_inference_prompt_cost": 0.00025622,
+        "upstream_inference_completions_cost": 0.00052992
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.00078614,
+  "parsed_results": [
+    {
+      "id": "decorative-contrast",
+      "text": "This isn't about doing more. It's about running the job once.",
+      "note": ""
+    },
+    {
+      "id": "substantive-negation",
+      "text": "We did not retry failed payments; we retried failed notifications.",
+      "note": ""
+    },
+    {
+      "id": "critical-citation",
+      "text": "Unlike Lee et al. [4], we found no improvement in the smaller sample.",
+      "note": ""
+    },
+    {
+      "id": "pat-humor",
+      "text": "I reconciled the invoices.",
+      "note": ""
+    },
+    {
+      "id": "intentional-humor",
+      "text": "The deployment finally worked. My celebratory dance was mercifully undocumented.",
+      "note": ""
+    },
+    {
+      "id": "contribution-boundary",
+      "text": "I helped build the scheduler.",
+      "note": ""
+    },
+    {
+      "id": "uncertainty-and-condition",
+      "text": "The cache may reduce latency by approximately 10% when requests repeat; we have not tested cold starts.",
+      "note": ""
+    },
+    {
+      "id": "literal-review-word",
+      "text": "The tapestry depicts a coastal landscape.",
+      "note": ""
+    },
+    {
+      "id": "protected-quotation",
+      "text": "Her note read: \"Not today—but soon.\"",
+      "note": ""
+    },
+    {
+      "id": "already-clear",
+      "text": "Please send the invoice by Friday.",
+      "note": ""
+    },
+    {
+      "id": "participial-tail",
+      "text": "The team launched the dashboard on Tuesday.",
+      "note": ""
+    },
+    {
+      "id": "aspiration-not-capability",
+      "text": "The prototype aims to detect duplicate invoices. We have not tested its accuracy. It could help the finance team.",
+      "note": ""
+    },
+    {
+      "id": "mathematical-representation",
+      "text": "The vector represents velocity. The robust regression estimates the slope while limiting the effect of outliers.",
+      "note": ""
+    },
+    {
+      "id": "plain-punctuation",
+      "text": "The migration is complete, finally. \"Ready to launch,\" the manager said. We still need to check the backups.",
+      "note": ""
+    },
+    {
+      "id": "business-paragraph",
+      "text": "On Tuesday, I helped deploy the cache to two servers. Median latency fell from 80 ms to 60 ms for repeated requests in our 30-minute test. We have not tested cold starts or the other eight servers. The cache could reduce support tickets. The dashboard still shows yesterday's data.",
+      "note": ""
+    },
+    {
+      "id": "useful-parallel-list",
+      "text": "Before release:\n- Verify the signature.\n- Verify the checksum.\n- Verify the version.",
+      "note": ""
+    }
+  ],
+  "parse_error": null,
+  "status": "complete",
+  "finished_utc": "2026-10-04T01:42:18.568971+00:00",
+  "latency_seconds": 2.167,
+  "accounted_cost_usd": 0.00078614,
+  "original_request_sha256": "b0d1d3a5ca664bca12bc14f5b2b2a90c18056a4c3bf07d5e1bc189506cc141cd"
+}

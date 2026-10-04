@@ -1,0 +1,490 @@
+{
+  "job_id": "judge-qwen-0-0",
+  "requested_model": "openai/gpt-6-luna",
+  "started_utc": "2026-10-04T01:48:40.132319+00:00",
+  "request": {
+    "model": "openai/gpt-6-luna",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05.txt",
+        "content_sha256": "4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/fffb811c3f31ba79e126294848c4394f8f5f61cf9fbd4feb6f5a9611c7991ea9.txt",
+        "content_sha256": "fffb811c3f31ba79e126294848c4394f8f5f61cf9fbd4feb6f5a9611c7991ea9"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.2,
+        "completion": 1.0,
+        "request": 0
+      }
+    },
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "c2991002984bc1581e3db4190eeb1ed0b2c265d95fe9f1f16df8b7a5e4c2d785",
+  "reservation_usd": 0.0071036,
+  "response": {
+    "id": "gen-1791078520-LmTXhoIEnFzo6w0UYpyy",
+    "object": "chat.completion",
+    "created": 1791078520,
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Retains the decorative contrast the request asks to remove.\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":false,\"t\":false,\"r\":true,\"reason\":\"Omits the source's uncertain possibility of helping the finance team.\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Drops the source's emphasis that the migration is complete finally.\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":false,\"t\":false,\"r\":true,\"reason\":\"Omits the speculative possibility of reducing support tickets.\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbB8E2qFjdibYISXLageWLh5G5ea1KfzHoZ6exlKazYWJ-DXEPBVVtz21EoiIdymzJ8zMIwe7_zIX97mXiqYO0iHz1OYrH2KXqKpVOIXVa6Tg-gGzjQVhUv4O9FYInRyHZUbnJAkAxQxKU4vF1qniLm1z0T3Rx8swgr_ehf4W7HQ9uxZp7m--U1oAvuK-7kp96Mf1_TZM7jGA4jJsaElUq3gxiNoFCzcW4ro1OtV_hSa2hPGFCeJtrclM5I6yfOMmJCOnI60BJgxVnqwBD_D7D3uyMCD2LgXabeR1CTHybrtp5NIUbSYQOCYlN6EV5SfSrs5iqYh2B3vdRUk3ELLOgNhmjXWPSaOuHiSWcg-iU7P2gjoDvYSsRQyChEBjhZVflZmxBjzoqi8N4AqxVMH-2s40NB4Yphgldmgq_XHMIlNRX_GmDa-qyCB9hVRYERvyZVbJpd4mZH1MnU24vN-lBv3wVbJBupmNWWTb8hc-Kr0G30I09dccxqo0i9sRMGzQmVR9fC0iZX69OYRufP0GsJdRPlz1ZGlUb63zikoVDwQ3RROvA7O2BiwxM76jxzM8oWC9f2ZEIRG4w03HCcqelX9G754yDlYwI6Otx5AUOFv99LN0AjTlAYOZCTj4OPIjRMUoY5zhVQfswOtm3JMEoRyd8t0phFuNGHRosmSUwMbsi6VRFHTV8y4O9jnhhMUh1psTCxYMUlWGQ5qfaz6nHOfAX2aadhbQHZL7FewDptz-qO-12ll67xt7fnsK2SxQHhK8sV5pe8ZN1crpknEF_5EUz76XoKshMApioNsANsQTP6YjYispIU4P4DY5JsEDy5HkbNPtGcb3zX3u2pE5VNtqt6VKfdNb9-WK-8xwnYNtWcsKc_gBDlrrQp0u6PJsRv_8x_GgGBFizBeB4KginTjZuhZHM8M3269-8VxijhZZD1sT4tJbGj-9RHXoAmmdmvM6alY8zB_EkTipTemQc3Y4r6qnzOrJo4qFLvaF9uZev3wbr2uEoRIKSzJC3U6etD0aCywv_Kp_iaydKzNQc2nIXKrkeUrTFqcQRwZYHpxLgTMA_Iv7WbA6HsHATAtcqejzoP3mkA38KbJCavK7d6K2zcG3FrFM-YLn_FCj6fpnqNatEXhOMtoGMMTexdq9iGT2XSDuotVXnm_RCdy5Z7nwtNKLVYRXlvdRNyh5hVhMDD5xFtKF54WvwxpagOfIbtpY0y1nYIZomK7o7zQ1tQd6rvPeNHfSgg7r1Qdn4NjSfdD-1QTbM-OqVMaWApX2VvbaIWYvmL5NBvP3EWDzjux_73iF2h9kx_5ir4fZRgLftE6D5fqQNyWs0goQzy8SFhoiMEwE0oMW1wJEo7dr3Ve-LeT1dON5gYnLG-8EfyI_MrexkGefG0xRG7J46u_O5SB_aNtXzacJq6MNKGSBBI-A9zH_3At_Sve5KlQqpvfHxgi33DwDbml0cFelqUffeKs3L9KZCIZu_JguXwNNO33m99oHNQL_GYCEL7TWx5CCYBAwtaK-6YFIpg8RcXckX1VuaiNtZfR1Vudw57hC53TDtd2gIWdWLFdINi039Lw3ioKrzwIiaY2l-dJ_oRIUCvqGkbZonDKzEbSZ-F0nRurx9O6Z8pQ5fd2Js5ZM_NZPkPQjf8kUBwjI5UD7BmzWDbGJO8d-MNMKVGQPVqi-8Xe8rSRW3EQlGct9Teg26JxgkgrY5DjbDhqCb555O2KQ2PIl6cMpMr2LPhu1YdPtB3dJbE5AQTT5ZMfZNhFUSANf4UwignL6q9uNPH2B_GtAQHpBEefg2kRfwrsIuis44mmTXZ6Q9cp0SpQc0GlzSHCijnPHYVcibzajlcCbk6sGvV0h8o-FOW2hgmwNWW1w0B5fjWyPlWHNOU30alOv1kUDcQsF1HE-pxFUsvms0g-4yfsmrU_5m45mAB5E-_NJPOYrrhqfYeI6qEDRqTDggSXvm2mZw6tdfvjKswtbTCfJwqZqT5XD17MgKIRlEJuyi3GbUu3vFQ6ng_l6sirnaWTFzCQVqoM2dcAQvx9lcL4r_7mDiLYvIsMYp8F53pLwVH9yx9TdTXJasnB4healztaeEVxNf_PfE38RHp6qqD8tTf1DIlwYqW51s45gXmAGd2qF8HKP9-61sm-SWOKwqG6n9IX9hlxiE30Alh440ziQXUfekMYiDI8RuwL8c7cmd73BT3qZSvY9mJf97ipBjAK7ZNcN8ktCrWW3lGA5hfa9TRVXAWvPvvSKa0F_fmt_Sai1-VbPmSP1CHHhKp6tLJB6VOy37WRTZwAI35TfGMM8xweYtfRYi89NK5FN8qKDZPDxMR3DoekNhnJM4XPf0TmpO2ifWCVk64olUZ8Q8MJTP0mX91Tpeva73mSysGkDkXelsrFLAIYo_CYTlqJTLvZuMHVbF_nFV2ORBQsw7XHhWlo4Ez_uYT5FC_rBFXM8cF3vf-3UEy9jwEj3wjqMwA5HK72yOqHU0cz6O8C9PHRFgLSay-03K_4xuij5n2T9E7ssICP9ekQy0jqE1OOO-UpIaEL5NE7TKVq4OC_tYwGD-IbU9mePun7mt-SJYl9BG6LcbERcleuvyxhxQZeLAZ-N710iJL-x2nQ8XQXfwwSPY9fEM9YrElCMFU1hreA16C5jg4y-9FAyvGcIDZld0hAIU0OTzeSpBYNHtjfeGQJBgP0TXemJKWr029f64iVHtD4JO3SiRlIiwhNTMVGjJmku3KLOdco6_2MHU_4wvubLmum2OHM4eY5XBYRIxmxkA-XJz20rR0PRAbhSlifZvhIQzC7SYnYfHrLMWNEtxQrmOzHm7vi1o3MkbgygfEJ7h0wiecXVGgivZBxB8Fq0DHsmSe_GfI4TFjX5KqEeXZDlpLOTh6pUFA-_0D-Blrfck04gPf1hnWtcwfRLdanV6sxSXL7SYwjDF8BgoPWspPqpa4EBUz9IeJpi9fPgkf7ypEhFO_je8wYOmdF6eVhGKfF0oI6FN08G3H61X1PKxNDqTe2u1Dk3mKxfi3K94RADE3Zq4eClcgjtp_9r7JTTggc4QQFK5Cu6ZFeb5u8oZuaf1kx-owrcvPw-IcWTYhcZ77wJgCS6OyXpIqR4eD9M4kaVyBzxuSA3IVMee0T4xc10pip5OBUZ7RAPkRQcQ6qt6pyikIKb6DAIQQExwl7MlpWRctZGfQdmEltChsQ7FsQpeK0iUpl3kse5VvzHlV-xOCl8lFa1SXdN1tf3p69-nnRf67Ihw1WevmDCFY1tfaMi10zARjYjFpWiVUCNNQiFvFTl5TPZmofxlZDuFS6WHbgR1ydxEIwbRjRUO_iBNLB6o-l84_QZG5mGGgN2TBgOUAzq3RPpmEZSNegq5eteSi15d3U7XtfPlKBiKLjiytnKrPUJtaFJrAM1GPJz5NtGbF2gS4akDgzEncSc7VrVdXJjEL1zbGlXVKyKt-116nNTJTdBZASD-dy-LL8mshpY12M_wjpd92AeJKmvQPx_XeT5UcGDy6AhRp3U0SYldkifm0yo2X7vpnPQ_-3R5XEk3lO3Z7dWq6_tqMiCfucwGEhLk88NGIn6jzyZGh9ZKP4IG3TtuCFA2nK9vz8YwhUS1PfENCB5C3B_sjXhb3fxLu8bFdtMBUq-py94f_fRHh-Kt1oPHV_ldY8LI770q1vxwqaxHLKj1NiAMdc7qUItDOOxp0ZkenUSxWa8Ip6slsmsnyVr6KV1ic1_oTY2BHKRIZ2HqZ_aquwwDiNun8uXwkRmrRFgP5Hih2n7ViW0Zjoaw2hPYpgUFNE8eUeMh-QLxnXV-DhYGpHJD6CwAKGhviUuk5_nc5I5TzOmkbuKBsUir6v4x7l3Vu44ubR2OuNF3g9I6tHPGgHy5aypoA3Pb4LLuYUf5fsBCo2GptTbWCEbemsb4YnRXeXF2A1TKtXy74hwc1MstPibQAyj3KpRBDpS7GhJme1dd8yVrbfWRFaNaxraKgp2VI7UGoFc5-TUdcUgOAmGdBmkEsohdEb-ZCkjyYmPbWE1AVKkEheFGecPTzkonYlpu3CbIq7LWuFdvnF6tadLbiEVVk-B62nLihMbYS_d-tSpA-yWiEGBz3hSYJHHwy1jJrCC1DHYWNKGB-QX_iU0pG-ddHzutl1LVxAmp64qZwV5hBX2RKV7C80fItRaFoMg-csIKjxDNprfTUXl8wd6xKmdQGqHSGVkUWoH-hmdqTsPx7vIZFU9-ykBGR2UCojx_UhSC9UivY5lMwjQB5TaGmyNcpD-WlVpSJiKxXjc-15Fez_twSmogeqeCOXeaRDiMSPfX6cxnIgA5nKtg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_0361a21adfc6e614016ac1b078c91c87d189d57bc87d50e839",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3066,
+      "completion_tokens": 1796,
+      "total_tokens": 4862,
+      "cost": 0.001281175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 3063,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001281175,
+        "upstream_inference_prompt_cost": 0.000383175,
+        "upstream_inference_completions_cost": 0.000898
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 450,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.001281175,
+  "output_text": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Retains the decorative contrast the request asks to remove.\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":false,\"t\":false,\"r\":true,\"reason\":\"Omits the source's uncertain possibility of helping the finance team.\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Drops the source's emphasis that the migration is complete finally.\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":false,\"t\":false,\"r\":true,\"reason\":\"Omits the speculative possibility of reducing support tickets.\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+  "status": "complete",
+  "parsed": {
+    "ratings": [
+      {
+        "id": "decorative-contrast",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": false,
+        "reason": "Retains the decorative contrast the request asks to remove."
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "C",
+        "m": false,
+        "t": false,
+        "r": true,
+        "reason": "Omits the source's uncertain possibility of helping the finance team."
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "C",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "Drops the source's emphasis that the migration is complete finally."
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "C",
+        "m": false,
+        "t": false,
+        "r": true,
+        "reason": "Omits the speculative possibility of reducing support tickets."
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      }
+    ]
+  },
+  "accounted_cost_usd": 0.001281175,
+  "finished_utc": "2026-10-04T01:48:50.332560+00:00",
+  "latency_seconds": 10.2,
+  "original_request_sha256": "c2991002984bc1581e3db4190eeb1ed0b2c265d95fe9f1f16df8b7a5e4c2d785"
+}

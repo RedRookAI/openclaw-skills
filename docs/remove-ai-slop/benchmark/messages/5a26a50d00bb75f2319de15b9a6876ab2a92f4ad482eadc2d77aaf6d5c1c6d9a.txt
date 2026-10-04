@@ -1,0 +1,15 @@
+Remove AI slop from this draft. Keep the facts, uncertainty, and intended request. Shorten it if useful; the original 100-140 word target no longer applies. Use a direct peer voice. Return only the edited email. The original brief is included to check claims. If the draft introduced an unsupported fact, flag it briefly rather than inventing evidence.
+
+Generating model: deepseek/deepseek-v4.1-flash
+Original brief:
+Write a 100-140 word email to the engineering team in a natural peer voice. Output only the email body.
+Facts: Maya helped deploy a cache on Tuesday to two of ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. Cold starts and the other eight servers have not been tested. Any reduction in support tickets is uncertain. The dashboard still shows yesterday's data. Ask who owns fixing the dashboard. Do not invent further facts.
+Draft:
+Hey team,
+
+Just wanted to share where things stand on the cache work. Maya helped deploy it Tuesday to two of our ten servers. In a 30-minute test, median latency for repeated requests dropped from 80 ms to 60 ms. That's promising, but we haven't tested cold starts or the other eight servers yet. So any reduction in support tickets is still uncertain.
+
+One blocker: the dashboard is still showing yesterday's data, so we can't fully trust what we're seeing there. Who owns fixing that? Want to make sure we're looking at current numbers before drawing conclusions.
+
+Thanks all,
+[Name]

@@ -1,0 +1,497 @@
+{
+  "job_id": "judge-claude-0-0",
+  "requested_model": "openai/gpt-6-luna",
+  "started_utc": "2026-10-04T01:46:44.058379+00:00",
+  "request": {
+    "model": "openai/gpt-6-luna",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05.txt",
+        "content_sha256": "4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/0099b8a328c663b46430117c2b048bec100ab249d29ddeb98ca0b3ee7cc46f61.txt",
+        "content_sha256": "0099b8a328c663b46430117c2b048bec100ab249d29ddeb98ca0b3ee7cc46f61"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.2,
+        "completion": 1.0,
+        "request": 0
+      }
+    },
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "db30fa3e378a04c027e9b02716cd6ada3934ae9eb701f74b04d649b57e442e67",
+  "reservation_usd": 0.0073228,
+  "response": {
+    "id": "gen-1791078404-lZTXzfEild0YfYbFcJS7",
+    "object": "chat.completion",
+    "created": 1791078404,
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note adds explanation unnecessary to the direct status update.\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Adds an unsupported claim that the scheduler supports operations.\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note explains the edit rather than providing the requested concise prose.\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note explains the edit rather than providing the requested concise prose.\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note explains the edit instead of giving only the requested business update.\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note explains the edit instead of giving only the requested business update.\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Drops the source's emphasis that completion was finally achieved.\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":false,\"t\":false,\"r\":true,\"reason\":\"Adds an unsupported absence-of-evidence claim and an unnecessary explanatory note.\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":false,\"t\":false,\"r\":true,\"reason\":\"Adds an unsupported absence-of-evidence claim and an unnecessary explanatory note.\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbAImRwG3NP_LrQ0R-itAeX1y5JFmR3S7ptzwaS_AYGrJWCR_NdsBysvtNyMofwUQitZk1XQIobf5kjC3t3eLoYanUTZvRU-afVckXAzGVz7BHXNYdj_Whn4X59Gso4mrTj7HIt-sTGrGCGT-jDLh2IDDwHuUDQlQ7L4z8HMoBKcn9zjLau3-T2IWMY22KbmiPayEXN0e7Zmcs93gPtL_vwcVRf8dmblAwob2__WXJL_wqa-C6YkN8jcfEHc7_o0U6xD6bv7u61Lu8kfnFOLb400lYFfMgIm4wNesHo4f2IXf5-T-GWraUksf0yQJdwfJotiEp6GtgWbxO2njR96Us9nWISr64G_P46sW2MqUHld3eNl4tH2Iz11C_IbwIMrZZgi2Veg8B-Ys76ndMAfVHwWImP0uTB2eYgIlDKRaieD5NrpCH6zIDwjVZPLwZ-GnxwVCvM5zgghcdem7Ea9P5wuqX3BVKX91RpT464HOtCHZzR64675QMMgPrGgy-7zOFhI1l_laBYoNLGghWC3zyb38wZe4YXqM75MUXtgOmh16PO-EC0_vgy9qL6MnOlvLo8tnSiO_HLdkGiEVtZiyOFAX9n2H-QTUJUGpgyBMNSqnsJs3psWJWmejxN6aNMyrsOyRpgiIRUzoeapsjR-9-hrbPe66nsKKenCwooe9ouwwE5dxk7WDv9WwwuIsxUAYREV9oBrPfB1WjIe7kUpAUgZLiryF1HSGJQjTXQOcY9WlCmF_SqlfD8hJxcpgpEmbgKeyHYZjlLc3TOTS3lglLt1xgrFt6pJqBzlOXUghfopeOOGWIuiG1nM5OLvcMkauLPmiuya-PPqk7hMpcO_TC2N2GJaxi3P_G3jAtn9BIbjsERATD5q5bV8ErXuNfaNNqX3o5S12mVC8K3KLgZFjIp1KpnkJSTGwPbOgQjweXSks80NOom_3YlMswXl3idomqdwcb0TSwvVttUO-rhK21J2kSP3aPAoaFHgRyH9ExdOWefqmZrmFb74l8Zt2OKyEobfl1CDMyOtiUzqp58_fVyoUKsCw4dIp4RjZ5dAQf_qNGJDg8vHMHXapSBMJ8zZNw3jh1KXKnrZaXgCm-UMVsFw2p-cR5Le2Rj2IBeivLYy4WbRg8wf6RhCW0HbncV3kwzoHoEIWX56I6pa3WzG_7Nf08EHack8KTW6XRwnxGI-xaGnTttOwK0xPZaQ9ZcdfrZq0wUnbjrVUHSGCQbwggTuMpZ0Z8QdfUi1Mb6z2A2egovBWwFZO_po2IXY1WcFrQLKdSBdB0RWlGN65eb89lkm99Dbky-tj8zBY6zeTNaqzZPe5KdKJe6NSP75yyfSDu9YFnscbveKy8USVRgpaUl8I9thZNWT8n5RSs3bXBSg-5Xlrr77E_1cAGt0vonmZA-mkh22rYd-IXntk5sAvaFI9LPF0iVpOEVa5Zqx3WkBm82GNv5a3LarPhQUiZce3SnFNVeiA67R272-4FNfxOvMWLrGxKvhtbRPhHVW5OUA6USfyVQdNZHt1tkgn_ui1h3gVYSaz0rF30EdLiQ0Iw_B3IUT6zJK6CBUqsTUjuE3fSoUm5rSK9Ii20SUGp6BdSvovbZPujyHKFHDwKPPVW1-ys0Ujp5OxMCAuIaO5EciTi6S1DTfzoXRoCg21smR8L0Vk_G0f_1XnsyH5zm679z5VBZ6GLuxGD9kFWq4G8SqKfOslNUscNxdfgGU1eCbN69B8sNCTyp0UeEcXBXoBcxz5JmNnHQt00fB6clwhvs42wr0j-RdOtZeDrm08mgTTmUduRnsj2wMHM-i_mAweqlZHCWCy_L9MHmrA3kwYVC_6fJ2gii4trAZIQ4aKlNmfouHeW6f5Scjnni3rEitYd-9WYPLsX-n21GnnLues7sABtNMwSNK0ozseTSxRkrIjwrnBKr8rrgJ9cketrAfIi99yf_nLVqLNmljvWPWj2apU5Hj8i0Zohm_Zt0a3r_NThgpvEZxWMsPLn59J5wTuB0Gp32bR-3v6JmZcjYHK64ubSP5nMVXi-r83tHNoXAEff8F1ueeAo_s6EZjdPQANg9PdUTa2BI22F6l_XP5C7SS40iX-QlKL78DXL-x2yuonXR5PPw9rKRgmgiLGcfi-1hmFJyfglWLTXTcs4u4vw018iyiEon-gdakquXhks2R0b_EPGgvPmKEaWx2i1mHczpzgAl2ZqGwItbTF-GcGAB8Yr54XzIK7WvdN8WCxiEi3zLnNA36iOqPGyXAi-CkzxaIWwFrmPy8p-m-43Jju2VE0YfPmHCKs6nU2xDCd5fYoyMEjk1x4NdyuSq7Q9fsucoMmslOqDDB7kvwJ_sIcZMTmBz_8ntpwg6OFprTRAhWD9rPLoERAt-HuTocMEAr9IaAy5sfi9eufFJmXZBxItJUtLRKoX6y068ZoFGcE46LOImhM8ml9tO-Xn5hxAWUW7IdhQqcqH4gJ0UzlxUSMLqlQ_Od8KJxy4OH0dXr6TqwPjmUy7H2a4DQtzBF-xUKgQL5X8m5wocnBJy4ukpOzgl1WDH8B4scrWvnehBg2jeO3QWC8nCNkJZIB1OAJ_LkXfIbCrXUUam-BpSkLaH_sVLgjj8JiUfJlKoeuPxzVj3quuFisMNnZSOmsSwAVI2mCx0F5UNoyilQwA1Bl6hwcj6cwAixDbQbj_0rVqhKuZBN29eyWG0e2RRrcWx5O8IgVo5DBbmcIvGTp1byd8FjVTouB0gHePsVARfp3FtLatWc1MDmtGwzUutzRqdJpx7Tv3Y1xp-w5EjDNDXg14eUewsPYl7oGZeod6n7QX3SiIyX12NQfIpvm_I76GHTiiijaVKVxDmfk0YyEKErhjGArzf_3uo9LarOArHmoBdt9eKw_kfWZbfqHpmlNhZ9IR5y3Yb1hVCk-28MngzENV2eMRQGwKYq4bfrI48KXRE5-j5aSjhexAxMPWFB7X5wwlG67iQGgmK4Eg1oUVeYdDairMKBhArwKOkNwSOMt_oUMQcHwmt7LmTjMZRKnIpVCvJebYLRfkeKJD3ia2_Pe503YGPRFyPCbuPEVGCBGLECEkbNJjM5KK5sU82xtr7EPxXqv4e-xZM7X5aEPKgcVqil9pvnVhUerbT63Dl9qJL3cJKfoiI4kqhqFWjiC7jQTstrwzznx2ITP4nyREzGqCADGwuquX4YtosPKCgPJExUl8Cvy5764TuZ7iJMBYnSxnjBgkRG2nwffgyIuRL9PnuORW2yZ9IpX0y1TSL7m1UQfToLIXZjCKujHYHhCMWk1Yhmxa0ye0DZpZqyrql6i36NDu0Yv-UoBZW8KCmxwwlOtTjZlexCq_WP5wcULQM57cPceuwt3gZ11gBWGqb84COq68Sz-SY2B8RP8zsXBrhfiyQXMuWLF9LpTS6MswWUgg0gF_UYTc40diyk0HYqfplGZXB_cHP8AMw_-Y8AYxilQQ8b_jmO1rPspXfb4jXlkvdR6v-w3dRCuIDvh__5OXns6Fdr-6W4YSBv2vs9zNqlmIUDMeLnAyBOhXiY2cKcSwg6PL5eMNw7wxRHWbe6kn95F091nZDb71tWKAe7oXspU0q4nSvaf_8apIB5z_vRSUOHm9jyiUGNXftmsb2W0D1OW2giRBZsM60vge6hZJSeJkeuEPsVHQa65N2ZhFfwIr3SXHvdicJu3nUgW-lo8S9b796Rp7CV4rXRyaJzihy8zn9HwK6PSVbGScBsge4tdgrt0cVexEh5ldeO2tf5Ddsq5GLdkr98qgiUhO8_YQ_QPdQnoJntPrwGobFB9gJyXrSOeU7RSfMcknBM5l0XRtUbh5K0WKcb1GQ-261dnTjvnDWmjHZwTsxQKDMg-1u294rLXQeMwMBgvV6J8ULfzYHxCGC0QVjiXzt52nyCAon8CtSiml38k-SYGb4MdFhf988TOQP2shNL3RxM2knXO8ClqQ76ycQYU0MBY65Vg6yFIm__wHS5Dn1Exxaxt-FkARh3EujW0IFuqQ2cWWlPWhi_AyhXZpZK9eg7B6h0_kxG8FdbnmQg3KoP4yPYaoBvYcwaiJsGucvKDmbKDdrDa9a9UE46lY3u2vdglWGctZg8PIZPTCOclg_6D_m4rlsLcOA7ZyNzKXldn9aAxy-CZN-6a3lycPtuyawLhTLGjLnvEhf1AFjYGo3H_UJodMflk_JaGy9YPaY-lRfRsz6qeUwjo3XwOZ1jjHCK1-n3iV_fAso8vxMYoI6evetiraG9pNfA4z2zZ1uGxO7bd2AYqr1fyr5TIiqWQ5la8R99J6Fhs_eBaJR9NFmarKRO5-k9KljgvS1SzYurFXvk5jhsa4m5xshNb0mNG20gONkZ5VG3KKSzmhFn9dOiHJyANzvDD1L1OydKFzcfD6cRSjUUEc6kc6sn-LD1s5bXVBAEzE6SkTMDFANniUcCE9nFYdBVqsg3T4v0OpIj8dTI1B_fID5SAm7atEYcAda7jw2W_xgGFjWJPLI_1eq7qdFCWEyMt36ZuVyUzQr_S6rINUoRNhHoSo4i5RJ7sQMwXveSbUmp4ZO2Fn-BuMrtMlSWb4NtPnwKJ0-xFcYqUX0MeQsTE8B8IQXxeBkjFCQb1lMbS5hjVo-XErngu2MqNUtJiyUgHcV3gLH_szw8z3GzoVnHDx8AS-ZB6hLt3yVWGKGtHfk6qhiX3gb27DJnz3qVxMhgqC3Lb4RcVSV0pTtgDZP2CfZ6__Mv61lxO-8DU6636UKMJri3AHhHInBjIQrRs7UvsVo11-tdgeZR7EuvrPI5SqxtQe99i3spYWIzPj1vX5hJMCsg9Z-oM194Yp8zpiUvOOoFtpzuCIWQm_-vJtfSbifABMahlh3z8OvcuvD6Gui0GVPhbDn7d2hQcwZk-AaWOgfEwKljMokTd2Ocod1cnjPjswxMPHfguawfS2h1Uw9t21VIdtcIDmFYpSoDLrBpx4lyJ5bgI4-liRHa58zcwN5b5eOKwyszr8FnORWVhIBJseQqAIzh4NrsXtM0RJ_jiYIUL32T3wA7350EEjmA9jptnpjG4irJrNTuMNMrPNCUjV0Voab4Azgkzd3GPuZZu5fN9Vp9bcnASTYF6u0YdIJ12YDxmv_O1BbKHEEdiP8BAaMASHEsgNlLvIPjO9wpkopei-SxTw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_014b15b53d8b306c016ac1b004c53087d1ae49323f1fc7019c",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbAJlnEuzY_hEiwu9j_wfOFm-S-B_oMD4sQXPJErTIPum0eAHLwE-FHUJXcKPENB65TOFutTBiwkWoyw5wsXGT3vGSbj2M4TmN2BwFRHBnnhXua2FU42pTX99xzLanI1Xkdr5Uh6QzdNqtMrK0peq1GwhgSBRPlEqfJkI8P8GtkTMn7vVR-nLGGMNwmfkdtBwsH-L14gWjlffHdMOr0yq1w_GmdY7CEsQ-OUMBcxyiqoHYeMiWw_jUQRIYIKNjUDr8JL2rvRIxeE6x1XDJNXXBO9sabtr5BwKbwRZyVpNlBxRd_JZlrdahYXOMybYz4xZ6j3psTa3r2SItqonOtRRqJ9w_Y5sQPd4NxfVdeqX-RFcPWW6be-BR_Mxed7iuEikMSCzOgDIUCMBDVnhPpZFdIM-2GPbdyR05WxAQVJXI4e3glX_t9r4vTyiLhwKbsFHTZR8OOYG10cYLXmIdyBR3v32hPVPyYLyGq235gS7WiwmQ8STVkG0Z804_TAp8J45xyfvaOpRR5NvNcvSbyv9yd9oY1HK4TdhQ2P3WDQHAgdfY8xQdINUdK2HfG5G4OcYK9ib0VIcoWr7YkwD-QaSN_NZIV1FD7yiPITekZfnBW8cpaahiUNLayBJ2WgMaCq5ZLIMdLGJbJKu7IEJFvEsfgP-XYPhgaax9LeypKFzqiX7rZiOnTWwsberczpzYRQxa9Xoy_DUdYLbKTik356bHciDcpxLWQrU6KD7uEXESFsO2qY44UAFfvlfXCXvKxBG40yEBvxAq4SSGgBYI1zPIQKf_kvOi4-GBw3hRH6UfKGatKNfBwW8OKR_2r0AIO7B2w7Lnckzmv2jd__s1thmqjdpZ9ip9C1PjBxCoaXs3KD_TrKJVB1e-XTDSPleAvc32yTSAef1xz4AAhbn5EfoBSv88HE-rXmFcQiVKBxMMLIp8IXVZTyKiGj3bGZXNsvZfifyAgazh3TKo5jjB6NGXqVjZ0vDB73cqXvZg-_uReE11vvsibEGzirAxkGvJQSjw_te7dtWR_wQJQu4VY0X2--zJjKD_psOqsoaCJpvojuxS_U3PQWxBQYtsWy_BSgl2sCLtWZUWe2EUdKWWBizAGNzwHqjI_Vg7xpkOnJUYuX5olzKOXZ6yG2p_jgGmovuLzps1DM-CJ21_UVti3nb3u56zBOwE6kvYBsBff3dCR8lGICBADy40mlecrH5aNgNnN2FfQFGb3JLElCz6JdYa0Sl-aMdDr1cWHtl2qOafLsyLvhJyuPSpsrYmS5NckE7wrCiLCp816ctlC2DFahD8F_YFRCwv-BztBfetcRTz61DsvUJFvF_3hvD-GqFjaPPLITmpChbGwwmnlTjI02pjIAqrdJnPpOVU5yQg0-Xp11c1MA34PZjq0LA4PuLwkJMvqE--xxDeL_UXreKbK0vjAWt6Wo_AeY06j2nsekjD2CO19ZZ5qL-sFe20b-qgTMSHn-.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_014b15b53d8b306c016ac1b008f70487d1a19dddfb3515d577",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3279,
+      "completion_tokens": 1957,
+      "total_tokens": 5236,
+      "cost": 0.0013883,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 3276,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013883,
+        "upstream_inference_prompt_cost": 0.0004098,
+        "upstream_inference_completions_cost": 0.0009785
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 543,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.0013883,
+  "output_text": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note adds explanation unnecessary to the direct status update.\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Adds an unsupported claim that the scheduler supports operations.\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note explains the edit rather than providing the requested concise prose.\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note explains the edit rather than providing the requested concise prose.\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note explains the edit instead of giving only the requested business update.\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note explains the edit instead of giving only the requested business update.\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Drops the source's emphasis that completion was finally achieved.\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":false,\"t\":false,\"r\":true,\"reason\":\"Adds an unsupported absence-of-evidence claim and an unnecessary explanatory note.\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":false,\"t\":false,\"r\":true,\"reason\":\"Adds an unsupported absence-of-evidence claim and an unnecessary explanatory note.\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+  "status": "complete",
+  "parsed": {
+    "ratings": [
+      {
+        "id": "decorative-contrast",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "A",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note adds explanation unnecessary to the direct status update."
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "A",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "Adds an unsupported claim that the scheduler supports operations."
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "B",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note explains the edit rather than providing the requested concise prose."
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note explains the edit rather than providing the requested concise prose."
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "A",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note explains the edit instead of giving only the requested business update."
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "B",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note explains the edit instead of giving only the requested business update."
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "C",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "Drops the source's emphasis that completion was finally achieved."
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "B",
+        "m": false,
+        "t": false,
+        "r": true,
+        "reason": "Adds an unsupported absence-of-evidence claim and an unnecessary explanatory note."
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "C",
+        "m": false,
+        "t": false,
+        "r": true,
+        "reason": "Adds an unsupported absence-of-evidence claim and an unnecessary explanatory note."
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      }
+    ]
+  },
+  "accounted_cost_usd": 0.0013883,
+  "finished_utc": "2026-10-04T01:46:55.513647+00:00",
+  "latency_seconds": 11.454,
+  "original_request_sha256": "db30fa3e378a04c027e9b02716cd6ada3934ae9eb701f74b04d649b57e442e67"
+}

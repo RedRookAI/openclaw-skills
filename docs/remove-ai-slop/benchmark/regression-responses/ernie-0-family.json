@@ -1,0 +1,126 @@
+{
+  "family": "ernie",
+  "arm": "family",
+  "replicate": 0,
+  "job_id": "ernie-0-family",
+  "revision": "meaning-and-note-guard-v2",
+  "requested_model": "baidu/ernie-4.5-vl-424b-a47b",
+  "started_utc": "2026-10-04T01:54:42.693213+00:00",
+  "request": {
+    "model": "baidu/ernie-4.5-vl-424b-a47b",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/f7e9fc4c7c6acf4c0cbe73566c18d94fe8bc9d1779e2cd329b7f2002b397689c.txt",
+        "content_sha256": "f7e9fc4c7c6acf4c0cbe73566c18d94fe8bc9d1779e2cd329b7f2002b397689c"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/e70d9c0942a10ed79c7c121058ea03c1614e6304b06560c771da3f7c82def1b2.txt",
+        "content_sha256": "e70d9c0942a10ed79c7c121058ea03c1614e6304b06560c771da3f7c82def1b2"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.84,
+        "completion": 2.5,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "seed": 20261004,
+    "reasoning": {
+      "enabled": false,
+      "exclude": true
+    }
+  },
+  "reservation_usd": 0.03456808,
+  "response": {
+    "id": "gen-1791078882-CHNZwbuUw7odMJhSIWVG",
+    "object": "chat.completion",
+    "created": 1791078882,
+    "model": "baidu/ernie-4.5-vl-424b-a47b",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"results\": [\n    {\n      \"id\": \"contribution-boundary\",\n      \"text\": \"I helped build the scheduler.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"uncertainty-and-condition\",\n      \"text\": \"The cache may reduce latency by about 10% for repeated requests, but cold starts remain untested.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"protected-quotation\",\n      \"text\": \"Her note read: \\\"Not today—but soon.\\\"\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"already-clear\",\n      \"text\": \"Please send the invoice by Friday.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"participial-tail\",\n      \"text\": \"The team launched the dashboard on Tuesday. This launch introduces a significant change.\",\n      \"note\": \"Reworded to remove promotional tail and figurative claim while retaining the launch fact and its implied importance. 'Paradigm shift' removed as unearned profundity.\"\n    },\n    {\n      \"id\": \"business-paragraph\",\n      \"text\": \"On Tuesday, I helped deploy the cache to two servers. Median latency for repeated requests dropped from 80 ms to 60 ms in our 30-minute test. We have not tested cold starts or the other eight servers. The dashboard still shows yesterday's data.\",\n      \"note\": \"Removed opening fluff, rhetorical framing, inflated claims ('transformative journey', 'unlocking seamless experience'), unearned praise ('unwavering commitment to excellence'), unnecessary speculation ('could potentially reduce support tickets'), and closing announcement. Retained all facts, uncertainties, and the dashboard data issue. 'This isn't about speed' removed as decorative reversal.\"\n    }\n  ]\n}",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5768,
+      "completion_tokens": 405,
+      "total_tokens": 6173,
+      "cost": 0.00292881,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00292881,
+        "upstream_inference_prompt_cost": 0.00242256,
+        "upstream_inference_completions_cost": 0.00050625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.00292881,
+  "output_text": "{\n  \"results\": [\n    {\n      \"id\": \"contribution-boundary\",\n      \"text\": \"I helped build the scheduler.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"uncertainty-and-condition\",\n      \"text\": \"The cache may reduce latency by about 10% for repeated requests, but cold starts remain untested.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"protected-quotation\",\n      \"text\": \"Her note read: \\\"Not today—but soon.\\\"\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"already-clear\",\n      \"text\": \"Please send the invoice by Friday.\",\n      \"note\": \"\"\n    },\n    {\n      \"id\": \"participial-tail\",\n      \"text\": \"The team launched the dashboard on Tuesday. This launch introduces a significant change.\",\n      \"note\": \"Reworded to remove promotional tail and figurative claim while retaining the launch fact and its implied importance. 'Paradigm shift' removed as unearned profundity.\"\n    },\n    {\n      \"id\": \"business-paragraph\",\n      \"text\": \"On Tuesday, I helped deploy the cache to two servers. Median latency for repeated requests dropped from 80 ms to 60 ms in our 30-minute test. We have not tested cold starts or the other eight servers. The dashboard still shows yesterday's data.\",\n      \"note\": \"Removed opening fluff, rhetorical framing, inflated claims ('transformative journey', 'unlocking seamless experience'), unearned praise ('unwavering commitment to excellence'), unnecessary speculation ('could potentially reduce support tickets'), and closing announcement. Retained all facts, uncertainties, and the dashboard data issue. 'This isn't about speed' removed as decorative reversal.\"\n    }\n  ]\n}",
+  "status": "complete",
+  "parsed_results": [
+    {
+      "id": "contribution-boundary",
+      "text": "I helped build the scheduler.",
+      "note": ""
+    },
+    {
+      "id": "uncertainty-and-condition",
+      "text": "The cache may reduce latency by about 10% for repeated requests, but cold starts remain untested.",
+      "note": ""
+    },
+    {
+      "id": "protected-quotation",
+      "text": "Her note read: \"Not today—but soon.\"",
+      "note": ""
+    },
+    {
+      "id": "already-clear",
+      "text": "Please send the invoice by Friday.",
+      "note": ""
+    },
+    {
+      "id": "participial-tail",
+      "text": "The team launched the dashboard on Tuesday. This launch introduces a significant change.",
+      "note": "Reworded to remove promotional tail and figurative claim while retaining the launch fact and its implied importance. 'Paradigm shift' removed as unearned profundity."
+    },
+    {
+      "id": "business-paragraph",
+      "text": "On Tuesday, I helped deploy the cache to two servers. Median latency for repeated requests dropped from 80 ms to 60 ms in our 30-minute test. We have not tested cold starts or the other eight servers. The dashboard still shows yesterday's data.",
+      "note": "Removed opening fluff, rhetorical framing, inflated claims ('transformative journey', 'unlocking seamless experience'), unearned praise ('unwavering commitment to excellence'), unnecessary speculation ('could potentially reduce support tickets'), and closing announcement. Retained all facts, uncertainties, and the dashboard data issue. 'This isn't about speed' removed as decorative reversal."
+    }
+  ],
+  "accounted_cost_usd": 0.00292881,
+  "finished_utc": "2026-10-04T01:54:55.014584+00:00",
+  "latency_seconds": 12.321,
+  "original_request_sha256": "274ca52ef2f98968a6e9cc47a029d5191a04cd83263c507166acb60fb8690ec7"
+}

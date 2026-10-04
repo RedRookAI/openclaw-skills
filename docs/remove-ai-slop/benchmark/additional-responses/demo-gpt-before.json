@@ -1,0 +1,99 @@
+{
+  "job_id": "demo-gpt-before",
+  "requested_model": "openai/gpt-6.1-sol",
+  "started_utc": "2026-10-04T01:45:55.153376+00:00",
+  "request": {
+    "model": "openai/gpt-6.1-sol",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/61a921c68a626059fb7c748191af3599a6c17f0176fa639b26d691e9f3e882cb.txt",
+        "content_sha256": "61a921c68a626059fb7c748191af3599a6c17f0176fa639b26d691e9f3e882cb"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/f44388cd9a52812b65d1ce05f40592d2aad7e37bd7fa5195b4ee838b319b28ed.txt",
+        "content_sha256": "f44388cd9a52812b65d1ce05f40592d2aad7e37bd7fa5195b4ee838b319b28ed"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 4.0,
+        "completion": 20.0,
+        "request": 0
+      }
+    },
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    }
+  },
+  "request_sha256": "9a579c8ed2c1acdad0b045ff9cad00fc27e2a14f5f24c8d7bbbc1881b22bbfb7",
+  "reservation_usd": 0.047432,
+  "response": {
+    "id": "gen-1791078355-a7hSIVAYYYuDD6b5E71L",
+    "object": "chat.completion",
+    "created": 1791078355,
+    "model": "openai/gpt-6.1-sol",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "Hi team,\n\nMaya helped deploy the cache on Tuesday to two of our ten servers. In a 30-minute test, median latency for repeated requests dropped from 80 ms to 60 ms. That’s an encouraging result, but it’s limited to the tested requests on those two servers. We haven’t tested cold starts or the other eight servers yet, so we shouldn’t treat this as a fleet-wide result.\n\nWe also don’t know whether the cache will reduce support tickets; that remains uncertain.\n\nThe dashboard is still showing yesterday’s data. Who owns fixing it? It would be helpful to get that clarified so we’re not relying on stale data when reviewing the results.\n\nThanks!",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwa_VlzTSMlyv5v85lCGNBgAp-Pa6Jyr6Tr_xnsEY8RnAWXW3OLa5wr_jNeLZm1LaW3CTKiJ4qsaTrhoso23X1LuHj_PtCWpYjcpjwK3KI6pE7J-aJuwKOSs9_ytbXO26NzXv-JgJR0HutJwfPRD9_eTLcE3m4xfUAABx0VxtPyfk2ZZ9qEAzVR-vNc41EDRjQLv6yxnBSFbIfZUlQVhUlmoOsiHRSj61jvRp3GhfLmcaeyrBvJ2nvtGNvVw6B15yDOi_pLzicpq7a7MLAsHAgBbpohYr6Myn7ERdCQv9LY0x9E5BEwXfvBor_5Bd4rJn10Jff7N-yWT5svJIqwO0IysczcdENH60WsnqvxTjrB_5ICgcs81Cn_2pZiquCoSZHe0TgRHwdcguwR0ztqjxu83ORd5uugR-GkLr9WC_nO3I8nsiJnwSCb6VP2b3EgLDayEOrnzlvvAgz8LFQcX7fKrAprmyOoxZEwqTDvZzDqa2Kqyh8j1kUYqAiw-1ZitVdOE7eAzoaDU14UUfzhN8_6dtRP59mc8QJRWj-UbjEnkRihc1k6-x8NQNSTVpR-lMq0WuA1a08tCXsTDMi7JdHm6dsURHuaXZNWbQUbvRoL-ogzU-KGicmoHQXP4g96s8dlaQHPNXbYHMJXS3wxHF5VH53Iso64uB9cAEC5cab08q324OzNkQKXHrY8QTGteKKQcgoYXbpMztiKwOSJQOcF6ki12JdI3aXf1WlPsqvGhRaaW0aKXDkfW28289Q9XttnGQW3GBtjGtoULwoQfYj-MOkUMPM_gaYD6myES7sZ6lU_4EgtqPP7aTZ6q4zR71NXbC3ImyUtQm-5BB9tpCPj9Eq7mE7ruw1PwLZvW3V9xl3L_U9nX2Pezo2XYD7kN3Q5NHkcYaT8ceVvo_zv7puw_4dAWyQGUKu1nuqzcJJ1C3cacMvWupPWQYY7ou2aKHsIGluyHNuhoD30I6M32roK8BIBjZh6y3M896tI4hEX-tIHy9HnyfEMID7Wnq-1GbFajUh5FqfhMR0Ce56tN1qd5-vUcWVD4JnF9zSVieAbiSXoSlD7WRqx5CksUiKsVNJrx-OSBBJDFskyaW5IG2oh7-lKEGZH4Nj2BrPh_M0Qz4gIAXSgqioWKA8h5wXmFRB1By_2TVrA5dyxi8vhwOHdEA35eW08vizqpSkVU3tNniYBXjGCO6_durANoGvJm5iAQ1erLXJeFjrp8puG-kLks5_IP_NIO2vgwGJu57Cc-YBo8ut8SnKbHRgQCG-BglCh4Vcjkh86CGd210oxMj2y9aSPdZsrt6PcjP6b_xjCeSv5shWFJaHRE-qgnMgFOkq0-BwozhP7rdRUZaRfJr1B5N-BMt4AAo8X2lNO14rVJX7Jd7JkkBLIwBCX8gywe0tLzYsUl-zXIb6M52spOonQzN0ujT4Jzcy2WKz7RB5NOGSaU=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LjEtc29sLTIwMjYwOTI5fG9wZW5haSJ9",
+              "format": "openai-responses-v1",
+              "id": "rs_0e8adcc095d90e75016ac1afd4e74087d194d5627c82aae91a",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 122,
+      "completion_tokens": 167,
+      "total_tokens": 289,
+      "cost": 0.001914,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001914,
+        "upstream_inference_prompt_cost": 0.000244,
+        "upstream_inference_completions_cost": 0.00167
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 23,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.001914,
+  "output_text": "Hi team,\n\nMaya helped deploy the cache on Tuesday to two of our ten servers. In a 30-minute test, median latency for repeated requests dropped from 80 ms to 60 ms. That’s an encouraging result, but it’s limited to the tested requests on those two servers. We haven’t tested cold starts or the other eight servers yet, so we shouldn’t treat this as a fleet-wide result.\n\nWe also don’t know whether the cache will reduce support tickets; that remains uncertain.\n\nThe dashboard is still showing yesterday’s data. Who owns fixing it? It would be helpful to get that clarified so we’re not relying on stale data when reviewing the results.\n\nThanks!",
+  "status": "complete",
+  "accounted_cost_usd": 0.001914,
+  "finished_utc": "2026-10-04T01:45:59.810603+00:00",
+  "latency_seconds": 4.657,
+  "original_request_sha256": "9a579c8ed2c1acdad0b045ff9cad00fc27e2a14f5f24c8d7bbbc1881b22bbfb7"
+}

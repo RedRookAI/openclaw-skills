@@ -1,0 +1,16 @@
+Remove AI slop from this draft. Keep the facts, uncertainty, and intended request. Shorten it if useful; the original 100-140 word target no longer applies. Use a direct peer voice. Return only the edited email. The original brief is included to check claims. If the draft introduced an unsupported fact, flag it briefly rather than inventing evidence.
+
+Generating model: x-ai/grok-4.7
+Original brief:
+Write a 100-140 word email to the engineering team in a natural peer voice. Output only the email body.
+Facts: Maya helped deploy a cache on Tuesday to two of ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. Cold starts and the other eight servers have not been tested. Any reduction in support tickets is uncertain. The dashboard still shows yesterday's data. Ask who owns fixing the dashboard. Do not invent further facts.
+Draft:
+Hi everyone,
+
+I wanted to share where the cache work stands. Maya helped deploy a cache on Tuesday to two of ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. That result is limited to the test we ran.
+
+Cold starts have not been tested. The other eight servers have not been tested either. Any reduction in support tickets is uncertain, so I do not want us to treat ticket volume as evidence yet.
+
+The dashboard still shows yesterday's data. Can someone tell me who owns fixing the dashboard? I would like to know who to ask so we can get current numbers in front of the team.
+
+Thanks for taking a look.

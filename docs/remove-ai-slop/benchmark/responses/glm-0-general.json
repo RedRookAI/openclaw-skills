@@ -1,0 +1,99 @@
+{
+  "family": "glm",
+  "model": "z-ai/glm-5.3-flashx",
+  "arm": "general",
+  "replicate": 0,
+  "prompt_key": "general",
+  "job_id": "glm-0-general",
+  "started_utc": "2026-10-04T01:41:35.256862+00:00",
+  "reservation_usd": 0.03253028,
+  "request": {
+    "model": "z-ai/glm-5.3-flashx",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/c5d7cae1aa58453a19a329e1cb2a86adc851bbefff9faee8c7c2509aef7db992.txt",
+        "content_sha256": "c5d7cae1aa58453a19a329e1cb2a86adc851bbefff9faee8c7c2509aef7db992"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a.txt",
+        "content_sha256": "162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.74,
+        "completion": 2.5,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "response_format": {
+      "type": "json_object"
+    },
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    }
+  },
+  "prompt_sha256": "c5d7cae1aa58453a19a329e1cb2a86adc851bbefff9faee8c7c2509aef7db992",
+  "user_payload_sha256": "162c6451bf734e7a057317aa558356059e9f8e55384f5a862804e0d1a412592a",
+  "response": {
+    "id": "gen-1791078095-WaqnKHAqF0h3hluMmfgS",
+    "object": "chat.completion",
+    "created": 1791078095,
+    "model": "z-ai/glm-5.3-flashx",
+    "provider": "Z.AI",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"results\": [\n    {\"id\": \"decorative-contrast\", \"text\": \"Run the job once.\", \"note\": \"\"},\n    {\"id\": \"substantive-negation\", \"text\": \"We did not retry failed payments; we retried failed notifications.\", \"note\": \"\"},\n    {\"id\": \"critical-citation\", \"text\": \"Unlike Lee et al. [4], we found no improvement in the smaller sample.\", \"note\": \"\"},\n    {\"id\": \"pat-humor\", \"text\": \"I reconciled the invoices.\", \"note\": \"\"},\n    {\"id\": \"intentional-humor\", \"text\": \"The deployment finally worked. My celebratory dance was mercifully undocumented.\", \"note\": \"\"},\n    {\"id\": \"contribution-boundary\", \"text\": \"I helped build the scheduler.\", \"note\": \"\"},\n    {\"id\": \"uncertainty-and-condition\", \"text\": \"The cache may reduce latency by roughly 10% when requests repeat, but we have not tested cold starts.\", \"note\": \"\"},\n    {\"id\": \"literal-review-word\", \"text\": \"The tapestry depicts a coastal landscape.\", \"note\": \"\"},\n    {\"id\": \"protected-quotation\", \"text\": \"Her note read: \\\"Not today—but soon.\\\"\", \"note\": \"\"},\n    {\"id\": \"already-clear\", \"text\": \"Please send the invoice by Friday.\", \"note\": \"\"},\n    {\"id\": \"participial-tail\", \"text\": \"The team launched the dashboard on Tuesday.\", \"note\": \"\"},\n    {\"id\": \"aspiration-not-capability\", \"text\": \"The prototype aims to detect duplicate invoices. We have not tested its accuracy. It may help the finance team.\", \"note\": \"\"},\n    {\"id\": \"mathematical-representation\", \"text\": \"The vector represents velocity. The robust regression estimates the slope while limiting the effect of outliers.\", \"note\": \"\"},\n    {\"id\": \"plain-punctuation\", \"text\": \"The migration is complete. \\\"Ready to launch,\\\" the manager said. We still need to check the backups.\", \"note\": \"Removed the emoji per your punctuation rules.\"},\n    {\"id\": \"business-paragraph\", \"text\": \"Update for the team:\\n\\nOn Tuesday, I helped deploy the cache to two servers. In our 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms.\\n\\nTwo caveats: we have not tested cold starts or the other eight servers, and we don't yet know whether the cache will reduce support tickets. The dashboard also still shows yesterday's data.\", \"note\": \"\"},\n    {\"id\": \"useful-parallel-list\", \"text\": \"Before release:\\n- Verify the signature.\\n- Verify the checksum.\\n- Verify the version.\", \"note\": \"\"}\n  ]\n}\n``",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5897,
+      "completion_tokens": 604,
+      "total_tokens": 6501,
+      "cost": 0.00293689,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00293689,
+        "upstream_inference_prompt_cost": 0.00218189,
+        "upstream_inference_completions_cost": 0.000755
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 10,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.00293689,
+  "parsed_results": null,
+  "parse_error": "invalid_json",
+  "status": "response_failure",
+  "finished_utc": "2026-10-04T01:41:39.106781+00:00",
+  "latency_seconds": 3.85,
+  "accounted_cost_usd": 0.00293689,
+  "original_request_sha256": "855cc45348ba9c370aa16bc3218dd819d9d8848eafc379456f644e4589bd6cb2"
+}

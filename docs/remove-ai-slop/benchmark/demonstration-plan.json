@@ -1,0 +1,14 @@
+{
+  "families": [
+    "gpt",
+    "claude",
+    "gemini",
+    "grok",
+    "deepseek",
+    "qwen",
+    "mistral"
+  ],
+  "brief": "Write a 100-140 word email to the engineering team in a natural peer voice. Output only the email body.\nFacts: Maya helped deploy a cache on Tuesday to two of ten servers. In a 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. Cold starts and the other eight servers have not been tested. Any reduction in support tickets is uncertain. The dashboard still shows yesterday's data. Ask who owns fixing the dashboard. Do not invent further facts.",
+  "purpose": "Illustrative generation-to-edit outputs, not a controlled superiority test.",
+  "max_tokens": 2048
+}

@@ -1,0 +1,490 @@
+{
+  "job_id": "judge-minimax-0-0",
+  "requested_model": "openai/gpt-6-luna",
+  "started_utc": "2026-10-04T01:48:32.220084+00:00",
+  "request": {
+    "model": "openai/gpt-6-luna",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05.txt",
+        "content_sha256": "4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/b1b40ab6e3f2824ee5aa32e1de60ed7cd5766667c7da02e146a87207de38021c.txt",
+        "content_sha256": "b1b40ab6e3f2824ee5aa32e1de60ed7cd5766667c7da02e146a87207de38021c"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.2,
+        "completion": 1.0,
+        "request": 0
+      }
+    },
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "f0e5dca3c7f6d0f2b7ab37922ed2b9674b912796cd6bd00a76c4196383c36829",
+  "reservation_usd": 0.0071126,
+  "response": {
+    "id": "gen-1791078512-uzRcW1zhswbfhEKWwAXm",
+    "object": "chat.completion",
+    "created": 1791078512,
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Retains the contrastive rhetorical framing the request asks to remove.\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":false,\"reason\":\"Changes the meaningful contrast between repeated-request results and untested cold starts.\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":false,\"reason\":\"Changes the meaningful contrast between repeated-request results and untested cold starts.\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Omits the speculative possibility that the cache could reduce support tickets.\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbB1JxGPC-lnK1KDVBZuMxA28jK5L7H-lky1_Q7D75J67WPpCjaRRTGIhilwGRxOl-3WyQYLJEmpucCOQzWIGElKSKNa039GCdJP8iIe7nGoqZEpfilLlZ-l3l9t8p8FRGTg-P4-LBoFXolWU_CciApjWMKQlGmUwCfwa_Y4vs6-weye0kO9tEEEhe4uXGng20P7lK-OB1fqLTxeGdsJjlyL8R5Ltd9d-XiTiN0dxfhzZRwaOgLCsIklq_kPFS8GKJCgPCIV2tgswqf7bFn-sof4EaZQTxAI3POtmn2XIYHDDtI2D3X2hD4SVHF9K9NpoJ_bE0nwVIMrDnOejghAYLbP-sxTXQE01Au0bFE3tWUVSmBpYtk8Agqmrls-IZiJlR9nFHhrv7vuBB8ogAAvjdsidUYI_RQQ2h1y2nzHuIrpDhDeFzeANrHVF4tWUxPaJEN2ln1e8WoDSptFOkCgxL8hWQRcZqJw7tKm0LSyxPbFfdrPLXay0ueNzEfEJS4xzQp9hM5gjq-iAFhL5ZuHbo4RKOH3tKSF7QBRtOQEgFqFgwFWwr_Q8ByRe-478T00fq2l02rZDYQicCalge6Cb1MC6VDAotYNNPfQg6HqmjP1FDBYFVQJtnL8IrfmaBgmWtjrIAkHgKCRkQ5Zr4wgZj2NK4C5yZJhEC6FFVEVyEBbkQY15e_yji9uZfvmVi9JxH5etbf5jrEEQCNg_pwcE8xnlKgc4ZF2uAxzMjDXjsgrFdDPB0IYU_a4zD1wnGOmSDjgDA9RzZFX1-Ymdr0OT8Gh3qfBOAW6uNweXURZWI8I51KQ9tBTPlwU-hB0CW02K0BdGwzDRK6q33zYF4wxw_sQ8Yxe0fxf04b8WjzBPUwGtJgHiyOMYGA30hXQRaRIGxCCPxG7pvkFxye0oo3lRunr-nhF5QGwouZ9wP3MJwE60ihqy_P0uv_F7rZ0H4PjEt6CxjOjGXkI6zYyQhmOmjjbeseb5Y4jvqTvWdjrMDtdU3vl2pQD2k_IxnXjOLvPOV09LWu1BMrRUA5zq6FiJ_Sr7Mz_j1pARoD7aGeLM6JOEPCDI2E0S_ZigEnbflO7O7gwpsBEEHDrQ1RJuc7cNd1rd5nvBJwkCS6NViZz9vmR2OHhsH1CnSXPOjXYnlt3TAnMPwP8dCwjP3eHSzGghIOuy2z6Py2KfLDJCXvns4VkBdcCle7kfSfyuCPXuvE-RXIaPtl3zBAhPd82U4gsIbVH8IT-XvwVrydP_lkPGAZKBdK2Z0DB3NPxwKxtcj_HoteqmkrOUOYVN4Ki4OsA5L17aqq_vWIxTfQ6Ola9theJ2jrkxN5WEOBL8b-eGDDsArTsG0mTgIsp2qeLsh8jozYe9cU1_eKhfeMmEMu0FFKRBtRlVYfBELo3dqtMCxW_1I_TCkzLx3MEeYb4_PFsRjtSeGuh88n0iquLeNtFgqO5p_jRQEW4o-X_dAtru8qGqlXoTDSwAHvoblG4bOa3rrBZYAb-ojwYkOorbFSRwX3JtYGuLbvA4ijWPXFN-s9sK_dNsOtjuXP2u0uBPPrYwUw4fEf_lU16RsNUlrAJfadTgWIow05vhXDInSBG2lF10rnobZ6wn0juCOsTheV9JyiG_LXt8Tl9xQ_t7sfCN3gTpBZYiSnbnNpnIPgChJQnRhvayyFXgNY1-QHIpK4cJKxvZNLKb-tiPv5fWibiPFn7L_7Vw-_kARQHX23J_ncH0wfn_bvphkFlDNOmgcHdUlIg6UfIT7pQYyvg0I093ltWRj_RW3fmlj5M-3RLZ1JUwv1N2WOKVD7Oe2KsGNvVe8LK9F88U7imk4L8BYQYJDhwiPb0HZ8M4Lvr6okuBZU-zM71_xZVHfonmMR-aJ59LsxqLdV2t22ICYC7LppiI3bNfUjbWncGOfPtgzoTpVXkvwdihjcZtyExqx_eXTBzxoVmkOHErOAxJ_jhFnHIB-urcoNCymd8kxN3K6eZj6-aNdIDJvnCznC0UeKiXKMqNr6SYFqnoLZsHCVm_yfZz5dd8LN3XpyB7hYoIWK5dXcOSWpt0i7kp3Qo1a5dM54ynhHJq54doWeR76ZcL__J3OcizqFujyDwMkmIb2EeX6OxjCrV8RNTn1cKdAmPDH4Njrc0Npn7-sVlOmS6i3HEOz0wTUxRUPf8qxbnQsjEsSk2jgS6AS7R3DjhmJhx9wt73YX1cdMXofWAnPMYLkLbMIb2hvBDnntaHMxil5-2Vz8nKXV84ox76umP5uQn-Jhh5QfiyF01T4pUXdLwmZGHw3AWbVXTxIMnVemRPxFZPcALs0BJrPLhLWO1jRxxt4DVbsynLP76JYfjTUVq8Y3ljEb9goYqdYacf7BQhUB1UrzV2WAOzW3ferMxz8p6V0ng4JGL76DfNBXittVx0dl8oVUInFnpFnPC9_iP5r4zEwrOBxCT8lzMt-i-B_uat7EIItCJ0X3e0EqsZvcGnkiQfEaxsKMekhIxcR9tGLWN7kfnsYCX9fjoU6xHXM5Rz7DisnhQzKKiIHWpBDjGYQdsUFRuQ62VktMKURiQw0ES8R-v6j75d0-tAvmzH6bOK7u4xioWuLXXXrBL4E2AUxC4Z9KQ8jbyFe-5p3rqxWZ7Yi6h4Sb8adlIyvvS5uzsDxK3fnCILSTR13Wf7z9ee_9e1KCoKNcGVZ_aTbBlH1adtGRk5gR5o2M1QJNFCijJoOtNlTdHp64qvarA9xen2fYc9O45lw0MphHUzmmdvcOGm6Lf5-uDDQEK7BUWzLbs5xOWqCnwfa1t2oBTwutg7zvIZf-7k-6CL6jrA1Nr9yBzdmP4cjuPt6P2yIVe1FWCBvb1aoX398lq7yJpuPg4dZzzvwpM4gUw4FD-u6Htv32JxcSHuLqqYXp-p5yWNmF7GAZjUqVmfQ-nZ9AX17LWB3doX4syZC9h9brsxPQxFLn1nB1Ibl4uo3sZmfYJ9nIHcSL9jsiP2Bmk69zxEHZcib2cu0MaFnu_sqRXqKtYYUPxiQeOJyTTuHucVV175Wgh3itPCQLLl4FQ_6HaPhSCxRgpajtVSOZYVY2AcDUkHMq5AyO6oYHUCvIUZN8MaGb6ULe8iJZTL0F1TJQUwDYsRfun7ugRvg-xNzLbfoaYYF8drmS65qTNEUmEmw3MlFxyGy8XMn2Qd4uNdQRMjyfNsLf__W2UHmSNvTQ4-sEn7QeKEi0FY3NC56A-0gQBUry71riFrhtOg_E-kYp3-1QwHQTmR5XQ-ZteIHaOg5xzt_aXF1UY2AiOI6PMwJdLB9I__3-5Ak909oCrlr2Qvx2ihn7YjZaeWDK8oTPlsZAsgRrAfrL7XPE-mhydE7Nx6y619WpRA6MC1BZtlx4ScQ-Z6Rhg0kluYeHTZT-TZCYIb_VRma43JvnFGilii7rsLXxviMs_0M3n5rv6Sd3uWSFe4xuIT1q8fskVkLNKJgXIbN6656JS_drUZdfrWLeWpSwrYkyFdt2FuTGi7SS49gqMa4hLdiZRTzy056wG-gyGOjYj-yqwt1lmJM24_Wz5e1JqKxHEnl9Ii-1EpT3IZ1sDAybMoch2NoPLry8-MKzu1d0mVdiT6UeLGCw1yR4bSwW7nav6ZJUtjEQYUCX641oAGZOtvTGwVOGKAwWgZhWUN6PjOUzMVJ-pparu_G4zaPwziIC9rcI9FGg31dX_zeMlnXNRz9evaSDO755yI6BtfHYAORnJlNZmWHRR14sS2nHe5ozOGh4iHtIvy-oI8rgGuf_s8e0AUNQXGy-Nkw_v9CINlFn513X-7oo_Ttpweuph4LVKTKqqC7zLlFmx7ksAZMoT-LEETUbhCChIniDu3J1RD5-gfod69Q3iV-ZnJ6rylXa1MwHhR4mNXjv3tLfc2ZNDLKOzV76XjhuB_4iispokTb6ksR9OV6PwmpcVOO8ak3bfVsbyLhhZQMAuGjK3_t69VcYfR7d4ncKBcNFnifx2A8xiZLIHPq4Tvc1a0_GqMlJEF-w1IbQ-NXCo4K2owrDKAEwy2GqFi0Mvya6GfSXmOsjlxCeNOW72FVLgjxbR7o3o3LnJTP4tTnk2GorelUBgcl2PewA7d6siW9k-HnQXSry8u8mim1K5_5tQCKaqwNlRrUDFU9v4Iyy0vDbmyXNDFm2jyO4M00hdzwIDYIK7RhjUouvPiZZp1OXa09kY5CQe1-3MRfEFY6MAti45QAFK4eQ7bG7LtpZqplYAyb1kaW3Zf1kS7MRsVdiKokYkYTV10ab7p46I2deH6XEfg0ENLRZwOyUQBAr9lGiFw6JE8eib6i3N6DUq_BlRwGr4MusDVXAxeM94GCHigb8Pra9wL47xlOMO8y5SMohwZqrxPf4n3phDtEs1KnHyyMcN8fZxDoojkF1Mqn3HDJwEROzBq0FszqEv3CNr2guAO62k2iK8B-O61xUxjF1vis2EMNlrYKf-Jc9KvF6NC0PsesCxqNGPpn1_LdPe9elOyoqBInAJ_GNJsJZdt4Ton9u0SE_KgEoryZnQ5sHrwh2d6qZXsV3m_FZCninYHfrzc2P-skketsHLMJXykkp5_GERUIYAuetlhJ0tzaqmMlrDZ3x7ARxRvbGBU_8cdQq8zNK4DnM-RgorHxP7YGaAUr_OSQ3OvpBDZSXhjp6WAkacinsuGOik9jFV7pU2JaBP8BWIZTM-uHoiBh3tlvDLzl-ukyBw9fPVT6bL6VUZTwW9Wbv9taRkUuMmXXCTN0SM9evt-bjeTAHE0C5ut8F556aCH7otLMqNKzOvtydsvCWoCpdNTt51xaAuijhG-viAxPpJrxI1TGPEYRNzjSs1PmtSVWPEMFnuaO4WSu6Sr5X0FNVQ_eatO2gpmO5STOJfX9MuHjljOZb_6eUm-g-FJ7H3pq2qY2w_z8y36uC0gy2pOsfkn2LrPHU=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_04f545f75edcbe02016ac1b070f97887d18e3fe839c98ef963",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3075,
+      "completion_tokens": 1862,
+      "total_tokens": 4937,
+      "cost": 0.0013153,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 3072,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013153,
+        "upstream_inference_prompt_cost": 0.0003843,
+        "upstream_inference_completions_cost": 0.000931
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 508,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.0013153,
+  "output_text": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Retains the contrastive rhetorical framing the request asks to remove.\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":false,\"reason\":\"Changes the meaningful contrast between repeated-request results and untested cold starts.\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":false,\"reason\":\"Changes the meaningful contrast between repeated-request results and untested cold starts.\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Omits the speculative possibility that the cache could reduce support tickets.\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+  "status": "complete",
+  "parsed": {
+    "ratings": [
+      {
+        "id": "decorative-contrast",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": false,
+        "reason": "Retains the contrastive rhetorical framing the request asks to remove."
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": false,
+        "reason": "Changes the meaningful contrast between repeated-request results and untested cold starts."
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": false,
+        "reason": "Changes the meaningful contrast between repeated-request results and untested cold starts."
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "A",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "Omits the speculative possibility that the cache could reduce support tickets."
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      }
+    ]
+  },
+  "accounted_cost_usd": 0.0013153,
+  "finished_utc": "2026-10-04T01:48:43.306451+00:00",
+  "latency_seconds": 11.086,
+  "original_request_sha256": "f0e5dca3c7f6d0f2b7ab37922ed2b9674b912796cd6bd00a76c4196383c36829"
+}

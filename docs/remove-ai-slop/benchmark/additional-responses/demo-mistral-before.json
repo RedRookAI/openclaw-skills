@@ -1,0 +1,91 @@
+{
+  "job_id": "demo-mistral-before",
+  "requested_model": "mistralai/mistral-medium-3-5",
+  "started_utc": "2026-10-04T01:46:29.222751+00:00",
+  "request": {
+    "model": "mistralai/mistral-medium-3-5",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/61a921c68a626059fb7c748191af3599a6c17f0176fa639b26d691e9f3e882cb.txt",
+        "content_sha256": "61a921c68a626059fb7c748191af3599a6c17f0176fa639b26d691e9f3e882cb"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/f44388cd9a52812b65d1ce05f40592d2aad7e37bd7fa5195b4ee838b319b28ed.txt",
+        "content_sha256": "f44388cd9a52812b65d1ce05f40592d2aad7e37bd7fa5195b4ee838b319b28ed"
+      }
+    ],
+    "max_tokens": 2048,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 3.0,
+        "completion": 15.0,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    }
+  },
+  "request_sha256": "7dacc972f1425ffa27af3aed322ed464913c46e16c1e252a4c830b2393589b67",
+  "reservation_usd": 0.035574,
+  "response": {
+    "id": "gen-1791078389-hNeQgOy54CXjql4fK7du",
+    "object": "chat.completion",
+    "created": 1791078389,
+    "model": "mistralai/mistral-medium-3-5",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "length",
+        "native_finish_reason": "length",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 137,
+      "completion_tokens": 2048,
+      "total_tokens": 2185,
+      "cost": 0.0155655,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0155655,
+        "upstream_inference_prompt_cost": 0.0002055,
+        "upstream_inference_completions_cost": 0.01536
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1801,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.0155655,
+  "output_text": null,
+  "status": "response_failure",
+  "accounted_cost_usd": 0.0155655,
+  "finished_utc": "2026-10-04T01:46:39.404338+00:00",
+  "latency_seconds": 10.182,
+  "original_request_sha256": "7dacc972f1425ffa27af3aed322ed464913c46e16c1e252a4c830b2393589b67"
+}

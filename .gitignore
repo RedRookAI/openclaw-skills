@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+.runner.lock
+.DS_Store

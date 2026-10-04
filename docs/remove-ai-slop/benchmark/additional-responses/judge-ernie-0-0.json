@@ -1,0 +1,497 @@
+{
+  "job_id": "judge-ernie-0-0",
+  "requested_model": "openai/gpt-6-luna",
+  "started_utc": "2026-10-04T01:47:23.733224+00:00",
+  "request": {
+    "model": "openai/gpt-6-luna",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05.txt",
+        "content_sha256": "4c883f30bc0b1a2cd4c2abdc39dbcfa7bf77eceaa3744c89d5af5d1776f05f05"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/cc829ec5b6144db6022109ad3bfe0f9527ed5792955ba8619d2679abb20d162b.txt",
+        "content_sha256": "cc829ec5b6144db6022109ad3bfe0f9527ed5792955ba8619d2679abb20d162b"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.2,
+        "completion": 1.0,
+        "request": 0
+      }
+    },
+    "seed": 20261004,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "d382a00c91aa1b16246022ae1f0691857f4eafc518203f39834dfe9648b60940",
+  "reservation_usd": 0.007399,
+  "response": {
+    "id": "gen-1791078443-AgG9OGVoIAXqrVWvIsGK",
+    "object": "chat.completion",
+    "created": 1791078443,
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Keeps the unwanted decorative contrast.\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Drops the qualification that the deployment finally worked.\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Adds an unsupported claim that the scheduler improved operations.\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":false,\"t\":false,\"r\":false,\"reason\":\"Changes the specific coastal landscape to a broader scene; the note is unsolicited.\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":false,\"t\":false,\"r\":false,\"reason\":\"Changes the specific coastal landscape to a broader scene; the note is unsolicited.\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":false,\"t\":false,\"r\":true,\"reason\":\"Omits the speculative support-ticket benefit; the unsolicited note is also out of scope.\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Omits the speculative support-ticket benefit.\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+          "refusal": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbAwk2UYYF755URNsBDmolVW9f_HiMAUDXOQeR75A50-WQvSUqHJF1Q-F7o_mj3oV4t2V3aWD_vOJQNIvtEm5U9p5nDXahgZzuXCHtep4Wd3rhAH7EUekGJY2oVXd2-uEfgMapi7lLwaeqk_dqf3YGKW2Sg-tznwnsvEOL1qy7MJ4sO5RmkKLC5gfv8f1SgzdV4NO4elx-JF632zbN7eZMbz4hxvDZ0VHCp23263q0xVuXxDpwTAIMeAuF96xo1iIedezOQZbyUUOBgUUcqK49VVCgmq9SVHWDSHbYYIfvTYajNCuAAtTnrs_Q5NGjIX_-wy8z2UuMQvsU3b7aP5kTANUf82EBy8atRBdAsODj0DyOvKvBxNfyLQ9RNhwmJYQufpICDyRw-WCH99K-NtJ4R4KxxVDsqx-dSBeiwZD7xzEwwWde95vRqzVyeM1IofVwxJmUJuc5CJXy5nkhL9Ct0vOkXztMQUNqB_Jq_8pKvWABzRZbGo1wOsFrBSkhqffjCO9XMdelEaRlJESDc5eRzLKc9SPKj4HevwnRfWamWw4dJxDL6RMfW8BKY2eEShbDP6dyjF2POyagW-1r_qQCMRwVG2ThmOMjc0IxaoeiQLTsb_q4hCMk8fC8M1mPg5sZHXYPF50ibW2qYAwsJ_2z1OUtnilmgLCGFRpL8-t7gPzaVJEPZ5NRsjeNOM20wcNN8Xss9-QUAcwE_4A9Skwo8l0u2lLS8UH6kQFWRRQgcUzWXU3wi_8FGWJ6srbNpYK03eEOSs2JsOHs5U--bEilJSiFh-vqUdfvMWX19kkIRXZokHBUh-IeubgqEAZcNrGFZZkNPZpOH4qkl9Zcs3IjiOey3vPaIspWVZiJL9h-BC-2txDtzeIsgtdOU_x_GTwzLmfhTPkS0VgsQ5wEH8HVnu4jFBZV9ZU6Y-JdHDTmpyRFFo8BCtdPBcRDLutLknUuXm-VIWUoWOm1KTK4MYZdGK5-KCfcfz2s-0-YfBbZtGB_w1K0_X_jXpNRhT--cN2FZKbAmVItgNs_nVWqoj4TRF3GrrvDBk3tKSbq49amcki5Ve21dISAls_frbmOP1FXhRszb3i4GJ_2fuC3oIwKI6usqg1nCrj6C3zHA4Ils2PV_Lob8DSTS-t1_K77nDNjFBV8szjH4R50pjcUimr1KCU1NOwaxYkHFF0K3O0ut4wziW1BDDlVre57CossyzDG5DmNHPegIwCweOQkP4q02jWwciJvaFjM2ywsU7l5PcmwOsYyHMl6LTZNai6OngE9ikXrsCjejSNNXbBog9qv5B2IX-cJKHCsePL_JvNQnxWTYuwXtWWVYJhiV3MKbXbYpFhXaGYA6VGPToniVwR_MqJeVok57SCeBe2aPlolcC5yDazrSkBO_bUO4pp2v3Y2EAV1SMqV2TL7Y9mPpoKUo5Nz-Brg8s9LDT8wDEB_uXO3qIjmEDDkvVarry3LiYUuNFgtIsGVpmjXm9YdmRd4OcoDhljqU3zeqvX5a-wGDuoTDvRvmWnXBjsk_fRKkni1SRt1K9FkZ5AJMvaopJgRLORxiUireBAnGe2gkF1H8llZRqJo_hT7damQygsv64FYV5i0Z-Oz7oDfw4WMscTCftcu19E90q-7kyXPQ1m04hQ9KZFV1lUIEmyQjqGnVhse0loKASZFSEfUYcuNL2olUUt6E4aS0TX4kewBuR4_Prszu0uRHM8CIhrQYFYwIjhHd5NaWoo6gwPDMarWr-U-3AxyuB_aL4kcqstZAH5J_s9fNHusIGkXkq2bs2ZS-CPdAgDPnsb5rmjpUxNR-U1AB8PNKClrxaEcfjFWHelh5Oh5NvtZ_GvKhA0gxd6AVHi08mBfHZU2fp9zYprx6uMAsITc6taAUGdhMb5IWD3tsiN8sPLpJL2cstKui3Tub3Qn5L0t5o4mwH5m_-xpn-R9lE2oL-y1TcSw2zjvWHMlI4olUrLdo4b1gDVvvKPg6GBmRDrOIf1iNmYz1n1rWsldBX6Gb-B9qmaRt-MtMg85G2cccuTmx3W_JJJMX8TAr_RCAgLtTgNuoN24As2spuoEDa5nzvKGlvhYFm7BACyrKn_ZOl-w8tmDU4HqlApSHzOoJ1062lP_OBkymuLCs3m_c_oCD4To2ljlk6ufR4HX0nTg6ThqPwZCwSiusa4FVsiSdSJcYGotCDtu_jjlEtzmbOtjMg8bpDQZj_BhQF6RwcmVmrGbYDED21W0kuh7cQZ-oLixHkDa0ADg_Gj6zoLW0dw72Hkg0d2Up70ZATtytdsKerKhHmOJWjg8peIXhYe0D_k5LY7bwdpY5Co-pnoHitiXrJa3KDj8R5YS-m8V8tdu4lUVibrpMOPFnGfP4XdhgdC4xkSjVWM73NWcg-UqJXryfzcvsdizdQYief9HBmiiZFRDCjycgLl3YvZWcLnO035CirCK35DgNMusofFpDXmZNcI9xbCcY8-9WS5Vu6cJ3ykcRQ7YPLsJ8JG28nmc-qPohPyxqdbhKXxd2BbEvgdRye8WJB6hPD2buXoLKc7oefLkiP1BW5wcSAAaVueS-uoZ9jHE0Vu1wHkVy7C_mrdypjSofCUFQmlPgRFxiVrG2Q__8uPiq-WSbfRh922COFPVjZlxinHCsFxift9xr7COCKHgond4GRjnGe_s62N1rt3XWV_Zc8R3Z_B7ChSbawQBGdaj7t9RJ-bg_RqwkFOYeg37KuDomYA0BinEejyGwpiMGp0lmMlzlacHael-IGUxeMgtCUnVuvrepMXd0uvPSryycVTTgM35K2mQ-gSAiUnGxI11XgsBHoHJq0KLEUwa8576huD1UFAQxnirCsa-Znp48FGc_5U7PzMDq2YuHijuApfPxrNqPez2EHhbaUHB8ytR8yleKNpbBWS7ZlKMgpBusg4SCC61_ElQLplpg6GYIEIiOmlWpSvc_TjVQZA7wDQCkjteX2y0mVvkkoWu-K4YFUPk16pGtLDJbeuKQ1uZipvvDMcag8ywcBg0huDwxPROmauQ2u1pSwYHprv5c_tMWBlqik5pXpYBL-E36_4N17HOJ1CdUr7R1zcDBVZDS9EGGtNBHJ15Qt1t9zu6ZKDGah2qkbBac5YdCvTK8TYfgVmev0_qVm6tGeAWyicnHjTM7alNfAjtI2aFqmUFhsEj6c0GroGGjMrnkH3D-FaJvQR7eYbOXf7kB3cyGvICVx9OoUJKx9DLLc55vAvd9xKEwxiTtKQAzt8WnW2A5_2iORl2acUyf-0sx3ulx01oSTsXTjqRJCfy4PDqzCBOlQscxvTjNWPJKBwFgOsdKp_ceY7FtPavp31ZunNZFOBM_CmDoA1p8eqvDPh2YwxSvfNoRAHDDeqJd_CBgP5JLnZ-gxcp8BTOhPGp1LJ0fP0RnSKDNXLpcDhmBVhNSWMrv8xnpKFoZankC1h5Z6BzgjcAPUsX6pMFpKFFeoT8MKI0mS-PwQtdWf2wzYQ2nNpdLLvVA1cjstCPeo7_h1HpcQZlyqGd9ZMQCzO9ye7s9yui-gH3BdEK9qTeoD_N8VYJo-vFHZHq0KTJ1HnbYPiWGwMwFtM32nazO7nNaRnICvLMXRx0VVIzQtlILusU1QO_i3OhW1mznEVMax86hJV74NI93BUWmyIKhWAjTDouM1rjLdhIYdvg_R5zqaJt3-nCEgPwi8mNT9pYE1R7sHE8SFKx4dCq_C8Rj5YSbXjwqMnUDt-ygLXrzHWJssrCqXiTYynpfk58PewcxTbxMAOWcQxBIVBm_ja8qazeMz2kab2HuUWHlqe3IcuqmrIfNPKsyRJcbjZFMmY7Ni4-CLtleiUGpHeB1eCj-cQgd0Cgw5ypnvPGU6pTMKBeh3u5_fV18ADDBJ4LUOjtz7GU9WnK3khZuGE0wQ03jibGcsGga8uv49fnd_CAeWUTuy2EKJHWhXCzDtIUqNAbkGSyy9Q7AI5YxI97sWFgwozaDBP3q6hrGbHqCVttCGk6Ov6YE0HZl_rpVweUJwJVXbfl58L1SGaadmetKc-2Hn0XOb2KZkqzeWeG1uBvDqMAA9aad_WSGlkN7gxrWJqnGXc6Vm5avG4CnOW8Umi2XnkK4dlVmc_vsc-BecBggpzFhFtPAVGHE-ZwNbVfOX4aabHVhiGwrRgyVNMnM4SeUw1nN5WPcspfDIBL3rlW6lwjwIMPCqCppbHqlyz46fBZWLUKDBC6ca3FWJr6DVZkztnfnYJdUi-r9N8_AfIF05OUHrjf7VyeXfa3XnajRg93UlnZ5d-dG_3WDN_LvYJS83CJNqHMMYISB-zIEuKND4f43eCMNEG4ozz-FvL2LM_-DD9OvlU47Age2jGKhxAvFeNBDGQvri3rNr6421zmZiQwrhEJqQknLW_ywu1uG5f_DWTmeID7Wuxwf38WEAJt9lXprcriJKjGES5XH8_6UiC064VTwfWKTvetqamk9obQ2FtOE73EtKQVR8XN8VtAjUbRLaxAvHMv8qyqNHDhYzaVwCWyo3gJ-pUrtjpY6nisz0p1Ud5Y3wnW4FJto283JNA5RTzp6MWLLmDIhOMC1z-k6jW5UzrL2oSkSCb14-S7ve13WwDXZ_gNI7lGvtouiB9fCK1otxUnIBrjMyzXgB-Z767DBJ9vO5s6K9DxULYgOpUzfRTP2c5982pENbjFBPrSxvgulFu_VMgFkUOfA4ob5p2o1joONsDcacYqna-TDjMOBt7otDSEyA5HQl-sb5ExXZ1Fts_gSEG42xbkoVuqzpTJ1OVTJBISZPUej3edISGsiXbZ4C69g_4c-jrPzqHou4S0Zmf0g74tj9UYZ1l8iQCzQGxHvmJK_qRLL1rSshBOfsJt2_nCb67OY--rK5V_c8aIlWZA_ofEOLBCSMN5dn2NmzxJHGLs0P7ONtt8Sr6HoHEoKn5nWtvRZeM8xCZOJZXqpos4zfL87pVJxmRnPu5iiH9jiLGGaAH0yXKhDl0jk1I0QKeuj4RvrugSmj5-yqoO3fd3MeLHQNj9WGn0UrpP4UX2d77smilshViH2djWIccrg=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_022c7e2310d1d7be016ac1b02c6adc87d1a143349e3794cb3c",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqwbAyk2aY-6egC8wwgVlAUrNkgdPlrTbIOLoFornYd1hwdo8aTYinbqXo842ex0qrpFmoMupZYAXHv-MtoK9KF5RoW0J578Fc_R_Qvb7Ei8Rk8ZS01JPgGpkaQf1E0xbs9c37o87hukCu9GuBOVJcYfMH32VsWszsW0i3FFKpjmv2NBYbihJlwo6LMYjmo0SajGGl2F5e25kIaSZdOhetFE6rEHgLqR-29QZjYESrn-1m4USZpX1fSDCPrYve-enLvUdoEKLDeiMCHXhBBqL2FRPvvBnl4m4wktpbDX0D1AblBdeMwBvYFuMKRisK3tJnh5RDCs9S0V2UeyKnKL4rZZhxEpz8nsA7aKmhfnhZh066TT91Ufp4BT9mI2Ixm6H-eyafh9obM_bf1C6oJDhx66Mj0Tp-kEP6hP9Yf3i95HASg5J82Lxb-qIlD2YFjg3bG-dmWE-RVrQXJ1FGBntVXQOvoZMJtr5AR0ZL75Cjkd1gaRHZyu4SYQgQJDaZD1LR_9vZrd3P7sGW4ILw5XMReBX7fCJem1uTDOIe0UZAJ3cs4QAP8y-SO6w0Skle3kEAYyBubJTCxTxE-E3a5lUAIpYBj_6W1GlR7r0vaEK-MtPh8fu04L_oTUwEsWe49zX9s7mqm1MPUx-rqluRed04fYSylnGR7q0ddz8caQPvFbF9vnyL4vazeB-yykBemB2Mzxz3A5hKKvmeuozOoaVAK2LiAnvk6KKNhaWvbnzI8qtYfnzriD34CphkgbFwL_XDjiPJWivtQTA6Rs-f0UgwQYdh4P3QbR2bUE986FtuFjOJ0_lFTHwYExqXIerW5e7HhOrCVdwzMqj_fiKAXIXPgCq42WSYdkdsQZrIGURMHvv-Isx2nptFCAF7UoZS5-pKL96wDwjG70rFEd9xSTMjMghFfGkVgbdCGAuKqO-LyfYqMnHb2fW1rsi3ksvxdNb31EFNCXEws8h6XsWoqeCbNzyk3Ee_liaUdQY2VTd3bEWS-Kv3lhPcT8VlJckbw9JYLE5kgcKVM7ehkULFJ_Zbxo_7d33MJtidbZJAY3U7CeNqTK_YoY9Afj13o1tHy-2V3gMfGTO2fm_TXhg8VxqEygbSTFKG1DWURpcaQpnEvOwyIkPVKSTx9G4BkmEaa0mdrA4q_Un_ol7-n3Nb054HXiO7s3wRlzfwB4eK2yvV0EiJvkL_ZM5yFq0h2mKOGdAhQ2JwJrov27LMcTuU41kp07_ifqrJYnqhucWFCOuEZndObPRIAzP59FUEmVGv24CPXPfNZBLloT6nfxHd78chn1hznGERH7md_xHTIaMJFx60xmmDVaRybIy-38qiEfahCUEyT45wKFXdiyVEgF_y1Y0K0cU7TGM6ohJKS1U9JyjrYYVqcqHDM0OufEkZUFewl3V5_GSL7meRth4ng06OkJqFSba4tavMQ-aV_VElnBK_Zpn2-TNrmK26XxbvVJUX57zAlEcTFOqeeSQ7QuWnxDMDLfyCnmob9TrKVOxre64lfh0A0xzfZ8JpKc0EQnNDCEXiy74ZHrDDNZ4SEuXWoSTP5OWqMDmdRBJIIPBcuRW9X0vJahy_RgMAeQUoNWlt0finbE8wq4C9N8RoXrbkzTmYR3E9F1q73kP8ZJyliqxKSFe0CwzjGMuoCm65iRzESyUAriOk1LDDkb72riLrBBHM3HWuzdui0q54_yH44oIhYRaOwS3thBqLngrPrFXk921a8C4R-lGEWbEvBItH9m1NNmLFllmWRfwXOFXyyIPI1BpQWQGK6Lw1mnwsbaBi9PQ9t_VVNCqCFjCfe-JGHwW6IqzLqmag40Z8lfXXjuQqqA0Xt9sXHjIAGqqNUHUXpfU1tIp-tZ3G4KhqunEJl7gpdz2M9zQ45EyJOOnx1NEcwo_gA7b-Tne-cI8YLG2F94Tvt-Gw0tSIGMnqp5QfeE-MtKxHxrN1UR-fGPZ7QmTvoNb71_LQ-moYiDGNusLzQiuUYYUAw1NlnkBoEPZVx9FYkfINpPcAf7TrzI_KODQkDUWI8gGnRoqeP21LIZXbG4rwwaZbWFzW2CWEYxG4GfrnmYOI-73WJ9_5Guyh9U99AL6Ezoo9B87qYge-BEqIcd6g2TrZyylISKwtWs6x9I7EPrH3LzpM6G5tpASpjgAOJUohSiRVMFN_F5KjisXEXjB_Jzuhv4Hz-ngirYuCsOBmbUVJuOwndTd_15LlDqI7dmzrW_ed99UK8z8WDY2yHlhdTNmpaeWp4hifa3qhlVwCkLXZKgD3r94yhfWqiKj1sJxxxFhYOr0dHzay-WuvD2IeXef2bM3SuffpzjHboUzs6i_7vtYKlIg_-4Q9WV1tknWzZILBzSIYCPSLQ1aGF2bhhVuy5aZN7EPzNOTfUqiQwCBBJft7EaVky33w9lfLvYEcJ3DbSrW-8cRzgCvpIZjALgI1jut7f0FHHovF6C3HENDqhDVa7kbZPNrevmYRTU9M3Xz-IoZCX5TlhQURhe8P4QoBYnB5EyOlWqvWg6maLEam0_2fQQWFQa0k2sknAblcxNDAs0La67wPXATenagvOaEIrvGrOODxCrSORo2hPmu7720GdSCugV0HBuiGodrMPc5QFrMaUMzJOrm4RYHttaA0HC0qYVj7q7i71CNtlPHgcX__RK4OQrpqJ_f__WFmleTz3xDbvczGgo2FRwEzh5bxGwCgxKz9c8_EU6zjBcNMRBzodxiaaQoi_sx1IioEvaUEq0lGuQYOei9HWLMTDCn-NmoJrYIQWmpPoRU9YIs4l6Nc1H2orfJuHTz4G5g6iAk5bVy1szHILXT6gZnuDgN_fJLaQRdy5Ym14A-rCZLT1NqD05t5gkulQ-TYAyQ=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+              "format": "openai-responses-v1",
+              "id": "rs_022c7e2310d1d7be016ac1b030db4487d1bd5f91a11248a340",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3347,
+      "completion_tokens": 2220,
+      "total_tokens": 5567,
+      "cost": 0.0015283,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 3344,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015283,
+        "upstream_inference_prompt_cost": 0.0004183,
+        "upstream_inference_completions_cost": 0.00111
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 738,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.0015283,
+  "output_text": "{\"ratings\":[{\"id\":\"decorative-contrast\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"decorative-contrast\",\"candidate\":\"B\",\"m\":true,\"t\":false,\"r\":false,\"reason\":\"Keeps the unwanted decorative contrast.\"},{\"id\":\"decorative-contrast\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"substantive-negation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"critical-citation\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"pat-humor\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"intentional-humor\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"intentional-humor\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Drops the qualification that the deployment finally worked.\"},{\"id\":\"intentional-humor\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"contribution-boundary\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"contribution-boundary\",\"candidate\":\"B\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Adds an unsupported claim that the scheduler improved operations.\"},{\"id\":\"contribution-boundary\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"uncertainty-and-condition\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"A\",\"m\":false,\"t\":false,\"r\":false,\"reason\":\"Changes the specific coastal landscape to a broader scene; the note is unsolicited.\"},{\"id\":\"literal-review-word\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"literal-review-word\",\"candidate\":\"C\",\"m\":false,\"t\":false,\"r\":false,\"reason\":\"Changes the specific coastal landscape to a broader scene; the note is unsolicited.\"},{\"id\":\"protected-quotation\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"protected-quotation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"protected-quotation\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"already-clear\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"already-clear\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"participial-tail\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"participial-tail\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"aspiration-not-capability\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"mathematical-representation\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"mathematical-representation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"mathematical-representation\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"plain-punctuation\",\"candidate\":\"A\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"plain-punctuation\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"plain-punctuation\",\"candidate\":\"C\",\"m\":true,\"t\":false,\"r\":true,\"reason\":\"The unsolicited note is outside the requested edit.\"},{\"id\":\"business-paragraph\",\"candidate\":\"A\",\"m\":false,\"t\":false,\"r\":true,\"reason\":\"Omits the speculative support-ticket benefit; the unsolicited note is also out of scope.\"},{\"id\":\"business-paragraph\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"business-paragraph\",\"candidate\":\"C\",\"m\":false,\"t\":true,\"r\":true,\"reason\":\"Omits the speculative support-ticket benefit.\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"A\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"B\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"},{\"id\":\"useful-parallel-list\",\"candidate\":\"C\",\"m\":true,\"t\":true,\"r\":true,\"reason\":\"\"}]}",
+  "status": "complete",
+  "parsed": {
+    "ratings": [
+      {
+        "id": "decorative-contrast",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "B",
+        "m": true,
+        "t": false,
+        "r": false,
+        "reason": "Keeps the unwanted decorative contrast."
+      },
+      {
+        "id": "decorative-contrast",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "substantive-negation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "critical-citation",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "pat-humor",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "A",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested edit."
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "B",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "Drops the qualification that the deployment finally worked."
+      },
+      {
+        "id": "intentional-humor",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested edit."
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "B",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "Adds an unsupported claim that the scheduler improved operations."
+      },
+      {
+        "id": "contribution-boundary",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "A",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested edit."
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "uncertainty-and-condition",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "A",
+        "m": false,
+        "t": false,
+        "r": false,
+        "reason": "Changes the specific coastal landscape to a broader scene; the note is unsolicited."
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "literal-review-word",
+        "candidate": "C",
+        "m": false,
+        "t": false,
+        "r": false,
+        "reason": "Changes the specific coastal landscape to a broader scene; the note is unsolicited."
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "A",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested edit."
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "protected-quotation",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested edit."
+      },
+      {
+        "id": "already-clear",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "already-clear",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "A",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested edit."
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "participial-tail",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested edit."
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "A",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested edit."
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "aspiration-not-capability",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested edit."
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "A",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested edit."
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "mathematical-representation",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested edit."
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "A",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested edit."
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "plain-punctuation",
+        "candidate": "C",
+        "m": true,
+        "t": false,
+        "r": true,
+        "reason": "The unsolicited note is outside the requested edit."
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "A",
+        "m": false,
+        "t": false,
+        "r": true,
+        "reason": "Omits the speculative support-ticket benefit; the unsolicited note is also out of scope."
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "business-paragraph",
+        "candidate": "C",
+        "m": false,
+        "t": true,
+        "r": true,
+        "reason": "Omits the speculative support-ticket benefit."
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "A",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "B",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      },
+      {
+        "id": "useful-parallel-list",
+        "candidate": "C",
+        "m": true,
+        "t": true,
+        "r": true,
+        "reason": ""
+      }
+    ]
+  },
+  "accounted_cost_usd": 0.0015283,
+  "finished_utc": "2026-10-04T01:47:37.354677+00:00",
+  "latency_seconds": 13.621,
+  "original_request_sha256": "d382a00c91aa1b16246022ae1f0691857f4eafc518203f39834dfe9648b60940"
+}

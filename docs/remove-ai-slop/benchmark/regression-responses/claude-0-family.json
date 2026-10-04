@@ -1,0 +1,128 @@
+{
+  "family": "claude",
+  "arm": "family",
+  "replicate": 0,
+  "job_id": "claude-0-family",
+  "revision": "meaning-and-note-guard-v2",
+  "requested_model": "anthropic/claude-sonnet-5.5",
+  "started_utc": "2026-10-04T01:54:23.206178+00:00",
+  "request": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "messages": [
+      {
+        "role": "system",
+        "content_file": "messages/582baff0f17e8dcbc0842558076877b310db93b188ddf7fd66f06779d3f6ac2d.txt",
+        "content_sha256": "582baff0f17e8dcbc0842558076877b310db93b188ddf7fd66f06779d3f6ac2d"
+      },
+      {
+        "role": "user",
+        "content_file": "messages/e70d9c0942a10ed79c7c121058ea03c1614e6304b06560c771da3f7c82def1b2.txt",
+        "content_sha256": "e70d9c0942a10ed79c7c121058ea03c1614e6304b06560c771da3f7c82def1b2"
+      }
+    ],
+    "max_tokens": 4096,
+    "stream": false,
+    "provider": {
+      "sort": "price",
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 4.0,
+        "completion": 20.0,
+        "request": 0
+      }
+    },
+    "temperature": 0.3,
+    "reasoning": {
+      "effort": "low",
+      "exclude": true
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "reservation_usd": 0.198812,
+  "response": {
+    "id": "gen-1791078863-HnUjN4Ojj8hg42bp1LLT",
+    "object": "chat.completion",
+    "created": 1791078863,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Azure",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "{\"results\":[{\"id\":\"contribution-boundary\",\"text\":\"I helped build the scheduler.\",\"note\":\"\"},{\"id\":\"uncertainty-and-condition\",\"text\":\"The cache may reduce latency by about 10% when requests repeat. We have not tested cold starts.\",\"note\":\"\"},{\"id\":\"protected-quotation\",\"text\":\"Her note read: \\\"Not today—but soon.\\\"\",\"note\":\"\"},{\"id\":\"already-clear\",\"text\":\"Please send the invoice by Friday.\",\"note\":\"\"},{\"id\":\"participial-tail\",\"text\":\"The team launched the dashboard on Tuesday.\",\"note\":\"\"},{\"id\":\"business-paragraph\",\"text\":\"On Tuesday, I helped deploy the cache to two servers. In our 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. We have not tested cold starts or the other eight servers. It could reduce support tickets. The dashboard still shows yesterday's data.\",\"note\":\"\"}]}",
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 9198,
+      "completion_tokens": 313,
+      "total_tokens": 9511,
+      "cost": 0.021526,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.021526,
+        "upstream_inference_prompt_cost": 0.018396,
+        "upstream_inference_completions_cost": 0.00313
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "reported_cost_usd": 0.021526,
+  "output_text": "{\"results\":[{\"id\":\"contribution-boundary\",\"text\":\"I helped build the scheduler.\",\"note\":\"\"},{\"id\":\"uncertainty-and-condition\",\"text\":\"The cache may reduce latency by about 10% when requests repeat. We have not tested cold starts.\",\"note\":\"\"},{\"id\":\"protected-quotation\",\"text\":\"Her note read: \\\"Not today—but soon.\\\"\",\"note\":\"\"},{\"id\":\"already-clear\",\"text\":\"Please send the invoice by Friday.\",\"note\":\"\"},{\"id\":\"participial-tail\",\"text\":\"The team launched the dashboard on Tuesday.\",\"note\":\"\"},{\"id\":\"business-paragraph\",\"text\":\"On Tuesday, I helped deploy the cache to two servers. In our 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. We have not tested cold starts or the other eight servers. It could reduce support tickets. The dashboard still shows yesterday's data.\",\"note\":\"\"}]}",
+  "status": "complete",
+  "parsed_results": [
+    {
+      "id": "contribution-boundary",
+      "text": "I helped build the scheduler.",
+      "note": ""
+    },
+    {
+      "id": "uncertainty-and-condition",
+      "text": "The cache may reduce latency by about 10% when requests repeat. We have not tested cold starts.",
+      "note": ""
+    },
+    {
+      "id": "protected-quotation",
+      "text": "Her note read: \"Not today—but soon.\"",
+      "note": ""
+    },
+    {
+      "id": "already-clear",
+      "text": "Please send the invoice by Friday.",
+      "note": ""
+    },
+    {
+      "id": "participial-tail",
+      "text": "The team launched the dashboard on Tuesday.",
+      "note": ""
+    },
+    {
+      "id": "business-paragraph",
+      "text": "On Tuesday, I helped deploy the cache to two servers. In our 30-minute test, median latency for repeated requests fell from 80 ms to 60 ms. We have not tested cold starts or the other eight servers. It could reduce support tickets. The dashboard still shows yesterday's data.",
+      "note": ""
+    }
+  ],
+  "accounted_cost_usd": 0.021526,
+  "finished_utc": "2026-10-04T01:54:26.169556+00:00",
+  "latency_seconds": 2.963,
+  "original_request_sha256": "13ea9737a757f1117c0f8e26b5b238d235f2f640f61b1e66533a7dfb537d1a25"
+}
