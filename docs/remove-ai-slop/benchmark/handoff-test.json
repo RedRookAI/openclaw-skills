@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-04",
+  "host": "Haymitch",
+  "runtime": "OpenClaw 2026.9.7 (c074824)",
+  "model": "fleet-calcifer/qwen3.8-flash-next",
+  "scope": "Existing runtime and local model, fresh test workspace and state. The agent received the public release URL and installation request. The harness did not download or install the skill.",
+  "release_url": "https://github.com/RedRookAI/openclaw-skills/releases/tag/remove-ai-slop-v1.0.0",
+  "installed_file_hashes": {
+    "SKILL.md": "f8adc14cb7832502194e46332bf1028585dfbb88e834074502f2cbd064032d67",
+    "agents/openai.yaml": "cb11ece1900a48d5f1bf0a9735a7b2e2a8eab392473d3773118cd0e40c0faa09",
+    "references/patterns.md": "a0eec9cff06ada145a7ee0f5754440f6e652e686828e6fe51fb8e93ee510559b",
+    "references/phrasing.md": "d00408a18d598bdf0f5bcd04e5acac1a9afbbeeb27ea1c0925d040961a55af71",
+    "references/research.md": "d873af63f42f06c2f9b7e8956a59243be61950df92ce3229e3b8119639e1f756",
+    "references/word-and-phrase-review.md": "89f3dc9cd03ca9cd4e114519b5706f23de93e5b81809286595b8d956c90cb06e"
+  },
+  "installed_files_match_public_release": true,
+  "active_config_unchanged": true,
+  "gateway_pid_unchanged": true,
+  "paid_openrouter_calls": 0,
+  "turns": [
+    {
+      "id": "agent-installs",
+      "request": "Install the Remove AI slop skill from this link into your workspace skills directory, keeping all included files. Tell me when it is ready.",
+      "input": "https://github.com/RedRookAI/openclaw-skills/releases/download/remove-ai-slop-v1.0.0/remove-ai-slop-skill.zip",
+      "output": "Installed and ready. The **remove-ai-slop** skill is now in your workspace skills directory with all files from the archive:\n\n```\nskills/remove-ai-slop/\n├── SKILL.md                          (main skill instructions)\n├── agents/openai.yaml                (interface metadata)\n└── references/\n    ├── patterns.md                   (pattern review table)\n    ├── phrasing.md                   (construction-level checks)\n    ├── word-and-phrase-review.md     (expanded word/phrase cues)\n    └── research.md                   (source basis and limits)\n```\n\nI reviewed the contents during install — it's a prose-editing skill for stripping AI-style filler (canned phrases, decorative contrasts, unearned praise, etc.) while preserving meaning and the author's voice. The download temp files have been cleaned up. It's ready to use whenever you want text deslopped.",
+      "served_model": "qwen3.8-flash-next",
+      "provider": "fleet-calcifer",
+      "tool_calls": [
+        {
+          "tool": "exec",
+          "arguments": {
+            "command": "cd <test-root>/workspace && mkdir -p .openclaw/tmp && curl -fsSL -o .openclaw/tmp/remove-ai-slop-skill.zip \"https://github.com/RedRookAI/openclaw-skills/releases/download/remove-ai-slop-v1.0.0/remove-ai-slop-skill.zip\" && ls -la .openclaw/tmp/ && unzip -l .openclaw/tmp/remove-ai-slop-skill.zip",
+            "title": "Download skill zip and list contents"
+          }
+        },
+        {
+          "tool": "exec",
+          "arguments": {
+            "command": "cd <test-root>/workspace && python3 - <<'EOF'\nimport zipfile\nz = zipfile.ZipFile('.openclaw/tmp/remove-ai-slop-skill.zip')\nfor i in z.infolist():\n    print(i.filename, i.file_size)\nEOF",
+            "title": "List zip contents with Python"
+          }
+        },
+        {
+          "tool": "exec",
+          "arguments": {
+            "command": "cd <test-root>/workspace && python3 - <<'EOF'\nimport zipfile\nz = zipfile.ZipFile('.openclaw/tmp/remove-ai-slop-skill.zip')\nz.extractall('.openclaw/tmp/skill-inspect')\nEOF\ncat .openclaw/tmp/skill-inspect/remove-ai-slop/SKILL.md",
+            "title": "Extract and read SKILL.md for inspection"
+          }
+        },
+        {
+          "tool": "exec",
+          "arguments": {
+            "command": "cd <test-root>/workspace/.openclaw/tmp/skill-inspect/remove-ai-slop && cat agents/openai.yaml && echo ---- && head -40 references/patterns.md && echo ---- && head -40 references/phrasing.md && echo ---- && head -40 references/research.md && echo ---- && head -40 references/word-and-phrase-review.md",
+            "title": "Inspect remaining skill files"
+          }
+        },
+        {
+          "tool": "exec",
+          "arguments": {
+            "command": "cd <test-root>/workspace && mkdir -p skills && cp -a .openclaw/tmp/skill-inspect/remove-ai-slop skills/ && rm -rf .openclaw/tmp/skill-inspect .openclaw/tmp/remove-ai-slop-skill.zip && find skills/remove-ai-slop -type f | sort && echo ---- && sed -i 's/x/s/' /dev/null; sha256sum skills/remove-ai-slop/SKILL.md",
+            "title": "Install skill into workspace skills directory"
+          }
+        }
+      ],
+      "loaded_exact_released_skill": false
+    },
+    {
+      "id": "agent-uses",
+      "request": "Use remove-ai-slop to edit this business announcement. Return only the edited text.",
+      "input": "In today's fast-paced digital landscape, managing your downloads can feel like navigating a labyrinth. Meet FolderSweep—a seamless, game-changing solution designed to elevate your workflow.\n\nFolderSweep watches one folder. FolderSweep groups files by type. FolderSweep shows a preview before moving anything. It works on Linux and macOS – and you can undo the last move. This isn't just about organizing files—it's about unlocking your potential. Your downloads folder called. It wants its dignity back.\n\nWhy does this matter? Here's the kicker: you stay in control—every step of the journey. No clutter. No chaos. Just clarity. The preview reflects our unwavering commitment to transparency, empowering you to navigate your files with confidence.\n\nIt's worth noting that you decide when to move the files—nothing moves until you confirm. Preview first. Move when ready. At the end of the day, FolderSweep is more than a tool—it's your partner in productivity. Try it today.",
+      "output": "FolderSweep watches one folder, groups files by type, and shows a preview before moving anything. Nothing moves until you confirm, and you can undo the last move. It works on Linux and macOS.\n\nNo clutter. No chaos. Just clarity. Your downloads folder called. It wants its dignity back.\n\nTry it today.",
+      "served_model": "qwen3.8-flash-next",
+      "provider": "fleet-calcifer",
+      "tool_calls": [
+        {
+          "tool": "read",
+          "arguments": {
+            "path": "<test-root>/workspace/skills/remove-ai-slop/SKILL.md"
+          }
+        },
+        {
+          "tool": "read",
+          "arguments": {
+            "path": "<test-root>/workspace/skills/remove-ai-slop/references/phrasing.md"
+          }
+        }
+      ],
+      "loaded_exact_released_skill": true
+    }
+  ],
+  "limitations": [
+    "One existing installation and one local model; different tool permissions or model behavior can change the handoff.",
+    "The edited sample retained a stock joke and marketing slogan; working installation does not prove complete style compliance."
+  ]
+}

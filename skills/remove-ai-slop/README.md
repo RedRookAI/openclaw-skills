@@ -2,19 +2,27 @@
 
 Make AI drafts read naturally. Cut canned phrasing and forced jokes.
 
-## Use the prompt
+## Give this to your Claw
 
-Copy [REMOVE-AI-SLOP.md](REMOVE-AI-SLOP.md) into your chat and replace `{INPUT_TEXT}` with your draft. Add a tone or audience if useful. Run it before posting on social media, publishing a newsletter, or submitting an article.
+Copy this message into your chat:
 
-## Use the skill
+```text
+Install the Remove AI slop skill from this link into your workspace skills directory, keeping all included files. Tell me when it is ready.
 
-Download `remove-ai-slop-skill.zip` from [Releases](https://github.com/RedRookAI/openclaw-skills/releases). Extract the `remove-ai-slop` folder into your OpenClaw workspace's `skills/` directory. Or copy this folder there. [OpenClaw setup](https://docs.openclaw.ai/tools/skills).
+https://github.com/RedRookAI/openclaw-skills/releases/download/remove-ai-slop-v1.0.0/remove-ai-slop-skill.zip
+```
+
+You can also extract the ZIP's `remove-ai-slop` folder into your workspace's `skills/` directory yourself.
 
 Use it after drafting:
 
 ```text
 After drafting the post, use remove-ai-slop and return the edited version.
 ```
+
+## Use the prompt
+
+Copy [REMOVE-AI-SLOP.md](REMOVE-AI-SLOP.md) into your chat and replace `{INPUT_TEXT}` with your draft. Add a tone or audience if useful. Run it before posting on social media, publishing a newsletter, or submitting an article.
 
 ## See it work
 
