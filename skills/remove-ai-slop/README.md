@@ -26,6 +26,6 @@ Copy [REMOVE-AI-SLOP.md](REMOVE-AI-SLOP.md) into your chat and replace `{INPUT_T
 
 ## See it work
 
-[Approved before-and-after examples](../../docs/remove-ai-slop/assets/examples/README.md) show the exact GPT and Claude edits. Both remove the dashes and canned phrasing while keeping the useful slogan.
+[Approved before-and-after examples](https://github.com/RedRookAI/openclaw-skills/blob/main/docs/remove-ai-slop/assets/examples/README.md) show the exact GPT and Claude edits. Both remove the dashes and canned phrasing while keeping the useful slogan.
 
-[Test results](../../docs/remove-ai-slop/benchmark/README.md). [Research](references/research.md). [Marketing assets](../../docs/remove-ai-slop/assets/README.md).
+[Test results](https://github.com/RedRookAI/openclaw-skills/blob/main/docs/remove-ai-slop/benchmark/README.md). [Research](references/research.md). [Marketing assets](https://github.com/RedRookAI/openclaw-skills/blob/main/docs/remove-ai-slop/assets/README.md).
