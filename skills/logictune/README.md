@@ -1,26 +1,24 @@
-# LogicTune: AI Strategist
+# AI LogicTune: Better decisions, less wasted time 0.1.4
 
-Stop my AI from agreeing with everything I say. Help it choose useful work and finish the task.
-
-Version: 0.1.3. Use for planning, research, coding and long pipelines.
+Use for planning, research, coding and long pipelines.
 
 ## Install and activate
 
 **LogicTune needs both installation and activation. Send this single message to do both:**
 
-> Install LogicTune 0.1.3 from https://github.com/RedRookAI/openclaw-skills/tree/logictune-v0.1.3/skills/logictune into my active workspace's skills/logictune folder, including its bundled supporting files. Activate it by merging its principles into my active AGENTS.md. Preserve existing rules and preferences, combine duplicates, and flag conflicts. Confirm which file you updated and whether loading was verified.
+> Install AI LogicTune 0.1.4 from https://github.com/RedRookAI/openclaw-skills/tree/logictune-v0.1.4/skills/logictune into my active workspace's skills/logictune folder, including its bundled supporting files. Activate it by merging its principles into my active AGENTS.md. Preserve existing rules and preferences, combine duplicates, and flag conflicts. Confirm which file you updated and whether loading was verified.
 
 Start a new chat after setup to load the updated instructions.
 
 Already installed through ClawHub or another installer? Installation alone makes the skill available. Send this to activate it across sessions:
 
-> Activate LogicTune by merging its principles into my active AGENTS.md. Preserve existing rules and preferences, combine duplicates, and flag conflicts. Confirm which file you updated and whether loading was verified.
+> Activate AI LogicTune by merging its principles into my active AGENTS.md. Preserve existing rules and preferences, combine duplicates, and flag conflicts. Confirm which file you updated and whether loading was verified.
 
 ## Use for one task
 
 After installing, say:
 
-> Use LogicTune for this task without changing my operating instructions: [your task].
+> Use AI LogicTune for this task without changing my operating instructions: [your task].
 
 ## Copy and paste instead
 

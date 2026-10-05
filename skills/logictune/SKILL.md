@@ -1,14 +1,14 @@
 ---
 name: logictune
-description: Apply LogicTune's strategic working principles when the user asks to use LogicTune, or add them to the active agent's operating instructions when the user requests persistent setup.
+description: Apply AI LogicTune's strategic working principles when the user asks to use LogicTune, or add them to the active agent's operating instructions when the user requests persistent setup.
 license: MIT-0
 metadata:
-  version: "0.1.3"
+  version: "0.1.4"
   openclaw:
     homepage: https://github.com/RedRookAI/openclaw-skills/tree/main/skills/logictune
 ---
 
-# LogicTune: AI Strategist
+# AI LogicTune: Better decisions, less wasted time 0.1.4
 
 Read the bundled [AGENTS.md](AGENTS.md). Apply its principles to the requested task, respecting existing higher-priority instructions and the user's explicit choices.
 
@@ -27,7 +27,7 @@ Make a persistent change only when the user explicitly asks to add LogicTune to 
 - When the requested task already uses helpers, pass the relevant principles in their task context and check their effective instructions where observable. Do not assume inheritance or edit their workspaces. Do not create helpers solely to check setup.
 - Report the destination, version, merge result and observed loading status. If writing is unavailable, provide the proposed addition without claiming installation succeeded.
 
-Loading, installing or invoking this skill alone does not authorize a persistent edit. A request to "install and activate LogicTune" authorizes the merge into the active AGENTS.md. Complete both steps without asking again unless the destination is unclear or a material conflict needs the user's decision.
+Loading, installing or invoking this skill alone does not authorize a persistent edit. A request to "install and activate AI LogicTune" authorizes the merge into the active AGENTS.md. Complete both steps without asking again unless the destination is unclear or a material conflict needs the user's decision.
 
 ## Check behavior when needed
 
