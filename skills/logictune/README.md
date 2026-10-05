@@ -2,7 +2,7 @@
 
 Use for planning, research, coding and long pipelines.
 
-[Get it on ClawHub](https://clawhub.ai/redrookai/skills/logictune).
+[Get it on ClawHub](https://clawhub.ai/redrookai/skills/logictune). [Download the skill ZIP](https://github.com/RedRookAI/openclaw-skills/releases/download/logictune-v0.1.4/logictune-0.1.4.zip).
 
 ## Install and activate
 

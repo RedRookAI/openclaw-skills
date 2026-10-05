@@ -2,6 +2,8 @@
 
 Edit dialogue, pacing and prose while keeping the story and the author's voice. The final answer contains only edited fiction.
 
+[Get it on ClawHub](https://clawhub.ai/redrookai/skills/ai-fiction). [Download the skill ZIP](https://github.com/RedRookAI/openclaw-skills/releases/download/ai-fiction-v0.1.0/ai-fiction-0.1.0.zip).
+
 ## Install and use in OpenClaw
 
 Give your Claw this message:
