@@ -2,6 +2,8 @@
 
 Use for planning, research, coding and long pipelines.
 
+[Get it on ClawHub](https://clawhub.ai/redrookai/skills/logictune).
+
 ## Install and activate
 
 **LogicTune needs both installation and activation. Send this single message to do both:**
