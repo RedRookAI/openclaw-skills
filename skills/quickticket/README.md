@@ -30,7 +30,7 @@ Paste [QUICK-TICKET.md](QUICK-TICKET.md) into a chat, followed by your idea, pro
 
 - Related planning tools: [Spec Kit](https://github.com/github/spec-kit), [Task Master](https://github.com/eyaltoledano/claude-task-master), [OpenSpec](https://github.com/Fission-AI/OpenSpec).
 - Scope and decomposition: [Story splitting](https://agilealliance.org/glossary/story-splitting/), [Spec Kit's feature decomposition](https://github.github.io/spec-kit/concepts/spec-of-specs.html).
-- Requirements and coverage: [Can LLMs Generate User Stories and Assess Their Quality?](https://arxiv.org/abs/2507.15157), [Text2Stories](https://arxiv.org/abs/2510.08622), [ReqElicitGym](https://arxiv.org/abs/2602.18306).
+- Requirements and coverage: [Can LLMs Generate User Stories and Assess Their Quality?](https://arxiv.org/abs/2507.15157), [Automated Alignment between Elicitation Interviews and Requirements](https://arxiv.org/abs/2510.08622), [ReqElicitGym](https://arxiv.org/abs/2602.18306).
 - Acceptance and recovery: [SWE-Gate](https://arxiv.org/abs/2609.04167), [Runtime-Structured Task Decomposition](https://arxiv.org/abs/2605.15425).
 - Non-engineer use: [Feasibility of AI-Assisted Programming](https://arxiv.org/abs/2512.05666), [Non-programmers Assessing AI-Generated Code](https://arxiv.org/abs/2508.06484), [Novice engagement with vibe coding](https://arxiv.org/abs/2512.02750).
 - External instructions and persistence: [SkillJect](https://arxiv.org/abs/2602.14211), [Bad Memory](https://arxiv.org/abs/2607.14611), [Prompt-injection guidance](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks).
