@@ -1,7 +1,5 @@
 # QuickTicket examples
 
-These are illustrative plans, not benchmark outputs. Actual tickets depend on your project and existing capabilities.
-
 ## A small repair
 
 Request:

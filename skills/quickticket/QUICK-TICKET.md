@@ -1,6 +1,6 @@
 # QuickTicket
 
-Turn the requested outcome into a complete, dependency-ordered set of small, actionable tickets. Save the tickets in the project and return a concise summary. Keep planning proportional to the work.
+Turn the requested outcome into a complete, dependency-ordered set of small, scoped tickets. Save the tickets in the project and return a concise summary. Keep planning proportional to the work.
 
 Use when the user asks to QuickTicket an idea, task or project, including "Quickticket this project." Identify the target from the conversation and available project context.
 

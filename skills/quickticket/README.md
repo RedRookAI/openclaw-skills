@@ -1,6 +1,6 @@
 # QuickTicket
 
-Turn an idea or project into small, actionable tickets in the right order. QuickTicket checks relevant prior art, saves the plan and gives you a clear next step.
+Turn an idea or project into small, scoped tickets in the right order. QuickTicket checks relevant prior art, saves the plan and gives you a clear next step.
 
 ## Install and use
 
@@ -28,7 +28,6 @@ Paste [QUICK-TICKET.md](QUICK-TICKET.md) into a chat, followed by your idea, pro
 
 ## References
 
-- Working principles: [AI LogicTune](https://github.com/RedRookAI/openclaw-skills/blob/main/skills/logictune/AGENTS.md).
 - Related planning tools: [Spec Kit](https://github.com/github/spec-kit), [Task Master](https://github.com/eyaltoledano/claude-task-master), [OpenSpec](https://github.com/Fission-AI/OpenSpec).
 - Scope and decomposition: [Story splitting](https://agilealliance.org/glossary/story-splitting/), [Spec Kit's feature decomposition](https://github.github.io/spec-kit/concepts/spec-of-specs.html).
 - Requirements and coverage: [Can LLMs Generate User Stories and Assess Their Quality?](https://arxiv.org/abs/2507.15157), [Text2Stories](https://arxiv.org/abs/2510.08622), [ReqElicitGym](https://arxiv.org/abs/2602.18306).
