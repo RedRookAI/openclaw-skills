@@ -2,17 +2,19 @@
 
 Stop my AI from agreeing with everything I say. Help it choose useful work and finish the task.
 
-Version: 0.1.0.
+Version: 0.1.1.
 
 ## Use
 
 Use for planning, research, coding and long pipelines. Copy [AGENTS.md](AGENTS.md) into your operating instructions, or send your Claw:
 
-> Get LogicTune 0.1.0 from https://github.com/RedRookAI/openclaw-skills/tree/logictune-v0.1.0/skills/logictune and merge its AGENTS.md into my active AGENTS.md. Preserve existing rules and preferences, combine duplicates, and flag conflicts. Confirm which file you updated and whether it loads.
+> Get LogicTune 0.1.1 from https://github.com/RedRookAI/openclaw-skills/tree/logictune-v0.1.1/skills/logictune and merge its AGENTS.md into my active AGENTS.md. Preserve existing rules and preferences, combine duplicates, and flag conflicts. Confirm which file you updated and whether it loads.
 
 To use it for one task, ask your agent to apply the supplied instructions without saving them as operating rules.
 
 Persistent setup edits your active AGENTS.md only when you ask. Installing the skill alone does not apply the rules across sessions.
+
+To check whether it helps, try the relevant [behavioral checks](references/checks.md). Setup should distinguish saved instructions from verified session loading, including helpers used for your task. Runtime budgets and permissions remain under your control.
 
 ## References
 
@@ -26,7 +28,7 @@ Persistent setup edits your active AGENTS.md only when you ask. Installing the s
 - Planning: [GAVEL](https://arxiv.org/abs/2609.19315), [PlanFence](https://arxiv.org/abs/2609.03340), [SAGE](https://arxiv.org/abs/2609.34342), [grounded foresight](https://arxiv.org/abs/2606.27483).
 - Additional research: [factual agreement and uncertainty](https://arxiv.org/abs/2609.30986), [AI advice and decisions](https://arxiv.org/abs/2607.28133), [counterfactual strategic reasoning](https://arxiv.org/abs/2603.19167).
 - Skill security: [semantic supply-chain attacks](https://arxiv.org/abs/2605.11418), [scanner disagreement](https://arxiv.org/abs/2606.01494), [ClawHub audit criteria](https://docs.openclaw.ai/clawhub/security-audits).
-- Packaging: [skill format](https://docs.openclaw.ai/clawhub/skill-format), [OpenClaw workspace instructions](https://docs.openclaw.ai/concepts/agent-workspace), [ClawHub scan workflow](https://docs.openclaw.ai/clawhub/cli).
+- Packaging: [skill format](https://docs.openclaw.ai/clawhub/skill-format), [OpenClaw workspace instructions](https://docs.openclaw.ai/concepts/agent-workspace), [skill loading](https://docs.openclaw.ai/tools/skills), [ClawHub scan workflow](https://docs.openclaw.ai/clawhub/cli).
 - GitHub security: [secret scanning](https://docs.github.com/en/code-security/reference/secret-security/secret-scanning-scope), [push protection](https://docs.github.com/en/code-security/concepts/secret-security/push-protection), [CodeQL coverage](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/).
 
 Loading references: [OpenClaw](https://docs.openclaw.ai/concepts/agent), [Codex](https://learn.chatgpt.com/docs/agent-configuration/agents-md), [Claude Code](https://code.claude.com/docs/en/memory#agentsmd).

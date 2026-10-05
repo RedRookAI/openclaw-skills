@@ -3,7 +3,7 @@ name: logictune
 description: Apply LogicTune's strategic working principles when the user asks to use LogicTune, or add them to the active agent's operating instructions when the user requests persistent setup.
 license: MIT-0
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
   openclaw:
     homepage: https://github.com/RedRookAI/openclaw-skills/tree/main/skills/logictune
 ---
@@ -22,9 +22,18 @@ Make a persistent change only when the user explicitly asks to add LogicTune to 
 - Read existing instructions. Merge the bundled principles, preserve existing rules and preferences, combine duplicates, and flag material conflicts before changing affected instructions.
 - Keep this setup confined to that instruction file. Do not alter runtime configuration, permissions, other agents, memory files or background jobs.
 - Check existing content and any LogicTune version marker. Include each principle once; a marker alone does not establish that the principles are present.
-- Read back the saved result to verify the intended merge and preservation of existing rules. Report the destination, version and changes, and whether loading was actually verified. If writing is unavailable, provide the proposed addition without claiming installation succeeded.
+- Read back the saved result to verify the intended merge and preservation of existing rules. Check available runtime diagnostics for the effective instruction file and truncation. Do not silently remove principles or raise context limits to make them fit.
+- Distinguish the saved merge from instructions loaded in a session. Verify loading in a new session when existing authorized tools permit it; otherwise give the user a short verification step and report loading as unverified. Do not restart a service or reset an active conversation for this check.
+- When the requested task already uses helpers, pass the relevant principles in their task context and check their effective instructions where observable. Do not assume inheritance or edit their workspaces. Do not create helpers solely to check setup.
+- Report the destination, version, merge result and observed loading status. If writing is unavailable, provide the proposed addition without claiming installation succeeded.
 
 Loading, installing or invoking this skill alone does not authorize a persistent edit.
+
+## Check behavior when needed
+
+When the user requests a behavioral check or an observed failure needs diagnosis, use the relevant cases in [checks.md](references/checks.md). Inspect actions and outputs; reading or repeating the rules does not establish compliance. Stop after the relevant checks and report remaining gaps. Do not run the suite after every task.
+
+For a requested guarantee about spending, file access or stopping, identify the existing runtime control that could enforce it. Propose the smallest necessary configuration change separately. Applying this skill does not authorize installing hooks, changing permissions or setting hard limits.
 
 ## Access
 
