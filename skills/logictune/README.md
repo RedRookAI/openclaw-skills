@@ -2,19 +2,33 @@
 
 Stop my AI from agreeing with everything I say. Help it choose useful work and finish the task.
 
-Version: 0.1.1.
+Version: 0.1.2. Use for planning, research, coding and long pipelines.
 
-## Use
+## Install and set up
 
-Use for planning, research, coding and long pipelines. Copy [AGENTS.md](AGENTS.md) into your operating instructions, or send your Claw:
+**Installing the skill makes it available. To apply it across future sessions, you must ask your Claw to add it to your active AGENTS.md.**
 
-> Get LogicTune 0.1.1 from https://github.com/RedRookAI/openclaw-skills/tree/logictune-v0.1.1/skills/logictune and merge its AGENTS.md into my active AGENTS.md. Preserve existing rules and preferences, combine duplicates, and flag conflicts. Confirm which file you updated and whether it loads.
+1. Send this to install:
 
-To use it for one task, ask your agent to apply the supplied instructions without saving them as operating rules.
+   > Install LogicTune 0.1.2 from https://github.com/RedRookAI/openclaw-skills/tree/logictune-v0.1.2/skills/logictune into my active workspace's skills/logictune folder. Include its bundled supporting files.
 
-Persistent setup edits your active AGENTS.md only when you ask. Installing the skill alone does not apply the rules across sessions.
+2. Send this to enable it across sessions:
 
-To check whether it helps, try the relevant [behavioral checks](references/checks.md). Setup should distinguish saved instructions from verified session loading, including helpers used for your task. Runtime budgets and permissions remain under your control.
+   > Use LogicTune to merge its operating principles into my active AGENTS.md. Preserve existing rules and preferences, combine duplicates, and flag conflicts. Confirm which file you updated and whether loading was verified.
+
+Start a new chat after setup to load the updated instructions. You can send both requests in one message.
+
+## Use for one task
+
+After installing, say:
+
+> Use LogicTune for this task without changing my operating instructions: [your task].
+
+## Copy and paste instead
+
+Copy the contents of [AGENTS.md](AGENTS.md) into your agent's operating instructions, preserving existing rules and resolving conflicts. This works without installing the skill.
+
+Optional: try the relevant [behavioral checks](references/checks.md).
 
 ## References
 

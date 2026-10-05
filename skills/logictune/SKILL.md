@@ -3,7 +3,7 @@ name: logictune
 description: Apply LogicTune's strategic working principles when the user asks to use LogicTune, or add them to the active agent's operating instructions when the user requests persistent setup.
 license: MIT-0
 metadata:
-  version: "0.1.1"
+  version: "0.1.2"
   openclaw:
     homepage: https://github.com/RedRookAI/openclaw-skills/tree/main/skills/logictune
 ---

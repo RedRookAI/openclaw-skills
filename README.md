@@ -9,9 +9,9 @@ Skills and copy-and-paste prompts for everyday problems with AI agents.
 
 ## Give it to your Claw
 
-Open a skill's page, copy its install message, and send it to your Claw. It downloads and installs the skill in its workspace.
+Open a skill's page and send its install message to your Claw. Follow the setup steps on that page. [LogicTune needs an explicit request to add its rules to AGENTS.md](skills/logictune/README.md#install-and-set-up).
 
-You can also download a skill ZIP from [Releases](https://github.com/RedRookAI/openclaw-skills/releases) and extract it into your OpenClaw workspace's `skills/` directory. [OpenClaw setup](https://docs.openclaw.ai/tools/skills).
+Where available, you can also download a skill ZIP from [Releases](https://github.com/RedRookAI/openclaw-skills/releases) and extract it into your OpenClaw workspace's `skills/` directory. [OpenClaw setup](https://docs.openclaw.ai/tools/skills).
 
 Each skill also includes a standalone prompt you can paste into a chat.
 
