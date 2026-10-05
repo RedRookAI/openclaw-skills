@@ -4,7 +4,7 @@ Turn an idea or project into small, scoped tickets in the right order. QuickTick
 
 ## Install and use
 
-Give your OpenClaw this message:
+[Download the skill ZIP](https://github.com/RedRookAI/openclaw-skills/releases/download/quickticket-v0.1.0/quickticket-0.1.0.zip), or give your OpenClaw this message:
 
 > Install QuickTicket from https://github.com/RedRookAI/openclaw-skills/tree/main/skills/quickticket into my workspace's skills/quickticket folder, including all bundled files. Preserve my existing instructions, tickets and model settings.
 
