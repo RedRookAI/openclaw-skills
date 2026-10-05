@@ -6,6 +6,7 @@ Skills and copy-and-paste prompts for everyday problems with AI agents.
 | --- | --- |
 | [Remove AI slop](skills/remove-ai-slop/README.md) ([ClawHub](https://clawhub.ai/redrookai/skills/remove-ai-slop)) | Makes AI drafts read naturally. Cuts canned phrasing, forced jokes, and repetitive rhetoric. |
 | [AI LogicTune: Better decisions, less wasted time 0.1.4](skills/logictune/README.md) ([ClawHub](https://clawhub.ai/redrookai/skills/logictune)) | Helps an agent question weak logic, check prior art, keep work scoped and finish useful work. |
+| [AI Fiction: Pro Editor 0.1.0](skills/ai-fiction/README.md) | Edits fiction for dialogue, pacing and readable prose while respecting the author's style and story continuity. |
 
 ## Give it to your Claw
 
