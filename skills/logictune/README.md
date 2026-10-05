@@ -2,21 +2,19 @@
 
 Stop my AI from agreeing with everything I say. Help it choose useful work and finish the task.
 
-Version: 0.1.2. Use for planning, research, coding and long pipelines.
+Version: 0.1.3. Use for planning, research, coding and long pipelines.
 
-## Install and set up
+## Install and activate
 
-**Installing the skill makes it available. To apply it across future sessions, you must ask your Claw to add it to your active AGENTS.md.**
+**LogicTune needs both installation and activation. Send this single message to do both:**
 
-1. Send this to install:
+> Install LogicTune 0.1.3 from https://github.com/RedRookAI/openclaw-skills/tree/logictune-v0.1.3/skills/logictune into my active workspace's skills/logictune folder, including its bundled supporting files. Activate it by merging its principles into my active AGENTS.md. Preserve existing rules and preferences, combine duplicates, and flag conflicts. Confirm which file you updated and whether loading was verified.
 
-   > Install LogicTune 0.1.2 from https://github.com/RedRookAI/openclaw-skills/tree/logictune-v0.1.2/skills/logictune into my active workspace's skills/logictune folder. Include its bundled supporting files.
+Start a new chat after setup to load the updated instructions.
 
-2. Send this to enable it across sessions:
+Already installed through ClawHub or another installer? Installation alone makes the skill available. Send this to activate it across sessions:
 
-   > Use LogicTune to merge its operating principles into my active AGENTS.md. Preserve existing rules and preferences, combine duplicates, and flag conflicts. Confirm which file you updated and whether loading was verified.
-
-Start a new chat after setup to load the updated instructions. You can send both requests in one message.
+> Activate LogicTune by merging its principles into my active AGENTS.md. Preserve existing rules and preferences, combine duplicates, and flag conflicts. Confirm which file you updated and whether loading was verified.
 
 ## Use for one task
 
