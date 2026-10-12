@@ -8,6 +8,7 @@ Skills and copy-and-paste prompts for everyday problems with AI agents.
 | [AI LogicTune: Better decisions, less wasted time 0.1.4](skills/logictune/README.md) ([ClawHub](https://clawhub.ai/redrookai/skills/logictune)) | Helps an agent question weak logic, check prior art, keep work scoped and finish useful work. |
 | [AI Fiction: Pro Editor 0.1.0](skills/ai-fiction/README.md) ([ClawHub](https://clawhub.ai/redrookai/skills/ai-fiction)) | Edits fiction for dialogue, pacing and readable prose while respecting the author's style and story continuity. |
 | [QuickTicket 0.1.0](skills/quickticket/README.md) ([ClawHub](https://clawhub.ai/redrookai/skills/quickticket)) | Turns ideas and projects into scoped, dependency-ordered tickets with clear acceptance and a practical next step. |
+| [BugDoctor 0.1.0](skills/bugdoctor/README.md) | Helps an agent diagnose software failures, check existing remedies and verify a scoped repair. |
 
 ## Give it to your Claw
 
