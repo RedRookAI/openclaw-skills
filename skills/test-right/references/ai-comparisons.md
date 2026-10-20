@@ -1,10 +1,10 @@
-# AI comparisons
+# AI Comparisons
 
 TestRight helps your AI test whether something actually works or improves results. Say “Use TestRight to test this,” and it examines the relevant project, chooses meaningful checks, runs them and inspects the outputs. It addresses common AI testing mistakes: testing the wrong thing, using incorrect expected answers, coaching the baseline, leaking information between comparisons and claiming success without evidence. It also keeps testing scoped, preserves useful results and directs the AI to stop when it has enough evidence to answer your question.
 
 Use this guide when testing involves AI subjects or comparisons of AI behavior.
 
-## Construct the ordinary baseline
+## Construct the Ordinary Baseline
 
 Start from the real user request and relevant starting context. Preserve the request's wording. If the user said "Test this," provide the target and context they were referring to. If no original request exists, construct the shortest ordinary request for the intended use and record that it was constructed.
 
@@ -14,7 +14,7 @@ Put evaluator-authored methods, expected answers, suspected causes and grading n
 
 Build both conditions from the same source. Inspect the actual dispatched messages and condition differences. Keep evaluator records separate from subject workspaces, including filenames and helper files. Preserve inputs at meaningful stages. The optional [input guard](input-guard.md) checks declared changes after preparation; inspect source fairness before preparing the bundle.
 
-## Separate the testing agent from the subjects
+## Separate the Testing Agent From the Subjects
 
 TestRight guides the agent arranging and interpreting the test. The subjects perform the task being evaluated. Evaluators inspect the outcomes against the criteria.
 
@@ -22,7 +22,7 @@ When testing another skill, the baseline subject performs the ordinary task with
 
 Check effective instruction sources, installed skills, retrieved context, model/harness settings, tools and session state. A fresh folder or omitted skill name alone does not establish that guidance is absent. Restore equivalent starting conditions between runs, preserving state within an episode when required. Prevent files, answers and memories from one condition entering the other. Record inaccessible boundaries accurately.
 
-## Select and evaluate informative cases
+## Select and Evaluate Informative Cases
 
 Use real requests and source incidents where available. Distinguish captured incidents, adapted cases and constructed probes. Keep development cases identifiable when used again. Freeze case selection and evaluation criteria before inspecting results, and retain every outcome.
 

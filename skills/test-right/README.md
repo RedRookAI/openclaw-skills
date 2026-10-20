@@ -1,8 +1,8 @@
-# TestRight: Get answers without endless testing
+# TestRight: Get Answers Without Endless Testing
 
 TestRight helps your AI test whether something actually works or improves results. Say “Use TestRight to test this,” and it examines the relevant project, chooses meaningful checks, runs them and inspects the outputs. It addresses common AI testing mistakes: testing the wrong thing, using incorrect expected answers, coaching the baseline, leaking information between comparisons and claiming success without evidence. It also keeps testing scoped, preserves useful results and directs the AI to stop when it has enough evidence to answer your question.
 
-## Why it matters
+## Why It Matters
 
 An AI can run plenty of tests and still miss the actual problem. It can check a helper while the workflow fails, write assertions that accept a bug, or report success without inspecting the result.
 
@@ -21,7 +21,7 @@ The second request supplies part of TestRight's guidance. Preserve the original 
 
 [Research behind the instructions](REFERENCES.md) explains these failures and the evidence supporting the chosen approach.
 
-## Install and use
+## Install and Use
 
 Send your OpenClaw:
 
@@ -42,12 +42,12 @@ It uses your configured model and tools. Ask for a plan or review when that is a
 
 For a fiction pipeline, TestRight checks the relevant execution path and reads the resulting fiction against the author's brief. A successful run and readable prose are separate outcomes.
 
-## Optional input protection
+## Optional Input Protection
 
 For local AI comparisons, the included [Python input guard](references/input-guard.md) checks whether declared inputs changed after preparation. It makes no model calls and installs no hooks. Python 3 is needed only for this helper. Review the source request for coaching before preparing inputs.
 
-## Use as a prompt
+## Use as a Prompt
 
 Paste the body of [SKILL.md](SKILL.md), starting at its title, followed by what you want tested. The [AI comparison guide](references/ai-comparisons.md) provides additional detail for that workflow.
 
-[Research](REFERENCES.md) · Version 0.1.1 · [MIT-0 license](LICENSE)
+[Research](REFERENCES.md) · Version 0.1.2 · [MIT-0 license](LICENSE)
