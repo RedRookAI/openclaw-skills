@@ -9,6 +9,11 @@ Skills and copy-and-paste prompts for everyday problems with AI agents.
 | [AI Fiction: Pro Editor 0.1.0](skills/ai-fiction/README.md) ([ClawHub](https://clawhub.ai/redrookai/skills/ai-fiction)) | Edits fiction for dialogue, pacing and readable prose while respecting the author's style and story continuity. |
 | [QuickTicket 0.1.0](skills/quickticket/README.md) ([ClawHub](https://clawhub.ai/redrookai/skills/quickticket)) | Turns ideas and projects into scoped, dependency-ordered tickets with clear acceptance and a practical next step. |
 | [BugDoctor 0.1.0](skills/bugdoctor/README.md) ([ClawHub](https://clawhub.ai/redrookai/skills/bugdoctor)) | Helps an agent diagnose software failures, check existing remedies and verify a scoped repair. |
+| [TestRight: Test the actual problem 0.1.0](skills/test-right/README.md) | Runs scoped tests, checks actual outcomes and keeps comparisons fair. |
+
+## TestRight
+
+TestRight helps your AI test whether something actually works or improves results. Say “Use TestRight to test this,” and it examines the relevant project, chooses meaningful checks, runs them and inspects the outputs. It addresses common AI testing mistakes: testing the wrong thing, using incorrect expected answers, coaching the baseline, leaking information between comparisons and claiming success without evidence. It also keeps testing scoped, preserves useful results and directs the AI to stop when it has enough evidence to answer your question.
 
 ## Give it to your Claw
 
