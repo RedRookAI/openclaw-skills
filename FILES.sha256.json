@@ -1,7 +1,7 @@
 {
   ".gitignore": "9d8061fbb65f51f3193cb6018f133367128f5ccb643c6637a9fdf3df09c47129",
   "LICENSE": "282005256502083d4d292b34d55bbd75ccb4697f722953a66e424ff8d7135fbb",
-  "README.md": "2ec5b39dd1bcfd01361cc297e63b1668439bd0e8cd22d0ce8a4cfcb9886e8fa4",
+  "README.md": "a01a3a14655ee628432952de82c40ff4d9a31ca7f6ee247618afcbf8b1538c0d",
   "docs/remove-ai-slop/README.md": "c7800568a083c297b6109c6e578fa96f6bf8ff419a87c6a23a7deadb09b78441",
   "docs/remove-ai-slop/assets/README.md": "d3856d20b7156954e8800399203fd43eb002474bda09824a3bbd5968050e60f6",
   "docs/remove-ai-slop/assets/examples/README.md": "db70cd79e065d3a382d7b56f5a6d12e1e842ed20c4463811e7e50728c2bb944a",
@@ -293,10 +293,10 @@
   "skills/remove-ai-slop/references/research.md": "d873af63f42f06c2f9b7e8956a59243be61950df92ce3229e3b8119639e1f756",
   "skills/remove-ai-slop/references/word-and-phrase-review.md": "89f3dc9cd03ca9cd4e114519b5706f23de93e5b81809286595b8d956c90cb06e",
   "skills/test-right/LICENSE": "04fefccc6dc5a560ab7a9036e4b940645ee5649353145a4c9abbc31ab56488f5",
-  "skills/test-right/README.md": "66bd00cdedc631983544a73b8941b3846a6322e622ab4dd8aee93399644e8e95",
+  "skills/test-right/README.md": "2bd1f986f8f68a17b724a8ba4396df66703084c6a46c707747b7b9cbb756553f",
   "skills/test-right/REFERENCES.md": "6389753576b90eb4587c8f7b20bb8533e99f2eb431e631cd9503a1a374f7d8fa",
-  "skills/test-right/SKILL.md": "b14ee6d118045ebc658a5dc9e7594046161d5b123f50a1e8791da50e0caa79f1",
-  "skills/test-right/agents/openai.yaml": "528601128611786b5f275b9c12b4054fa98c4ea75a552cea727830eced99b295",
+  "skills/test-right/SKILL.md": "d78ca08907d8c81fc913eaf7ecaf5f241cde28c74e4b30afbee2f8e48cc1e190",
+  "skills/test-right/agents/openai.yaml": "312115f8e1c0c558d19452aa2e9d450beb8c56030ed39e4080ce19792c8c8962",
   "skills/test-right/references/ai-comparisons.md": "23c6f7fe267294c482658ded2be9ccde287ea4206e0f9a04a479f58e573e17d1",
   "skills/test-right/references/input-guard.md": "00913cd585666d556c3326c189c12cd42b65382e56ace0f54fdfe1ee930d3ffc",
   "skills/test-right/scripts/input_guard.py": "6b63119cf95c2c226c00dfdc0d07d1df4c6bb3dedcd14951443d5658d1821eeb"
